@@ -1,0 +1,91 @@
+\ifx\undefined\BibEmph\def\BibEmph#1{#1}\else\fi
+\ifx\undefined\href\def\href#1#2{#2}\else\fi
+\ifx\undefined\url\def\url#1{\texttt{#1}}\else\fi
+\ifx\undefined\urlprefix\def\urlprefix{URL: }\else\fi
+\ifx\undefined\BibUrl\def\BibUrl#1{\urlprefix\url{#1}}\else\fi
+\ifx\undefined\BibUrlDate\long\def\BibUrlDate#1{({%
+\cyr\cyrd\cyra\cyrt\cyra\ %
+\cyro\cyrb\cyrr\cyra\cyrshch\cyre\cyrn\cyri\cyrya}: #1)}\else\fi
+\ifx\undefined\BibAnnote\long\def\BibAnnote#1{#1}\else\fi
+\begin{thebibliography}{1}
+\def\selectlanguageifdefined#1{
+\expandafter\ifx\csname date#1\endcsname\relax
+\else\language\csname l@#1\endcsname\fi}
+
+\bibitem{my_1}
+\selectlanguageifdefined{russian}
+\BibEmph{Афанасьев~М.~Я., Филиппов~А.~Н.} Применение методов нечёткой логики
+  в~автоматизированных системах технологической подготовки
+  \mbox{производства}~// \BibEmph{Изв. вузов. Приборостроение}.
+\newblock 2010.
+\newblock {\cyr\CYRT.}~53, {\cyr\textnumero}~6.
+\newblock {\cyr\CYRS.}~38--42.
+\newblock \textbf{\mbox{(Из перечня ВАК)}}.
+
+\bibitem{my_2}
+\selectlanguageifdefined{russian}
+\BibEmph{Афанасьев~М.~Я., Филиппов~А.~Н.} Создание динамических моделей баз
+  данных технологического назначения на языке Python~// \BibEmph{Изв. вузов.
+  \mbox{Приборостроение}}.
+\newblock 2010.
+\newblock {\cyr\CYRT.}~53, {\cyr\textnumero}~6.
+\newblock {\cyr\CYRS.}~59--62.
+\newblock \textbf{(Из перечня ВАК)}.
+
+\bibitem{my_7}
+\selectlanguageifdefined{russian}
+\BibEmph{Афанасьев~М.~Я., Грибовский~А.~А.} Организация единого информационного
+  пространства виртуального предприятия~// \BibEmph{Научно-технический вестник
+  СПбГУ ИТМО}.
+\newblock 2011.
+\newblock {\cyr\textnumero}~76.
+\newblock {\cyr\CYRS.}~113--118.
+\newblock \textbf{(Из перечня ВАК)}.
+
+\bibitem{my_8}
+\selectlanguageifdefined{russian}
+\BibEmph{Афанасьев~М.~Я., Саломатина~А.~А., Алёшина~Е.~Е., Яблочников~Е.~И.}
+  Применение многоагентных технологий для реализации системы управления
+  виртуальным предприятием~// \BibEmph{Научно-технический вестник СПбГУ ИТМО}.
+\newblock 2011.
+\newblock {\cyr\textnumero}~75.
+\newblock {\cyr\CYRS.}~105--111.
+\newblock \textbf{(Из перечня ВАК)}.
+
+\bibitem{my_3}
+\selectlanguageifdefined{russian}
+\BibEmph{Афанасьев~М.~Я., Грибовский~А.~А.} Реализация модуля управления
+  виртуальным предприятием в PDM-системе ENOVIA-SmarTeam~// Сборник тезисов
+  докладов конференции молодых учёных, Выпуск 2. Труды молодых учёных~/
+  {\cyr\CYRP\cyro\cyrd\ \cyrr\cyre\cyrd.\ }В.~О.~Никифорова.
+\newblock СПб: \mbox{СПбГУ ИТМО}, 2011.
+\newblock {\cyr\CYRS.}~\mbox{258--259}.
+
+\bibitem{my_4}
+\selectlanguageifdefined{russian}
+\BibEmph{Грибовский~А.~А., Афанасьев~М.~Я.} Декомпозиция структуры трехмерных
+  моделей на наборы конструктивных элементов с использованием примитивов~//
+  Сборник тезисов докладов конференции молодых ученых, Выпуск 2. Труды молодых
+  ученых~/ {\cyr\CYRP\cyro\cyrd\ \cyrr\cyre\cyrd.\ }В.~О.~Никифорова.
+\newblock СПб: \mbox{СПбГУ ИТМО}, 2011.
+\newblock {\cyr\CYRS.}~281.
+
+\bibitem{my_5}
+\selectlanguageifdefined{russian}
+\BibEmph{Афанасьев~М.~Я.} Использование библиотеки Open CASCADE для
+  параметрического 3D моделирования~// Сборник тезисов докладов конференции
+  молодых учёных, Выпуск 3. Труды молодых ученых~/ {\cyr\CYRP\cyro\cyrd\
+  \cyrr\cyre\cyrd.\ }~\mbox{В. О. Никифорова}.
+\newblock СПб: \mbox{СПбГУ ИТМО}, 2010.
+\newblock {\cyr\CYRS.}~\mbox{117--118}.
+
+\bibitem{my_6}
+\selectlanguageifdefined{russian}
+\BibEmph{Афанасьев~М.~Я.} Вероятностная модель рассуждений в машине логического
+  вывода экспертной системы <<ТехАссистент>>~// Сборник трудов конференции
+  молодых учёных, Выпуск 2. Биомедицинские технологии, мехатроника и
+  робототехника~/ {\cyr\CYRP\cyro\cyrd\ \cyrr\cyre\cyrd.\ }В.~Л.~Ткалич.
+\newblock СПб: \mbox{СПбГУ ИТМО}, 2009.
+\newblock {\cyr\CYRS.}~\mbox{296--299}.
+
+\end{thebibliography}

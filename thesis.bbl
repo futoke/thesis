@@ -1,0 +1,761 @@
+\ifx\undefined\BibEmph\def\BibEmph#1{#1}\else\fi
+\ifx\undefined\href\def\href#1#2{#2}\else\fi
+\ifx\undefined\url\def\url#1{\texttt{#1}}\else\fi
+\ifx\undefined\urlprefix\def\urlprefix{URL: }\else\fi
+\ifx\undefined\BibUrl\def\BibUrl#1{\urlprefix\url{#1}}\else\fi
+\ifx\undefined\BibUrlDate\long\def\BibUrlDate#1{({%
+\cyr\cyrd\cyra\cyrt\cyra\ %
+\cyro\cyrb\cyrr\cyra\cyrshch\cyre\cyrn\cyri\cyrya}: #1)}\else\fi
+\ifx\undefined\BibAnnote\long\def\BibAnnote#1{#1}\else\fi
+\begin{thebibliography}{10}
+\def\selectlanguageifdefined#1{
+\expandafter\ifx\csname date#1\endcsname\relax
+\else\language\csname l@#1\endcsname\fi}
+
+\bibitem{Matalin-2008}
+\selectlanguageifdefined{russian}
+\BibEmph{Маталин~А.~А.} Технология машиностроения: Учебник.
+\newblock 2 {\cyr\cyri\cyrz\cyrd.}
+\newblock СПб: Издательство <<Лань>>, 2008.
+\newblock 512~{\cyr\cyrs.}
+
+\bibitem{Scallan-2003}
+\selectlanguageifdefined{english}
+\BibEmph{Scallan~P.} Process planning: the design/manufacture interface.
+\newblock Oxford, UK: Butterworth-Heinemann, 2003.
+\newblock 483~p.
+
+\bibitem{Mitrofanov-1987}
+\selectlanguageifdefined{russian}
+\BibEmph{Митрофанов~С.~П., Куликов~Д.~Д., Миляев~О.~Н., Падун~Б.~С.}
+  Технологическая подготовка гибких производственных систем~/
+  {\cyr\CYRP\cyro\cyrd\ \cyrr\cyre\cyrd.\ }С.~П.~Митрофанова.
+\newblock Л.: Машиностроение, 1987.
+\newblock 352~{\cyr\cyrs.}
+
+\bibitem{Averchenkov-1993}
+\selectlanguageifdefined{russian}
+\BibEmph{Аверченков~В.~И., Каштальян~И.~А., Пархутин~А.~П.} САПР
+  технологических процессов, приспособлений и режущих инструментов.
+\newblock Мн.: Высшая школа, 1993.
+\newblock 288~{\cyr\cyrs.}
+
+\bibitem{Goransky-1970}
+\selectlanguageifdefined{russian}
+\BibEmph{Горанский~Г.~К., Владимиров~Е.~В., Ламбин~Л.~Н.} Автоматизация
+  технического нормирования работ на металлорежущих станках с помощью ЭВМ.
+\newblock М.: Машиностроение, 1970.
+\newblock 224~{\cyr\cyrs.}
+
+\bibitem{Tsvevkov-1972}
+\selectlanguageifdefined{russian}
+\BibEmph{Цветков~В.~Д.} Система автоматизации проектирования технологических
+  процессов.
+\newblock М.: Машиностроение, 1972.
+\newblock 240~{\cyr\cyrs.}
+
+\bibitem{Tsvevkov-1979}
+\selectlanguageifdefined{russian}
+\BibEmph{Цветков~В.~Д.} Системно-структурное моделирование и автоматизация
+  проектирования технологических процессов.
+\newblock Мн.: Наука и техника, 1979.
+\newblock 264~{\cyr\cyrs.}
+
+\bibitem{Zarubin-1979}
+\selectlanguageifdefined{russian}
+\BibEmph{Зарубин~В.~М., Капустин~Н.~М., Павлов~В.~В.} Автоматизированная
+  система проектирования технологических процессов механосборочного
+  производства.
+\newblock М.: Машиностроение, 1979.
+\newblock 248~{\cyr\cyrs.}
+
+\bibitem{Korsakov-1985}
+\selectlanguageifdefined{russian}
+\BibEmph{Корсаков~В.~С., Капустин~Н.~М., Темпельгоф~К.-Х., Лихтенберг~Х.}
+  Автоматизация проектирования технологических процессов в машиностроении.
+\newblock М.: Машиностроение, 1985.
+\newblock 304~{\cyr\cyrs.}
+
+\bibitem{Valkov-1991}
+\selectlanguageifdefined{russian}
+\BibEmph{Вальков~В.~М., Вершин~В.~Е.} Автоматизированные системы управления
+  технологическими процессами.
+\newblock 3-е {\cyr\cyri\cyrz\cyrd.}
+\newblock Л.: Политехника, 1991.
+\newblock 269~{\cyr\cyrs.}
+
+\bibitem{Yablochnikov-2003}
+\selectlanguageifdefined{russian}
+\BibEmph{Яблочников~Е.~И., Маслов~Ю.~В.} Автоматизация ТПП в приборостроении.
+  Учебное пособие.
+\newblock СПб: СПб~ГИТМО~(ТУ), 2003.
+\newblock 104~{\cyr\cyrs.}
+
+\bibitem{Zilberburg-2008}
+\selectlanguageifdefined{russian}
+\BibEmph{Зильбербург~Л.~И., Молочник~В.~И., Яблочников~Е.~И.} Информационные
+  технологии в проектировании и производстве.
+\newblock СПб: Политехника, 2008.
+\newblock 304~{\cyr\cyrs.}
+
+\bibitem{Norenkov-2002}
+\selectlanguageifdefined{russian}
+\BibEmph{Норенков~И.~П.} Основы автоматизированного проектирования: Учеб. для
+  вузов. Сер. Информатика в техническом университете.
+\newblock 2-e {\cyr\cyri\cyrz\cyrd.}
+\newblock М.: Изд-во МГТУ им.~Н.\,Э.~Баумана, 2002.
+\newblock 336~{\cyr\cyrs.}
+
+\bibitem{Gavrilov-2003}
+\selectlanguageifdefined{russian}
+\BibEmph{Гаврилов~Д.~А.} Управление производством на базе стандарта MRP\,II.
+\newblock СПб: Питер, 2003.
+\newblock 352~{\cyr\cyrs.}
+
+\bibitem{Nasr-2007}
+\selectlanguageifdefined{english}
+\BibEmph{Nasr~E.~A., Kamrani~A.~K.} Computer-Based Design and Manufacturing: An
+  Information-Based Approach.
+\newblock New York, NY, USA: Springer Science, 2007.
+\newblock 344~p.
+
+\bibitem{ISO-10303-21-2002}
+\selectlanguageifdefined{russian}
+ГОСТ Р ИСО 10303--2002. Системы автоматизации производства и их интеграция.
+  Представление данных об изделии и обмен этими данными; Введ. 20.12.2002.
+\newblock М.: Госстандарт России, 2003.
+\newblock 52~{\cyr\cyrs.}
+
+\bibitem{Golicina-2008}
+\selectlanguageifdefined{russian}
+\BibEmph{Голицына~Т.~Д.} Принципы организации и интерфейс унифицированного
+  модуля интеграции pdm- и cad-систем~// \BibEmph{Научно-технический вестник
+  Санкт-Петербургского государственного университета информационных технологий,
+  механики и оптики}.
+\newblock 2008.
+\newblock {\cyr\textnumero}~48.
+\newblock {\cyr\CYRS.}~186--190.
+
+\bibitem{my_7}
+\selectlanguageifdefined{russian}
+\BibEmph{Афанасьев~М.~Я., Грибовский~А.~А.} Организация единого информационного
+  пространства виртуального предприятия~// \BibEmph{Научно-технический вестник
+  Санкт-Петербургского государственного университета информационных технологий,
+  механики и оптики}.
+\newblock 2011.
+\newblock {\cyr\textnumero}~76.
+\newblock {\cyr\CYRS.}~113--118.
+
+\bibitem{Fomina-2009}
+\selectlanguageifdefined{russian}
+\BibEmph{Фомина~Ю.~Н.} Построение информационно–управляющей среды для
+  технологической подготовки производства виртуального предприятия: Дис\ldots\
+  канд. техн. наук: 05.11.14~/ СПбГУ ИТМО.
+\newblock СПб, 2009.
+\newblock 147~{\cyr\cyrs.}
+
+\bibitem{Salo-2011}
+\selectlanguageifdefined{russian}
+\BibEmph{Саломатина~А.~А.} Алгоритмы функционирования технологической
+  подготовки производства в информационной среде виртуального предприятия:
+  Дис\ldots\ канд. техн. наук: 05.11.14~/ СПбГУ ИТМО.
+\newblock СПб, 2011.
+\newblock 157~{\cyr\cyrs.}
+
+\bibitem{Wood-2001}
+\selectlanguageifdefined{english}
+\BibEmph{Wood~M.~F., DeLoach~S.~A.} An overview of the multiagent systems
+  engineering methodology~// First international workshop, AOSE 2000 on
+  Agent-oriented software engineering.
+\newblock Secaucus, NJ, USA: Springer-Verlag New York, Inc., 2001.
+\newblock P.~207--221.
+
+\bibitem{McDonald-2000}
+\selectlanguageifdefined{english}
+\BibEmph{McDonald~J.~T., Talbert~M.~L., DeLoach~S.~A.} Heterogeneous Database
+  Integration Using Agent-Oriented Information Systems~// Proceedings of the
+  International Conference on Artificial Intelligence (2000.
+\newblock CSREA Press, 2000.
+\newblock P.~26--29.
+
+\bibitem{Valetov-2008}
+\selectlanguageifdefined{russian}
+\BibEmph{Валетов~В.~А., Орлова~А.~А., Третьяков~С.~Д.} Интеллектуальные
+  технологии производства приборов и систем. Учебное пособие.
+\newblock СПб: СПбГУ ИТМО, 2008.
+\newblock 134~{\cyr\cyrs.}
+
+\bibitem{Bai-2010}
+\selectlanguageifdefined{english}
+\BibEmph{Bai~Q., Fukuta~N.} Advances in Practical Multi-Agent Systems. Studies
+  in Computational Intelligence.
+\newblock Springer-Verlag, 2010.
+\newblock 474~p.
+
+\bibitem{Staron-2007}
+\selectlanguageifdefined{english}
+\BibEmph{Staron~R., Tich\'{y}~P., \v{S}indel\'{a}\v{r}~R., Maturana~F.} Methods
+  to Observe the Clustering of Agents Within a Multi-Agent System~// Holonic
+  and Multi-Agent Systems for Manufacturing~/ Ed. by V.~Ma\v{r}\'\i{}k,
+  V.~Vyatkin, A.~Colombo.
+\newblock Berlin, Heidelberg: Springer, 2007.
+\newblock Vol.~4659 of \BibEmph{Lecture Notes in Computer Science}.
+\newblock P.~127--136.
+
+\bibitem{Heragu-2002}
+\selectlanguageifdefined{english}
+\BibEmph{Heragu~S.~S., Graves~R.~J., Kim~B.-I., Onge~A.~S.} Intelligent agent
+  based framework for manufacturing systems control~// \BibEmph{IEEE
+  Transactions on Systems, Man, and Cybernetics, Part A}.
+\newblock 2002.
+\newblock Vol.~32, no.~5.
+\newblock P.~560--573.
+
+\bibitem{Engelke-1990}
+\selectlanguageifdefined{russian}
+\BibEmph{Энгельке~У.~Д.} Как интегрировать САПР и АСТПП.
+\newblock М.: Машиностроение, 1990.
+\newblock 320~{\cyr\cyrs.}
+
+\bibitem{Anumba-2005}
+\selectlanguageifdefined{english}
+\BibEmph{Anumba~C.~J., Ugwu~O.~O., Ren~Z.} Agents and Multi-agent Systems In
+  Construction.
+\newblock Spon Press, 2005.
+\newblock 329~p.
+
+\bibitem{Rassel-2006}
+\selectlanguageifdefined{russian}
+\BibEmph{Рассел~С., Норвиг~П.} Искусственный интеллект: современный подход:
+  Пер. с англ.
+\newblock 2-e {\cyr\cyri\cyrz\cyrd.}
+\newblock М.: Издательский дом <<\mbox{Вильямс}>>, 2006.
+\newblock 1408~{\cyr\cyrs.}
+
+\bibitem{Wooldridge-1994}
+\selectlanguageifdefined{english}
+\BibEmph{Wooldridge~M., Jennings~N.~R.} Agent Theories, Architectures, and
+  Languages: A Survey~// Intelligent Agents: ECAI-94 Workshop on Agent
+  Theories, Architectures, and Languages~/ Ed. by M.~J.~Wooldridge,
+  N.~R.~Jennings.
+\newblock Berlin: Springer, 1994.
+\newblock P.~1--39.
+
+\bibitem{Gorodetskii-1998}
+\selectlanguageifdefined{russian}
+\BibEmph{Городецкий~В.~И., Грушинский~М.~С., Хабалов~А.~В.} Многоагентные
+  системы (обзор)~// \BibEmph{Новости искусственного интеллекта}.
+\newblock 1998.
+\newblock {\cyr\textnumero}~2.
+\newblock {\cyr\CYRS.}~41--61.
+
+\bibitem{Brooks-1991}
+\selectlanguageifdefined{english}
+\BibEmph{Brooks~R.~A.} Intelligence Without Representation~//
+  \BibEmph{Artificial Intelligence}.
+\newblock 1991.
+\newblock Vol.~47, no. 1--3.
+\newblock P.~139--159.
+
+\bibitem{Genesereth-1987}
+\selectlanguageifdefined{english}
+\BibEmph{Genesereth~M.~R., Nilsson~N.~J.} Logical foundations of artificial
+  intelligence.
+\newblock San Francisco: Morgan Kaufmann, 1987.
+\newblock 405~p.
+
+\bibitem{Bratman-1987}
+\selectlanguageifdefined{english}
+\BibEmph{Bratman~M.~E.} Intention, Plans, and Practical Reason.
+\newblock Cambridge, MA, USA: Harvard University Press, 1987.
+\newblock 208~p.
+
+\bibitem{Rao-1995}
+\selectlanguageifdefined{english}
+\BibEmph{Rao~A.~S., Georgeff~M.~P.} {BDI}-agents: From Theory to Practice~//
+  Proceedings of the First Intl. Conference on Multiagent Systems.
+\newblock San Francisco: 1995.
+\newblock P.~704--710.
+
+\bibitem{Korepanov-2011}
+\selectlanguageifdefined{russian}
+\BibEmph{Корепанов~В.~О.} Модели рефлексивного группового поведения и
+  управления.
+\newblock М.: ИПУ РАН, 2011.
+\newblock 127~{\cyr\cyrs.}
+
+\bibitem{Gerber-1999}
+\selectlanguageifdefined{english}
+\BibEmph{Gerber~C., Siekmann~J., Vierke~G.} Holonic {Multi-Agent} Systems:
+  Tech.~Rep. RR-99-03.
+\newblock Germany: DFKI, Kaiserslautern, 1999.
+
+\bibitem{Wooldridge-2002}
+\selectlanguageifdefined{english}
+\BibEmph{Wooldridge~M.} An Introduction to Multiagent Systemes.
+\newblock John Wiley \& Sons Limited, 2002.
+\newblock 348~p.
+
+\bibitem{Singh-1994}
+\selectlanguageifdefined{english}
+\BibEmph{Singh~M.~P.} Multiagent Systems: A Theoretical Framework for
+  Intentions, Know-how, and Communications.
+\newblock Secaucus, NJ, USA: Springer-Verlag New York, Inc., 1994.
+\newblock 168~p.
+
+\bibitem{Bussmann-2001a}
+\selectlanguageifdefined{english}
+\BibEmph{Bussmann~S., Jennings~N.~R., Wooldridge~M.} On the identification of
+  agents in the design of production control systems~// First international
+  workshop, AOSE 2000 on Agent-oriented software engineering.
+\newblock Secaucus, NJ, USA: Springer-Verlag New York, Inc., 2001.
+\newblock P.~141--162.
+
+\bibitem{Vieira-2007}
+\selectlanguageifdefined{english}
+\BibEmph{Vieira~R., Moreira~A., Wooldridge~M., Bordini~R.~H.} On the Formal
+  Semantics of {Speech-Act} Based Communication in an Agent-Oriented
+  Programming Language~// \BibEmph{J. Artif. Int. Res.}
+\newblock 2007. "--- June.
+\newblock Vol.~29.
+\newblock P.~221--267.
+
+\bibitem{Fischer-2003}
+\selectlanguageifdefined{english}
+\BibEmph{Fischer~K., Schillo~M., Siekmann~J.} Holonic Multiagent Systems: A
+  Foundation for the Organisation of Multiagent Systems~// Proceedings of the
+  First International Conference on Applications of Holonic and Multiagent
+  Systems (HoloMAS'03).
+\newblock 2003.
+
+\bibitem{Tharumarajah-1998}
+\selectlanguageifdefined{english}
+\BibEmph{Tharumarajah~A., Wells~A.~J., Nemes~L.} Comparison of emerging
+  manufacturing concepts~// Proceedings of the IEEE International Conference on
+  Systems, Man and Cybernetics.
+\newblock Vol.~1.
+\newblock 1998.
+\newblock P.~325--331.
+
+\bibitem{my_3}
+\selectlanguageifdefined{russian}
+\BibEmph{Афанасьев~М.~Я., Грибовский~А.~А.} Реализация модуля управления
+  виртуальным предприятием в PDM-системе ENOVIA-SmarTeam~// Сборник тезисов
+  докладов конференции молодых учёных, Выпуск 2. Труды молодых учёных~/
+  {\cyr\CYRP\cyro\cyrd\ \cyrr\cyre\cyrd.\ }В.~О.~Никифорова.
+\newblock СПб: \mbox{СПбГУ ИТМО}, 2011.
+\newblock {\cyr\CYRS.}~\mbox{258--259}.
+
+\bibitem{my_8}
+\selectlanguageifdefined{russian}
+\BibEmph{Афанасьев~М.~Я., Саломатина~А.~А., Алёшина~Е.~Е., Яблочников~Е.~И.}
+  Применение многоагентных технологий для реализации системы управления
+  виртуальным предприятием~// \BibEmph{Научно-технический вестник
+  Санкт-Петербургского государственного университета информационных технологий,
+  механики и оптики}.
+\newblock 2011.
+\newblock {\cyr\textnumero}~75.
+\newblock {\cyr\CYRS.}~105--111.
+
+\bibitem{Becvar-2003}
+\selectlanguageifdefined{english}
+\BibEmph{Be{\v c}v{\'a}{\v r}~P., Charv{\'a}t~P., Posp{\'\i}{\v s}il~M. P.~J.
+  et~al.} ExPlanTech/ExtraPLANT: Production Planning and Supply-Chain
+  Management Multi-Agent Solution~// \BibEmph{EXP --- in search of innovation}.
+\newblock 2003.
+\newblock Vol.~3, no.~3.
+\newblock P.~116--125.
+
+\bibitem{Sheremetov-2010}
+\selectlanguageifdefined{russian}
+\BibEmph{Шереметов~Л.~Б.} Методы и модели конфигурирования адаптивных сетей
+  поставок на основе многоагентных коалиционных систем: Автореф. дис\ldots\
+  д-ра техн. наук: 05.13.01~/ СПИИРАН.
+\newblock СПб, 2010.
+\newblock 39~{\cyr\cyrs.}
+
+\bibitem{Shamma-2007}
+\selectlanguageifdefined{english}
+Cooperative Control of Distributed Multi-Agent Systems~/ Ed. by J.~Shamma.
+\newblock John Wiley \& Sons Limited, 2007.
+\newblock 435~p.
+
+\bibitem{Sun-2011}
+\selectlanguageifdefined{english}
+\BibEmph{Sun~D.} Synchronization and Control of Multiagent Systems. Automation
+  and Control Engineering Series.
+\newblock CRC Press, 2011.
+\newblock 177~p.
+
+\bibitem{URL-IMS}
+\selectlanguageifdefined{english}
+Intelligent Manufacturing Systems [Электронный ресурс].
+\newblock \BibUrl{http://www.ims.org/} \BibUrlDate{30.08.2011}.
+
+\bibitem{Wang-2009}
+\selectlanguageifdefined{english}
+\BibEmph{Wang~L., Nee~A.} Collaborative Design and Planning for Digital
+  Manufacturing.
+\newblock Springer, 2009.
+\newblock 413~p.
+
+\bibitem{Koestler-1979}
+\selectlanguageifdefined{english}
+\BibEmph{Koestler~A.} The ghost in the machine.
+\newblock The danube, 2. impr edition.
+\newblock London: Hutchinson, 1979.
+\newblock 384~p.
+
+\bibitem{Skobelev-2001}
+\selectlanguageifdefined{russian}
+\BibEmph{Скобелев~О.~П.} Открытые мультиагентные системы для холонических
+  предприятий~// \BibEmph{Искусственный интеллект}.
+\newblock 2001.
+\newblock {\cyr\textnumero}~3.
+\newblock {\cyr\CYRS.}~98--119.
+
+\bibitem{Mella-2009}
+\selectlanguageifdefined{english}
+\BibEmph{Mella~P.} The holonic revolution. Holons, holarchies and holonic
+  networks. The ghost in the production machine.
+\newblock Pavia: Pavia University Press, 2009.
+\newblock 124~p.
+
+\bibitem{Giret-2005}
+\selectlanguageifdefined{english}
+\BibEmph{Giret~A., Botti~V.} Analysis and Design of Holonic Manufacturing
+  Systems~// Proceedings of the 18th International Conference on Production
+  Research.
+\newblock 2005.
+
+\bibitem{Giret-2005a}
+\selectlanguageifdefined{english}
+\BibEmph{Giret~A.}
+  \href{http://dx.doi.org/http://doi.acm.org/10.1145/1082473.1082783}{A multi
+  agent methodology for holonic manufacturing systems}~// Proceedings of the
+  fourth international joint conference on Autonomous agents and multiagent
+  systems.
+\newblock AAMAS '05.
+\newblock New York, NY, USA: ACM, 2005.
+\newblock P.~1375--1385.
+
+\bibitem{Giret-2006}
+\selectlanguageifdefined{english}
+\BibEmph{Giret~A., Botti~V.} From system requirements to holonic manufacturing
+  system analysis~// \BibEmph{International Journal of Production Research}.
+\newblock 2006. "--- October.
+\newblock Vol.~44, no. 18--19.
+\newblock P.~3917--3928.
+
+\bibitem{Suda-1989}
+\selectlanguageifdefined{english}
+\BibEmph{Suda~H.} {Future Factory System Formulated in Japan}~//
+  \BibEmph{Japanese Journal of Advanced Automation Technology}.
+\newblock 1989.
+\newblock Vol.~2, no.~10.
+\newblock P.~15--25.
+
+\bibitem{Babiceanu-2006}
+\selectlanguageifdefined{english}
+\BibEmph{Babiceanu~R., Chen~F.} Development and Applications of Holonic
+  Manufacturing Systems: A Survey~// \BibEmph{Journal of Intelligent
+  Manufacturing}.
+\newblock 2006.
+\newblock Vol.~17.
+\newblock P.~111--131.
+
+\bibitem{Borangiu-2009}
+\selectlanguageifdefined{english}
+\BibEmph{Borangiu~T., Gilbert~P., Ivanescu~N.-A., Rosu~A.} An implementing
+  framework for holonic manufacturing control with multiple robot-vision
+  stations~//
+  \href{http://dx.doi.org/10.1016/j.engappai.2009.03.001}{\BibEmph{Eng. Appl.
+  Artif. Intell.}}
+\newblock 2009. "--- June.
+\newblock Vol.~22.
+\newblock P.~505--521.
+
+\bibitem{Borangiu-2009a}
+\selectlanguageifdefined{english}
+\BibEmph{Borangiu~T., Raileanu~S., Rosu~A. et~al.} Semi-Heterarchical
+  Distributed Control of a Holonic Manufacturing Cell~// \BibEmph{Journal of
+  Control Engineering and Applied Informatics}.
+\newblock 2009.
+\newblock Vol.~11.
+\newblock P.~14--21.
+
+\bibitem{Botti-2008}
+\selectlanguageifdefined{english}
+\BibEmph{Botti~V., Giret~A.} ANEMONA: A Multi-agent Methodology for Holonic
+  Ma\-nu\-fac\-tu\-ring Systems. Springer series in advanced manufacturing.
+\newblock London, UK: Springer-Verlag, 2008.
+\newblock 214~p.
+
+\bibitem{Ceitin-1982}
+\selectlanguageifdefined{russian}
+\BibEmph{Цейтин~Г.~С.} О соотношении естественного языка и формальной модели~//
+  \BibEmph{Вопросы кибернетики}.
+\newblock 1982.
+\newblock {\cyr\CYRS.}~28--34.
+
+\bibitem{Filippov-1991}
+\selectlanguageifdefined{russian}
+\BibEmph{Филиппов~А.~Н.} Разработки и исследование методов экспертных сис\-тем
+  в САПР ТП механической обработки: Дис\ldots\ канд. техн. наук.
+\newblock Л., 1991.
+\newblock 148~{\cyr\cyrs.}
+
+\bibitem{Filippov-1989}
+\selectlanguageifdefined{russian}
+\BibEmph{Филиппов~А.~Н.} Автоматизированная система проектирования
+  технологических процессов с использованием подхода экспертных систем~//
+  \BibEmph{Актуальные проблемы современного программирования. Сборник
+  \mbox{ЛИИАН}}.
+\newblock 1989.
+\newblock {\cyr\CYRS.}~113--122.
+
+\bibitem{Texcom-1993}
+\selectlanguageifdefined{russian}
+<<Техком-SERVICE Plus>>, V 3.5.~--- Описание применения.
+\newblock СПб: НТЦ Техком, 1993.
+\newblock 205~{\cyr\cyrs.}
+
+\bibitem{Sisukov-2007}
+\selectlanguageifdefined{russian}
+\BibEmph{Сисюков~А.~Н.} Разработка и применение специализированных экспертных
+  систем для САПР технологических процессов механической обработки заготовок:
+  Дис\ldots\ канд. техн. наук.
+\newblock СПб, 2007.
+\newblock 150~{\cyr\cyrs.}
+
+\bibitem{my_4}
+\selectlanguageifdefined{russian}
+\BibEmph{Грибовский~А.~А., Афанасьев~М.~Я.} Декомпозиция структуры трехмерных
+  моделей на наборы конструктивных элементов с использованием примитивов~//
+  Сборник тезисов докладов конференции молодых ученых, Выпуск 2. Труды молодых
+  ученых~/ {\cyr\CYRP\cyro\cyrd\ \cyrr\cyre\cyrd.\ }В.~О.~Никифорова.
+\newblock СПб: \mbox{СПбГУ ИТМО}, 2011.
+\newblock {\cyr\CYRS.}~281.
+
+\bibitem{my_5}
+\selectlanguageifdefined{russian}
+\BibEmph{Афанасьев~М.~Я.} Использование библиотеки Open CASCADE для
+  параметрического 3D моделирования~// Сборник тезисов докладов конференции
+  молодых ученых, Выпуск 3. Труды молодых ученых~/ {\cyr\CYRP\cyro\cyrd\
+  \cyrr\cyre\cyrd.\ }В.~О.~Никифорова.
+\newblock СПб: \mbox{СПбГУ ИТМО}, 2010.
+\newblock {\cyr\CYRS.}~\mbox{117--118}.
+
+\bibitem{my_6}
+\selectlanguageifdefined{russian}
+\BibEmph{Афанасьев~М.~Я.} Вероятностная модель рассуждений в машине логического
+  вывода экспертной системы <<ТехАссистент>>~// Сборник трудов конференции
+  молодых учёных, Выпуск 2. Биомедицинские технологии, мехатроника и
+  робототехника~/ {\cyr\CYRP\cyro\cyrd\ \cyrr\cyre\cyrd.\ }В.~Л.~Ткалич.
+\newblock СПб: \mbox{СПбГУ ИТМО}, 2009.
+\newblock {\cyr\CYRS.}~\mbox{296--299}.
+
+\bibitem{Tamm-1986}
+\selectlanguageifdefined{russian}
+\BibEmph{Тамм~Б.~Г., Кюттнер~Р.~А.} Реализация специализированных
+  инструментальных систем программирования для САПР ТП~// Автоматизированное
+  проектирование и производство в машиностроении~/ {\cyr\CYRP\cyro\cyrd\
+  \cyrr\cyre\cyrd.\ }Ю.~М.~Соломенцева, В.~Г.~Митрофанова.
+\newblock М.: Машиностроение, 1986.
+\newblock {\cyr\CYRS.}~230--244.
+
+\bibitem{Zadeh-1976}
+\selectlanguageifdefined{russian}
+\BibEmph{Заде~Л.} Понятие лингвистической переменной и его применение к
+  принятию приближенных решений.
+\newblock М.: Мир, 1976.
+\newblock 166~{\cyr\cyrs.}
+
+\bibitem{my_1}
+\selectlanguageifdefined{russian}
+\BibEmph{Афанасьев~М.~Я., Филиппов~А.~Н.} Применение методов нечёткой логики
+  в~автоматизированных системах технологической подготовки производства~//
+  \BibEmph{Изв. вузов. Приборостроение.}
+\newblock 2010.
+\newblock {\cyr\CYRT.}~53, {\cyr\textnumero}~6.
+\newblock {\cyr\CYRS.}~38--42.
+
+\bibitem{Bruevich-1978}
+\selectlanguageifdefined{russian}
+\BibEmph{Бруевич~Н.~Г., Боброва~И.~В., Челищев~Б.~Е.} Математические основы
+  автоматизации проектирования процессов механической обработки деталей~//
+  \BibEmph{Изв.~АН СССР. Техническая кибернетика}.
+\newblock 1978.
+\newblock {\cyr\textnumero}~1.
+\newblock {\cyr\CYRS.}~134--148.
+
+\bibitem{Minsky-1981}
+\selectlanguageifdefined{english}
+\BibEmph{Minsky~M.} A Framework for Representing Knowledge~// Mind Design:
+  {P}hilosophy, Psychology, Artificial Intelligence~/ Ed. by J.~Haugeland.
+\newblock Cambridge, MA: MIT Press, 1981.
+\newblock P.~95--128.
+
+\bibitem{Gavrilova-2000}
+\selectlanguageifdefined{russian}
+\BibEmph{Гаврилова~Т.~А., Хорошевский~В.~Ф.} Базы знаний интеллектуальных
+  систем.
+\newblock СПб: Питер, 2000.
+\newblock 384~{\cyr\cyrs.}
+
+\bibitem{GOST-19781-90}
+\selectlanguageifdefined{russian}
+ГОСТ 19781--90. Обеспечение систем обработки информации программное. Термины и
+  определения; Введ. 01.01.92.
+\newblock М.: Стандартинформ, 2005.
+\newblock 16~{\cyr\cyrs.}
+
+\bibitem{Rivera-2009}
+\selectlanguageifdefined{english}
+\BibEmph{de~Rivera~G.~G., Ribalda~R., de~Castro~A., Garrido~J.} {Performance of
+  an Open Multi-Agent Remote Sensing Architecture Based on XML-RPC in
+  Low-Profile Embedded Systems}~// {PAAMS}~/ Ed. by Y.~Demazeau, J.~Pav\'{o}n,
+  J.~M.~Corchado, J.~Bajo.
+\newblock Vol.~55 of \BibEmph{{Advances in Intelligent and Soft Computing}}.
+\newblock Springer, 2009.
+\newblock P.~520–528.
+
+\bibitem{Gray-1998}
+\selectlanguageifdefined{english}
+\BibEmph{Gray~D.~N., Hotchkiss~J., LaForge~S. et~al.} {Modern Languages and
+  Microsoft's Component Object Model}~// \BibEmph{Commun. ACM}.
+\newblock 1998.
+\newblock Vol.~41, no.~5.
+\newblock P.~55–65.
+
+\bibitem{Oberg-2000}
+\selectlanguageifdefined{russian}
+\BibEmph{Оберг~Р.~Д.} Технология COM+. Основы и программирование.
+\newblock М.: Издательский дом «\mbox{Вильямс}», 2000.
+\newblock 480~{\cyr\cyrs.}
+
+\bibitem{Bollacker-2008}
+\selectlanguageifdefined{english}
+\BibEmph{Bollacker~K., Evans~C., Paritosh~P. et~al.} {Freebase: a
+  collaboratively created graph database for structuring human knowledge}~//
+  {SIGMOD '08: Proceedings of the 2008 ACM SIGMOD international conference on
+  Management of data}.
+\newblock New York, NY, USA: ACM, 2008.
+\newblock P.~1247--1250.
+
+\bibitem{Bellifemine-2007}
+\selectlanguageifdefined{english}
+\BibEmph{Bellifemine~F., Caire~G., Greenwood~D.} Developing Multi-Agent Systems
+  with JADE.
+\newblock John Wiley \& Sons Limited, 2007.
+\newblock 286~p.
+
+\bibitem{Searle-1969}
+\selectlanguageifdefined{english}
+\BibEmph{Searle~J.} Speech acts: an essay in the philosophy of language.
+\newblock Cambridge, UK: Cambridge University Press, 1969.
+\newblock 212~p.
+
+\bibitem{Austin-1978}
+\selectlanguageifdefined{english}
+\BibEmph{Austin~J.} How to do things with words~/ Ed. by J.~Urmson, S.~Marina.
+\newblock 2 edition.
+\newblock Cambridge, MA, USA: Harvard University Press, 1975.
+\newblock 192~p.
+
+\bibitem{GOST-7498-1-99}
+\selectlanguageifdefined{russian}
+ГОСТ Р ИСО\slash МЭК 7498-1--99. Информационная технология. Взаимодействие
+  открытых систем. Базовая эталонная модель. Часть 1. Базовая модель; Введ.
+  18.03.99.
+\newblock М.: Госстандарт России, 1999.
+\newblock 58~{\cyr\cyrs.}
+
+\bibitem{GOST-7498-2-99}
+\selectlanguageifdefined{russian}
+ГОСТ Р ИСО\slash МЭК 7498-2--99. Информационная технология. Взаимодействие
+  открытых систем. Базовая эталонная модель. Часть 2. Архитерктура защиты
+  информации; Введ. 18.03.99.
+\newblock М.: Госстандарт России, 1999.
+\newblock 36~{\cyr\cyrs.}
+
+\bibitem{Powers-2003}
+\selectlanguageifdefined{english}
+\BibEmph{Powers~S.} Practical RDF.
+\newblock Sebastopol, CA, USA: O'Reilly \& Associates, Inc., 2003.
+\newblock 331~p.
+
+\bibitem{Germain-2003}
+\selectlanguageifdefined{english}
+\BibEmph{Germain~S.~B., Valckenaers~P., Brussel~V.~H. et~al.} An agent-based
+  approach to the control of flexible production systems~// Proceedings of the
+  17th International Federation of Automatic Control (IFAC) Workshop.
+\newblock 2003.
+\newblock P.~207--212.
+
+\bibitem{Antonopoulos-2010}
+\selectlanguageifdefined{english}
+\BibEmph{Antonopoulos~N., Gillam~L.} Cloud Computing: Principles, Systems and
+  Applications. Computer Communications and Networks.
+\newblock 1st edition.
+\newblock London, UK: Springer-Verlag, 2010.
+\newblock 396~p.
+
+\bibitem{Adamczyk-2001}
+\selectlanguageifdefined{english}
+\BibEmph{Adamczyk~Z., Kocio{\l}ek~K.} CAD/CAM technological environment
+  creation as an interactive application on the Web~// \BibEmph{Journal of
+  Materials Processing Technology}.
+\newblock 2001.
+\newblock Vol. 109.
+\newblock P.~222--228.
+
+\bibitem{Lutz-2002}
+\selectlanguageifdefined{russian}
+\BibEmph{Лутц~М.} Программирование на Python: Пер. с англ.
+\newblock 2-е {\cyr\cyri\cyrz\cyrd.}
+\newblock СПб: Символ-Плюс, 2002.
+\newblock 1136~{\cyr\cyrs.}
+
+\bibitem{Lutz-2009}
+\selectlanguageifdefined{russian}
+\BibEmph{Лутц~М.} Изучаем Python: Пер. с англ.
+\newblock 3-е {\cyr\cyri\cyrz\cyrd.}
+\newblock СПб: Символ-Плюс, 2009.
+\newblock 848~{\cyr\cyrs.}
+
+\bibitem{Summerfield-2009}
+\selectlanguageifdefined{russian}
+\BibEmph{Саммерфилд~М.} Программирование на Python 3. Подробное руководство:
+  Пер. с англ.
+\newblock СПб: Символ-Плюс, 2002.
+\newblock 608~{\cyr\cyrs.}
+
+\bibitem{Farrell-2007}
+\selectlanguageifdefined{english}
+\BibEmph{Farrell~J., Nezlek~G.} {Rich internet Applications the Next Stage of
+  Application Development}~// {Information Technology Interfaces, 2007. ITI
+  2007. 29th International Conference on}~/ IEEE.
+\newblock 2007.
+\newblock P.~413--418.
+
+\bibitem{Fraternali-2010}
+\selectlanguageifdefined{english}
+\BibEmph{Fraternali~P., Comai~S., Bozzon~A., Toffetti~Carughi~G.} Engineering
+  Rich Internet Applications With a Model-driven Approach~//
+  \href{http://dx.doi.org/http://doi.acm.org/10.1145/1734200.1734204}{\BibEmph{ACM
+  Trans. Web}}.
+\newblock 2010.
+\newblock Vol.~4, no.~2.
+\newblock P.~1--47.
+
+\bibitem{my_2}
+\selectlanguageifdefined{russian}
+\BibEmph{Афанасьев~М.~Я., Филиппов~А.~Н.} Создание динамических моделей баз
+  данных технологического назначения на языке Python~// \BibEmph{Изв. вузов.
+  Приборостроение.}
+\newblock 2010.
+\newblock {\cyr\CYRT.}~53, {\cyr\textnumero}~6.
+\newblock {\cyr\CYRS.}~59--62.
+
+\end{thebibliography}

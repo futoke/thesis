@@ -1,0 +1,37 @@
+\begin{tikzpicture}
+
+\singlespacing \sffamily \footnotesize
+
+\node (a) [rectangle,draw] at (-2,5) {
+        \tikz{
+                \node [text width=3.5cm,align=center] at (0.3,0.3) {Принятие решений};
+                \node [text width=1.7cm,align=center] at (-1.3,-0.4) {Социальных};
+                \node [text width=2cm,align=center] at (1,-0.4) {Индивидуальных};
+                \draw [dashed] (-2,0) -- (2.6,0) ;
+                \draw [dashed] (-0.1,0) -- (-0.1,-0.7);
+        }
+};
+\node (b) [rectangle,draw] at (1,3.5)  {Организационный модуль};
+\node (c) [rectangle,draw] at (-5,3.5)  {Модуль взаимодействия};
+\node (d) [rectangle,draw] at (5,2)  {Модуль поведения};
+\node (e) [rectangle,draw] at (-5,2)  {Коммуникационный модуль};
+
+\node (f) at (-5,0)  {Физическое взаимодействие};
+\node  [text width=4cm,align=center] (g) at (5,0)  {Управление\\аппратными средствами};
+
+\draw[thin, triangle 45-triangle 45] (a.south) |- (b.north west);
+\draw[thin, triangle 45-triangle 45] (a.west) -| (c.north);
+\draw[thin, triangle 45-triangle 45]  (c.east) -- (b.west);
+\draw[thin, triangle 45-triangle 45]  (a.east) -|  node[near start,above] {Связь не обязательна}  (d.north);
+\draw[thin, triangle 45-triangle 45]  (c.south) -- (e.north);
+\draw[thin, triangle 45-triangle 45]  (b.south) |- (e.east);
+\draw[thin, triangle 45-triangle 45]  (b.east) -| (d.160);
+
+\draw[thin, triangle 45-triangle 45]  (e.south) -- (f.north);
+\draw[thin, triangle 45-triangle 45]  (d.south) -- (g.north);
+
+\node (f) at (5,6)  {Обработка данных};
+
+\draw [dashed] (-7.5,1) -- (7,1) -- (7,6.5) -- (-7.5,6.5) -- (-7.5,1);
+
+\end{tikzpicture}

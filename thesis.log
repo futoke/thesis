@@ -1,0 +1,3126 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.7.15)  18 JUL 2012 12:42
+entering extended mode
+ \write18 enabled.
+ %&-line parsing enabled.
+**thesis.tex
+(./thesis.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, et
+hiopic, farsi, arabic, pinyin, croatian, bulgarian, ukrainian, russian, slovak,
+ czech, danish, dutch, usenglishmax, ukenglish, finnish, french, basque, ngerma
+n, german, swissgerman, ngerman-x-2012-05-30, german-x-2012-05-30, monogreek, g
+reek, ibycus, ancientgreek, hungarian, bengali, tamil, hindi, telugu, gujarati,
+ sanskrit, malayalam, kannada, assamese, marathi, oriya, panjabi, italian, lati
+n, latvian, lithuanian, mongolian, mongolianlmc, nynorsk, bokmal, indonesian, e
+speranto, coptic, welsh, irish, interlingua, serbian, serbianc, slovenian, friu
+lan, romansh, estonian, romanian, armenian, uppersorbian, turkish, afrikaans, i
+celandic, kurmanji, polish, portuguese, galician, catalan, spanish, swedish, lo
+aded.
+(/usr/share/texlive/texmf-dist/tex/latex/disser/disser.cls
+Document Class: disser 2011/11/29 1.1.9 Document class for dissertations
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
+Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/extsizes/size14.clo
+File: size14.clo 1999/11/11 v1.4a NON-Standard LaTeX file (size option)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/exscale.sty
+Package: exscale 2007/10/29 v2.1h Standard LaTeX package exscale
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 52.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 52.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 52.
+\big@size=\dimen102
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\chapterindent=\skip41
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\footnoteindent=\skip44
+
+(/usr/share/texlive/texmf-dist/tex/latex/disser/titledefs.rtx
+File: titledefs.rtx 
+\fieldhshift=\skip45
+)
+\bibindent=\dimen103
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip46
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks15
+\ex@=\dimen104
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen105
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen106
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
+\dotsspace@=\muskip10
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks16
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks17
+\eqnshift@=\dimen107
+\alignsep@=\dimen108
+\tagshift@=\dimen109
+\tagwidth@=\dimen110
+\totwidth@=\dimen111
+\lineht@=\dimen112
+\@envbody=\toks18
+\multlinegap=\skip47
+\multlinetaggap=\skip48
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+\symEulerExtension=\mathgroup6
+LaTeX Font Info:    Redeclaring math symbol \intop on input line 1389.
+LaTeX Font Info:    Redeclaring math symbol \ointop on input line 1390.
+
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip49
+\bibsep=\skip50
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count100
+)
+(/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen113
+\WF@size=\dimen114
+\c@WF@wrappedlines=\count101
+\WF@box=\box28
+\WF@everypar=\toks20
+Package: wrapfig 2003/01/31  v 3.6
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2012/02/19 v3.2f Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2012/01/12 v1.4b caption3 kernel (AR)
+\captionmargin=\dimen115
+\captionmargin@=\dimen116
+\captionwidth=\dimen117
+\caption@indent=\dimen118
+\caption@parindent=\dimen119
+\caption@hangindent=\dimen120
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+)
+
+Package caption Warning: Unsupported document class (or package) detected,
+(caption)                usage of the caption package is not recommended.
+See the caption package documentation for explanation.
+
+Package caption Info: \@makecaption = \long macro:#1#2->\vskip \abovecaptionski
+p \sbox \@tempboxa {{\captionlabelfont #1\captionlabeldelim } {\captionfont #2}
+}\ifdim \wd \@tempboxa >\hsize {{\captionlabelfont #1\captionlabeldelim } {\cap
+tionfont #2}}\par \else \global \@minipagefalse \hb@xt@ \hsize {\hfil \box \@te
+mpboxa \hfil }\fi \vskip \belowcaptionskip .
+
+Package caption Warning: Configuration file caption.cfg not found on input line
+ 265.
+See the caption package documentation for explanation.
+
+\c@ContinuedFloat=\count102
+Package caption Info: wrapfig package is loaded.
+) (/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+\c@KVtest=\count103
+\sf@farskip=\skip51
+\sf@captopadj=\dimen121
+\sf@capskip=\skip52
+\sf@nearskip=\skip53
+
+
+Package subfig Warning: Configuration file subfig.cfg not found on input line 2
+97.
+
+\c@subfigure=\count104
+\c@subfigure@save=\count105
+\c@lofdepth=\count106
+\c@subtable=\count107
+\c@subtable@save=\count108
+\c@lotdepth=\count109
+\sf@top=\skip54
+\sf@bottom=\skip55
+) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/05/13 v6.82q Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package hobsub Info: Skipping package `ifluatex' (already loaded).
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package hobsub Info: Skipping package `etexcmds' (already loaded).
+Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\@linkdim=\dimen122
+\Hy@linkcounter=\count110
+\Hy@pagecounter=\count111
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/05/13 v6.82q Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count112
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 3941.
+Package hyperref Info: Option `unicode' set `true' on input line 3941.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2012/05/13 v6.82q Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Hyper figures OFF on input line 4062.
+Package hyperref Info: Link nesting OFF on input line 4067.
+Package hyperref Info: Hyper index ON on input line 4070.
+Package hyperref Info: Plain pages OFF on input line 4077.
+Package hyperref Info: Backreferencing OFF on input line 4082.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4300.
+\c@Hy@tempcnt=\count113
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4653.
+\Fld@menulength=\count114
+\Field@Width=\dimen123
+\Fld@charsize=\dimen124
+Package hyperref Info: Hyper figures OFF on input line 5773.
+Package hyperref Info: Link nesting OFF on input line 5778.
+Package hyperref Info: Hyper index ON on input line 5781.
+Package hyperref Info: backreferencing OFF on input line 5788.
+Package hyperref Info: Link coloring ON on input line 5791.
+Package hyperref Info: Link coloring with OCG OFF on input line 5798.
+Package hyperref Info: PDF/A mode OFF on input line 5803.
+LaTeX Info: Redefining \ref on input line 5843.
+LaTeX Info: Redefining \pageref on input line 5847.
+\Hy@abspage=\count115
+\c@Item=\count116
+\c@Hfootnote=\count117
+)
+
+Package hyperref Message: Driver: hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/05/13 v6.82q Hyperref driver for pdfTeX
+\Fld@listcount=\count118
+\c@bookmark@seq@number=\count119
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip56
+)
+Package hyperref Info: Option `colorlinks' set `false' on input line 1476.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 1476.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 1476
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+\Gread@gobject=\count120
+))
+\Gin@req@height=\dimen125
+\Gin@req@width=\dimen126
+)
+(/usr/share/texlive/texmf-dist/tex/latex/cmap/cmap.sty
+Package: cmap 2008/03/06 v1.0h CMap support: searchable PDF
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 1495.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/disser/candidate.rtx
+File: candidate.rtx 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+\Gm@cnth=\count121
+\Gm@cntv=\count122
+\c@Gm@tempcnt=\count123
+\Gm@bindingoffset=\dimen127
+\Gm@wd@mp=\dimen128
+\Gm@odd@mp=\dimen129
+\Gm@even@mp=\dimen130
+\Gm@layoutwidth=\dimen131
+\Gm@layoutheight=\dimen132
+\Gm@layouthoffset=\dimen133
+\Gm@layoutvoffset=\dimen134
+\Gm@dimlist=\toks21
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2aenc.def
+File: t2aenc.def 2005/09/27 v1.0i Cyrillic encoding definition file
+)
+LaTeX Font Info:    Try loading font information for T2A+cmr on input line 100.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmr.fd
+File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+)<<t2a.cmap>>)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks22
+\inpenc@posthook=\toks23
+
+(/usr/share/texlive/texmf-dist/tex/latex/cyrillic/cp1251.def
+File: cp1251.def 1999/11/16 v1.0d Input encoding file
+))
+(/var/lib/texmf/tex/generic/babel/babel.sty
+Package: babel 2008/07/08 v3.8m The Babel package
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/english.ldf
+Language: english 2005/03/30 v3.3o English support from the babel system
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2008/07/08 v3.8m Babel common definitions
+\babel@savecnt=\count124
+\U@D=\dimen135
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel/russianb.ldf
+Language: russianb 2008/03/21 v1.1r Russian support from the babel system
+Package babel Info: Making " an active character on input line 199.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf.sty
+Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/nomencl/nomencl.sty
+Package: nomencl 2005/09/22 v4.2 Nomenclature package (LN)
+\nomlabelwidth=\dimen136
+\nom@tempdim=\dimen137
+\nomitemsep=\skip57
+)
+\@nomenclaturefile=\write3
+\openout3 = `thesis.nlo'.
+
+
+Writing nomenclature file thesis.nlo
+(/usr/share/texmf/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texmf/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texmf/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks24
+)
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box29
+
+(/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2010/10/25 v2.10 (rcs-revision 1.24)
+))
+Package: pgf 2008/01/15 v2.10 (rcs-revision 1.12)
+
+(/usr/share/texmf/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texmf/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
+
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks25
+\pgfkeys@temptoks=\toks26
+
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks27
+))
+\pgf@x=\dimen138
+\pgf@y=\dimen139
+\pgf@xa=\dimen140
+\pgf@ya=\dimen141
+\pgf@xb=\dimen142
+\pgf@yb=\dimen143
+\pgf@xc=\dimen144
+\pgf@yc=\dimen145
+\w@pgf@writea=\write4
+\r@pgf@reada=\read1
+\c@pgf@counta=\count125
+\c@pgf@countb=\count126
+\c@pgf@countc=\count127
+\c@pgf@countd=\count128
+
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Package pgfsys Info: Driver file for pgf: pgfsys-pdftex.def on input line 900.
+
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2009/05/22  (rcs-revision 1.26)
+
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2008/05/19  (rcs-revision 1.10)
+)))
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2008/07/18  (rcs-revision 1.7)
+\pgfsyssoftpath@smallbuffer@items=\count129
+\pgfsyssoftpath@bigbuffer@items=\count130
+)
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+))
+(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 702.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
+
+(/usr/share/texmf/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen146
+\pgfmath@count=\count131
+\pgfmath@box=\box30
+\pgfmath@toks=\toks28
+\pgfmath@stack@operand=\toks29
+\pgfmath@stack@operation=\toks30
+)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.random.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.base.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.round.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)))
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count132
+))
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2010/04/09  (rcs-revision 1.20)
+\pgf@picminx=\dimen147
+\pgf@picmaxx=\dimen148
+\pgf@picminy=\dimen149
+\pgf@picmaxy=\dimen150
+\pgf@pathminx=\dimen151
+\pgf@pathmaxx=\dimen152
+\pgf@pathminy=\dimen153
+\pgf@pathmaxy=\dimen154
+\pgf@xx=\dimen155
+\pgf@xy=\dimen156
+\pgf@yx=\dimen157
+\pgf@yy=\dimen158
+\pgf@zx=\dimen159
+\pgf@zy=\dimen160
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2010/08/03  (rcs-revision 1.24)
+\pgf@path@lastx=\dimen161
+\pgf@path@lasty=\dimen162
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2008/04/22  (rcs-revision 1.12)
+\pgf@shorten@end@additional=\dimen163
+\pgf@shorten@start@additional=\dimen164
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2010/09/08  (rcs-revision 1.34)
+\pgfpic=\box31
+\pgf@hbox=\box32
+\pgf@layerbox@main=\box33
+\pgf@picture@serial@count=\count133
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2008/04/22  (rcs-revision 1.9)
+\pgflinewidth=\dimen165
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2009/06/10  (rcs-revision 1.11)
+\pgf@pt@x=\dimen166
+\pgf@pt@y=\dimen167
+\pgf@pt@temp=\dimen168
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2008/10/09  (rcs-revision 1.8)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2008/04/23  (rcs-revision 1.11)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2008/11/23  (rcs-revision 1.13)
+\pgf@max=\dimen169
+\pgf@sys@shading@range@num=\count134
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2010/03/25  (rcs-revision 1.16)
+
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2010/09/01  (rcs-revision 1.17)
+\pgfexternal@startupbox=\box34
+))
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2010/08/27  (rcs-revision 1.2)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2008/01/17  (rcs-revision 1.2)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2009/07/02  (rcs-revision 1.3)
+)))
+(/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2010/09/09  (rcs-revision 1.13)
+\pgfnodeparttextbox=\box35
+)
+(/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2010/10/22  (rcs-revision 1.8)
+)
+(/usr/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2007/07/03 v2.10 (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen170
+\pgf@nodesepend=\dimen171
+)
+(/usr/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2007/07/23 v2.10 (rcs-revision 1.1)
+))
+(/usr/share/texmf/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texmf/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texmf/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2010/03/23 v2.10 (rcs-revision 1.18)
+\pgffor@iter=\dimen172
+\pgffor@skip=\dimen173
+\pgffor@stack=\toks31
+\pgffor@toks=\toks32
+))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2010/10/13 v2.10 (rcs-revision 1.76)
+
+(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
+\pgf@plot@mark@count=\count135
+\pgfplotmarksize=\dimen174
+)
+\tikz@lastx=\dimen175
+\tikz@lasty=\dimen176
+\tikz@lastxsaved=\dimen177
+\tikz@lastysaved=\dimen178
+\tikzleveldistance=\dimen179
+\tikzsiblingdistance=\dimen180
+\tikz@figbox=\box36
+\tikz@tempbox=\box37
+\tikztreelevel=\count136
+\tikznumberofchildren=\count137
+\tikznumberofcurrentchild=\count138
+\tikz@fig@count=\count139
+
+(/usr/share/texmf/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2010/08/24  (rcs-revision 1.4)
+\pgfmatrixcurrentrow=\count140
+\pgfmatrixcurrentcolumn=\count141
+\pgf@matrix@numberofcolumns=\count142
+)
+\tikz@expandcount=\count143
+
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopat
+hs.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10 (rcs-revision 1.2)
+)))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecor
+ations.pathreplacing.code.tex
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecor
+ations.code.tex
+(/usr/share/texmf/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen181
+\pgfdecoratedremainingdistance=\dimen182
+\pgfdecoratedinputsegmentcompleteddistance=\dimen183
+\pgfdecoratedinputsegmentremainingdistance=\dimen184
+\pgf@decorate@distancetomove=\dimen185
+\pgf@decorate@repeatstate=\count144
+\pgfdecorationsegmentamplitude=\dimen186
+\pgfdecorationsegmentlength=\dimen187
+)
+\tikz@lib@dec@box=\box38
+)
+(/usr/share/texmf/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.p
+athreplacing.code.tex))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrow
+s.code.tex
+File: tikzlibraryarrows.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
+
+(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2008/10/27 v2.10 (rcs-revision 1.9)
+\arrowsize=\dimen188
+))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
+s.code.tex
+File: tikzlibraryshapes.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
+
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
+s.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
+
+(/usr/share/texmf/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geometric.c
+ode.tex
+File: pgflibraryshapes.geometric.code.tex 2008/06/26 v2.10 (rcs-revision 1.1)
+))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
+s.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
+
+(/usr/share/texmf/tex/generic/pgf/libraries/shapes/pgflibraryshapes.misc.code.t
+ex
+File: pgflibraryshapes.misc.code.tex 2008/10/07 v2.10 (rcs-revision 1.3)
+))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
+s.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
+
+(/usr/share/texmf/tex/generic/pgf/libraries/shapes/pgflibraryshapes.symbols.cod
+e.tex
+File: pgflibraryshapes.symbols.code.tex 2009/10/27 v2.10 (rcs-revision 1.3)
+))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
+s.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
+
+(/usr/share/texmf/tex/generic/pgf/libraries/shapes/pgflibraryshapes.arrows.code
+.tex
+File: pgflibraryshapes.arrows.code.tex 2008/06/26 v2.10 (rcs-revision 1.1)
+))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
+s.callouts.code.tex
+(/usr/share/texmf/tex/generic/pgf/libraries/shapes/pgflibraryshapes.callouts.co
+de.tex))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
+s.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
+
+(/usr/share/texmf/tex/generic/pgf/libraries/shapes/pgflibraryshapes.multipart.c
+ode.tex
+File: pgflibraryshapes.multipart.code.tex 2010/01/07 v2.10 (rcs-revision 1.2)
+\pgfnodepartlowerbox=\box39
+\pgfnodeparttwobox=\box40
+\pgfnodepartthreebox=\box41
+\pgfnodepartfourbox=\box42
+\pgfnodeparttwentybox=\box43
+\pgfnodepartnineteenbox=\box44
+\pgfnodeparteighteenbox=\box45
+\pgfnodepartseventeenbox=\box46
+\pgfnodepartsixteenbox=\box47
+\pgfnodepartfifteenbox=\box48
+\pgfnodepartfourteenbox=\box49
+\pgfnodepartthirteenbox=\box50
+\pgfnodeparttwelvebox=\box51
+\pgfnodepartelevenbox=\box52
+\pgfnodeparttenbox=\box53
+\pgfnodepartninebox=\box54
+\pgfnodeparteightbox=\box55
+\pgfnodepartsevenbox=\box56
+\pgfnodepartsixbox=\box57
+\pgfnodepartfivebox=\box58
+)))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryposit
+ioning.code.tex
+File: tikzlibrarypositioning.code.tex 2008/10/06 v2.10 (rcs-revision 1.7)
+)
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfit.c
+ode.tex
+File: tikzlibraryfit.code.tex 2008/06/21 v2.10 (rcs-revision 1.3)
+)
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarymatri
+x.code.tex
+File: tikzlibrarymatrix.code.tex 2008/06/18 v2.10 (rcs-revision 1.2)
+)
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.
+code.tex
+File: tikzlibrarycalc.code.tex 2009/09/04 v2.10 (rcs-revision 1.6)
+)
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshado
+ws.code.tex
+File: tikzlibraryshadows.code.tex 2008/01/13 v2.10 (rcs-revision 1.3)
+
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfadin
+gs.code.tex
+File: tikzlibraryfadings.code.tex 2009/11/15 v2.10 (rcs-revision 1.2)
+
+(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryfadings.code.tex
+File: pgflibraryfadings.code.tex 2008/02/07 v2.10 (rcs-revision 1.3)
+)))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshadi
+ngs.code.tex
+File: tikzlibraryshadings.code.tex 2008/10/29 v2.10 (rcs-revision 1.1)
+
+(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryshadings.code.tex
+File: pgflibraryshadings.code.tex 2008/10/29 v2.10 (rcs-revision 1.2)
+))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarychain
+s.code.tex
+File: tikzlibrarychains.code.tex 2008/02/27 v2.10 (rcs-revision 1.5)
+)
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryscope
+s.code.tex
+File: tikzlibraryscopes.code.tex 2008/06/27 v2.10 (rcs-revision 1.2)
+) (/usr/share/texlive/texmf-dist/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup7
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2009/07/02 v2.20.1
+\thm@style=\toks33
+\thm@bodyfont=\toks34
+\thm@headfont=\toks35
+\thm@notefont=\toks36
+\thm@headpunct=\toks37
+\thm@preskip=\skip58
+\thm@postskip=\skip59
+\thm@headsep=\skip60
+\dth@everypar=\toks38
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mh/mathtools.sty
+Package: mathtools 2012/04/24 v1.12 mathematical typesetting tools
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count145
+\calc@Bcount=\count146
+\calc@Adimen=\dimen189
+\calc@Bdimen=\dimen190
+\calc@Askip=\skip61
+\calc@Bskip=\skip62
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count147
+\calc@Cskip=\skip63
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mh/mhsetup.sty
+Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
+)
+\g_MT_multlinerow_int=\count148
+\l_MT_multwidth_dim=\dimen191
+\origjot=\skip64
+\l_MT_shortvdotswithinadjustabove_dim=\dimen192
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen193
+\l_MT_above_intertext_dim=\dimen194
+\l_MT_below_intertext_dim=\dimen195
+\l_MT_above_shortintertext_dim=\dimen196
+\l_MT_below_shortintertext_dim=\dimen197
+)
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen198
+\lightrulewidth=\dimen199
+\cmidrulewidth=\dimen200
+\belowrulesep=\dimen201
+\belowbottomsep=\dimen202
+\aboverulesep=\dimen203
+\abovetopsep=\dimen204
+\cmidrulesep=\dimen205
+\cmidrulekern=\dimen206
+\defaultaddspace=\dimen207
+\@cmidla=\count149
+\@cmidlb=\count150
+\@aboverulesep=\dimen208
+\@belowrulesep=\dimen209
+\@thisruleclass=\count151
+\@lastruleclass=\count152
+\@thisrulewidth=\dimen210
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen211
+\extrarowheight=\dimen212
+\NC@list=\toks39
+\extratabsurround=\skip65
+\backup@length=\skip66
+)
+\TX@col@width=\dimen213
+\TX@old@table=\dimen214
+\TX@old@col=\dimen215
+\TX@target=\dimen216
+\TX@delta=\dimen217
+\TX@cols=\count153
+\TX@ftn=\toks40
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count154
+\lst@gtempboxa=\box59
+\lst@token=\toks41
+\lst@length=\count155
+\lst@currlwidth=\dimen218
+\lst@column=\count156
+\lst@pos=\count157
+\lst@lostspace=\dimen219
+\lst@width=\dimen220
+\lst@newlines=\count158
+\lst@lineno=\count159
+\lst@maxwidth=\dimen221
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count160
+\lst@skipnumbers=\count161
+\lst@framebox=\box60
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/makecell/makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen222
+\c@nlinenum=\count162
+\TeXr@lab=\toks42
+)
+(/usr/share/texlive/texmf-dist/tex/latex/rotating/rotating.sty
+Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
+\c@r@tfl@t=\count163
+\rotFPtop=\skip67
+\rotFPbot=\skip68
+\rot@float@box=\box61
+\rot@mess@toks=\toks43
+)
+(/usr/share/texlive/texmf-dist/tex/latex/datetime/datetime.sty
+Package: datetime 2010/09/21 v2.58 Date Time Package
+
+(/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fmtcount.sty
+Package: fmtcount 2009/10/02 v1.31
+\c@padzeroesN=\count164
+
+(/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fc-english.def
+File: fc-english 2007/05/26
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fc-UKenglish.def
+File: fc-UKenglish 2007/06/14
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fc-british.def
+File: fc-british 2007/06/14
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fc-USenglish.def
+File: fc-USenglish 2007/06/14
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fc-spanish.def
+File: fc-spanish.def 2007/05/26
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fc-portuges.def
+File: fc-portuges.def 2007/05/26
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fc-french.def
+File: fc-french.def 2007/05/26
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fc-german.def
+File: fc-german.def 2007/06/14
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fc-italian.def
+File: fc-italian.def 2009/10/02 Italian support for fmtcount (Edoardo Pasca)
+)
+No configuration file fmtcount.cfg found.
+\@DT@modctr=\count165
+\@ordinalctr=\count166
+\@orgargctr=\count167
+\@strctr=\count168
+\@tmpstrctr=\count169
+\@DT@loopN=\count170
+\@DT@X=\count171
+)
+\@day=\count172
+\@month=\count173
+\@year=\count174
+\c@HOUR=\count175
+\c@HOURXII=\count176
+\c@MINUTE=\count177
+\c@TOHOUR=\count178
+\c@TOMINUTE=\count179
+\c@SECOND=\count180
+\currenthour=\count181
+\currentminute=\count182
+\currentsecond=\count183
+Package datetime Info: No datetime.cfg file found, using default settings on in
+put line 292.
+\@dtctr=\count184
+\dayofyear=\count185
+\dayofweek=\count186
+LaTeX Info: Redefining \today on input line 724.
+ (/usr/share/texlive/texmf-dist/tex/latex/datetime/dt-russian.def
+File: dt-russian.def 2004/10/31
+LaTeX Info: Redefining \daterussian on input line 63.
+)
+\dt@a=\toks44
+\dt@b=\toks45
+)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2010/01/10 v2.4 Micro-typography with pdfTeX (RS)
+\MT@toks=\toks46
+\MT@count=\count187
+LaTeX Info: Redefining \lsstyle on input line 1597.
+LaTeX Info: Redefining \lslig on input line 1597.
+\MT@outer@space=\skip69
+LaTeX Info: Redefining \textls on input line 1605.
+\MT@outer@kern=\dimen223
+LaTeX Info: Redefining \textmicrotypecontext on input line 2156.
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2010/01/10 v2.4 microtype main configuration file (RS)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
+)
+\c@blindtext=\count188
+\c@Blindtext=\count189
+\c@blind@countparstart=\count190
+\blind@countxx=\count191
+\blindtext@numBlindtext=\count192
+\blind@countyy=\count193
+\c@blindlist=\count194
+\c@blindlistlevel=\count195
+\c@blindlist@level=\count196
+\blind@listitem=\count197
+\c@blind@listcount=\count198
+\c@blind@levelcount=\count199
+\blind@mathformula=\count200
+\blind@Mathformula=\count201
+\c@blind@randomcount=\count202
+\c@blind@randommax=\count203
+\c@blind@pangramcount=\count204
+\c@blind@pangrammax=\count205
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancybox/fancybox.sty
+Package: fancybox 2010/05/15 1.4
+
+Style option: `fancybox' v1.4 <2010/05/15> (tvz)
+\@fancybox=\box62
+\shadowsize=\dimen224
+\@Sbox=\box63
+\do@VerbBox=\toks47
+\the@fancyput=\toks48
+\this@fancyput=\toks49
+\EndVerbatimTokens=\toks50
+\Verbatim@Outfile=\write5
+\Verbatim@Infile=\read2
+)
+\c@mydef=\count206
+\c@mylemma=\count207
+\c@mycorrollary=\count208
+ (/usr/share/texlive/texmf-dist/tex/latex/paralist/paralist.sty
+Package: paralist 2002/03/18 v2.3b Extended list environments (BS)
+\pltopsep=\skip70
+\plpartopsep=\skip71
+\plitemsep=\skip72
+\plparsep=\skip73
+\pl@lab=\toks51
+) (./thesis.aux)
+\openout1 = `thesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: rotating package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\AtBeginShipoutBox=\box64
+Package hyperref Info: Link coloring ON on input line 161.
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count209
+)
+LaTeX Info: Redefining \ref on input line 161.
+LaTeX Info: Redefining \pageref on input line 161.
+LaTeX Info: Redefining \nameref on input line 161.
+
+(./thesis.out) (./thesis.out)
+\@outlinefile=\write6
+\openout6 = `thesis.out'.
+
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count210
+\scratchdimen=\dimen225
+\scratchbox=\box65
+\nofMPsegments=\count211
+\nofMParguments=\count212
+\everyMPshowfont=\toks52
+\MPscratchCnt=\count213
+\MPscratchDim=\dimen226
+\MPnumerator=\count214
+\makeMPintoPDFobject=\count215
+\everyMPtoPDFconversion=\toks53
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includefoot 
+* h-part:(L,W,R)=(85.35826pt, 478.0064pt, 34.14322pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=478.0064pt
+* \textheight=702.7831pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-57.81723pt
+* \headheight=14.0pt
+* \headsep=28.45274pt
+* \topskip=14.0pt
+* \footskip=28.45274pt
+* \marginparwidth=15.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=12.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+ABD: EveryShipout initializing macros
+\c@lstlisting=\count216
+LaTeX Info: Redefining \microtypecontext on input line 161.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `basictext'.
+Package microtype Info: No tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2009/11/09 v2.0 microtype config. file: Computer Modern Roman 
+(RS)
+) (./common.tex)
+\firstskip=\skip74
+\secondskip=\skip75
+\thirdskip=\skip76
+\fourthskip=\skip77
+\fifthskip=\skip78
+\sixthskip=\skip79
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./thesis.toc
+
+Package xcolor Warning: Incompatible color definition on input line 2.
+
+<<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>>
+LaTeX Font Info:    Try loading font information for U+msa on input line 2.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 2.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Font Info:    Try loading font information for U+euex on input line 2.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueuex.fd
+File: ueuex.fd 2009/06/22 v3.00 Euler extra symbols
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 2.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 4.
+
+
+Package xcolor Warning: Incompatible color definition on input line 5.
+
+
+Package xcolor Warning: Incompatible color definition on input line 6.
+
+
+Package xcolor Warning: Incompatible color definition on input line 7.
+
+
+Package xcolor Warning: Incompatible color definition on input line 8.
+
+
+Package xcolor Warning: Incompatible color definition on input line 9.
+
+
+Package xcolor Warning: Incompatible color definition on input line 10.
+
+
+Package xcolor Warning: Incompatible color definition on input line 11.
+
+
+Package xcolor Warning: Incompatible color definition on input line 12.
+
+
+Package xcolor Warning: Incompatible color definition on input line 13.
+
+
+Package xcolor Warning: Incompatible color definition on input line 14.
+
+
+Package xcolor Warning: Incompatible color definition on input line 15.
+
+
+Package xcolor Warning: Incompatible color definition on input line 16.
+
+
+Package xcolor Warning: Incompatible color definition on input line 17.
+
+
+Package xcolor Warning: Incompatible color definition on input line 18.
+
+[2
+
+
+]
+
+Package xcolor Warning: Incompatible color definition on input line 21.
+
+
+Package xcolor Warning: Incompatible color definition on input line 24.
+
+
+Package xcolor Warning: Incompatible color definition on input line 27.
+
+
+Package xcolor Warning: Incompatible color definition on input line 28.
+
+
+Package xcolor Warning: Incompatible color definition on input line 29.
+
+
+Package xcolor Warning: Incompatible color definition on input line 30.
+
+
+Package xcolor Warning: Incompatible color definition on input line 31.
+
+
+Package xcolor Warning: Incompatible color definition on input line 32.
+
+
+Package xcolor Warning: Incompatible color definition on input line 33.
+
+
+Package xcolor Warning: Incompatible color definition on input line 37.
+
+
+Package xcolor Warning: Incompatible color definition on input line 40.
+
+
+Package xcolor Warning: Incompatible color definition on input line 41.
+
+
+Package xcolor Warning: Incompatible color definition on input line 45.
+
+
+Package xcolor Warning: Incompatible color definition on input line 46.
+
+
+Package xcolor Warning: Incompatible color definition on input line 47.
+
+
+Package xcolor Warning: Incompatible color definition on input line 48.
+
+
+Package xcolor Warning: Incompatible color definition on input line 49.
+
+
+Package xcolor Warning: Incompatible color definition on input line 50.
+
+
+Package xcolor Warning: Incompatible color definition on input line 51.
+
+
+Package xcolor Warning: Incompatible color definition on input line 52.
+
+
+Package xcolor Warning: Incompatible color definition on input line 53.
+
+
+Package xcolor Warning: Incompatible color definition on input line 54.
+
+[3]
+
+Package xcolor Warning: Incompatible color definition on input line 55.
+
+
+Package xcolor Warning: Incompatible color definition on input line 56.
+
+
+Package xcolor Warning: Incompatible color definition on input line 57.
+
+
+Overfull \hbox (2.81201pt too wide) detected at line 57
+\T2A/cmr/m/n/14.4 А.1.  
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 58.
+
+
+Overfull \hbox (2.81201pt too wide) detected at line 58
+\T2A/cmr/m/n/14.4 А.2.  
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 59.
+
+
+Overfull \hbox (2.81201pt too wide) detected at line 59
+\T2A/cmr/m/n/14.4 А.3.  
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 60.
+
+
+Overfull \hbox (2.81201pt too wide) detected at line 60
+\T2A/cmr/m/n/14.4 А.4.  
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 61.
+
+
+Overfull \hbox (2.81201pt too wide) detected at line 61
+\T2A/cmr/m/n/14.4 А.5.  
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 62.
+
+
+Overfull \hbox (2.81201pt too wide) detected at line 62
+\T2A/cmr/m/n/14.4 А.6.  
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 63.
+
+
+Overfull \hbox (2.81201pt too wide) detected at line 63
+\T2A/cmr/m/n/14.4 А.7.  
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 64.
+
+
+Package xcolor Warning: Incompatible color definition on input line 65.
+
+
+Package xcolor Warning: Incompatible color definition on input line 66.
+
+
+Package xcolor Warning: Incompatible color definition on input line 67.
+
+
+Package xcolor Warning: Incompatible color definition on input line 68.
+
+
+Package xcolor Warning: Incompatible color definition on input line 69.
+
+
+Package xcolor Warning: Incompatible color definition on input line 70.
+
+
+Package xcolor Warning: Incompatible color definition on input line 71.
+
+
+Package xcolor Warning: Incompatible color definition on input line 72.
+
+
+Package xcolor Warning: Incompatible color definition on input line 73.
+
+
+Package xcolor Warning: Incompatible color definition on input line 74.
+
+
+Package xcolor Warning: Incompatible color definition on input line 75.
+
+
+Package xcolor Warning: Incompatible color definition on input line 76.
+
+[4]
+
+Package xcolor Warning: Incompatible color definition on input line 77.
+
+)
+\tf@toc=\write7
+\openout7 = `thesis.toc'.
+
+ [5] (./thesis.nls) (./intro.tex [6
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 9--9
+[]\T2A/cmr/m/n/14.4 (+20) .
+ []
+
+[7
+
+]
+Overfull \hbox (8.24857pt too wide) in paragraph at lines 13--13
+\T2A/cmr/m/n/14.4 (-20) тех^^?но^^?ло^^?ги^^?че^^?ской под^^?го^^?тов^^?ки про^
+^?из^^?вод^^?ства, ба^^?зи^^?ру^^?ю^^?щу^^?ю^^?ся на []
+ []
+
+[8] [9] [10] [11]) (./1.tex [12]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 17.
+
+
+Package xcolor Warning: Incompatible color definition on input line 26.
+
+
+Package xcolor Warning: Incompatible color definition on input line 26.
+
+[13
+
+] [14]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 72.
+
+
+Package xcolor Warning: Incompatible color definition on input line 85.
+
+
+Package xcolor Warning: Incompatible color definition on input line 85.
+
+[15]
+
+Package xcolor Warning: Incompatible color definition on input line 104.
+
+
+Package xcolor Warning: Incompatible color definition on input line 104.
+
+[16] [17]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 161.
+
+
+Package xcolor Warning: Incompatible color definition on input line 179.
+
+
+Package xcolor Warning: Incompatible color definition on input line 179.
+
+[18] [19]
+
+Package xcolor Warning: Incompatible color definition on input line 240.
+
+
+Package xcolor Warning: Incompatible color definition on input line 244.
+
+[20]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 277.
+
+[21] [22]
+
+Package xcolor Warning: Incompatible color definition on input line 325.
+
+[23]
+
+Package xcolor Warning: Incompatible color definition on input line 360.
+
+
+Package xcolor Warning: Incompatible color definition on input line 360.
+
+[24]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 379.
+
+
+Package xcolor Warning: Incompatible color definition on input line 403.
+
+
+Package xcolor Warning: Incompatible color definition on input line 407.
+
+
+Package xcolor Warning: Incompatible color definition on input line 407.
+
+[25]
+
+Package xcolor Warning: Incompatible color definition on input line 436.
+
+[26]
+
+Package xcolor Warning: Incompatible color definition on input line 462.
+
+
+Package xcolor Warning: Incompatible color definition on input line 462.
+
+
+Package xcolor Warning: Incompatible color definition on input line 464.
+
+
+Package xcolor Warning: Incompatible color definition on input line 464.
+
+
+Package xcolor Warning: Incompatible color definition on input line 469.
+
+[27]
+
+Package xcolor Warning: Incompatible color definition on input line 494.
+
+Package epstopdf Info: Source file: <fig/mas-effect.eps>
+(epstopdf)                    date: 2012-04-09 18:57:06
+(epstopdf)                    size: 118715 bytes
+(epstopdf)             Output file: <fig/mas-effect-eps-converted-to.pdf>
+(epstopdf)                    date: 2012-04-09 19:00:40
+(epstopdf)                    size: 63321 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/mas-effect-eps-converte
+d-to.pdf fig/mas-effect.eps>
+(epstopdf)             \includegraphics on input line 497.
+Package epstopdf Info: Output file is already uptodate.
+<fig/mas-effect-eps-converted-to.pdf, id=552, 734.745pt x 633.36626pt>
+File: fig/mas-effect-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig/mas-effect-eps-converted-to.pdf>
+Package pdftex.def Info: fig/mas-effect-eps-converted-to.pdf used on input line
+ 497.
+(pdftex.def)             Requested size: 478.0064pt x 412.0601pt.
+
+
+Package xcolor Warning: Incompatible color definition on input line 504.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 544.
+
+[28] [29 <./fig/mas-effect-eps-converted-to.pdf>]) (./2.tex [30]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 13.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 15.
+
+
+Package xcolor Warning: Incompatible color definition on input line 19.
+
+
+Package xcolor Warning: Incompatible color definition on input line 27.
+
+
+Package xcolor Warning: Incompatible color definition on input line 27.
+
+Package epstopdf Info: Source file: <fig/agent-env.eps>
+(epstopdf)                    date: 2012-03-06 17:38:46
+(epstopdf)                    size: 29182 bytes
+(epstopdf)             Output file: <fig/agent-env-eps-converted-to.pdf>
+(epstopdf)                    date: 2012-04-09 19:00:40
+(epstopdf)                    size: 16246 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/agent-env-eps-converted
+-to.pdf fig/agent-env.eps>
+(epstopdf)             \includegraphics on input line 31.
+Package epstopdf Info: Output file is already uptodate.
+<fig/agent-env-eps-converted-to.pdf, id=578, 638.385pt x 229.85875pt>
+File: fig/agent-env-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig/agent-env-eps-converted-to.pdf>
+Package pdftex.def Info: fig/agent-env-eps-converted-to.pdf used on input line 
+31.
+(pdftex.def)             Requested size: 334.60301pt x 120.47772pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package xcolor Warning: Incompatible color definition on input line 38.
+
+[31
+
+]
+
+Package xcolor Warning: Incompatible color definition on input line 55.
+
+[32 <./fig/agent-env-eps-converted-to.pdf>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 129.
+
+
+Package xcolor Warning: Incompatible color definition on input line 131.
+
+
+Package xcolor Warning: Incompatible color definition on input line 135.
+
+(./fig/react-agents.pgf
+\pgf@layerbox@background=\box66
+\pgf@layerboxsaved@background=\box67
+\pgf@layerbox@foreground=\box68
+\pgf@layerboxsaved@foreground=\box69
+LaTeX Font Info:    Try loading font information for T2A+cmss on input line 20.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmss.fd
+File: t2acmss.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+)
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+ [][][][] 
+ []
+
+
+Underfull \hbox (badness 7012) in paragraph at lines 36--36
+ [][][][]\T2A/cmss/m/n/14.4 (+20) Окружающая сре^^?да 
+ []
+
+)
+
+Package xcolor Warning: Incompatible color definition on input line 164.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package xcolor Warning: Incompatible color definition on input line 169.
+
+[33]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 190.
+
+
+Package xcolor Warning: Incompatible color definition on input line 194.
+
+
+Package xcolor Warning: Incompatible color definition on input line 195.
+
+
+Package xcolor Warning: Incompatible color definition on input line 201.
+
+
+Package xcolor Warning: Incompatible color definition on input line 203.
+
+(./fig/aims-agents.pgf
+\pgf@layerbox@background=\box70
+\pgf@layerboxsaved@background=\box71
+\pgf@layerbox@foreground=\box72
+\pgf@layerboxsaved@foreground=\box73
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--48
+ [][][][] 
+ []
+
+
+Underfull \hbox (badness 7012) in paragraph at lines 53--53
+ [][][][]\T2A/cmss/m/n/14.4 (+20) Окружающая сре^^?да 
+ []
+
+) [34]
+
+Package xcolor Warning: Incompatible color definition on input line 219.
+
+[35]
+
+Package xcolor Warning: Incompatible color definition on input line 234.
+
+
+Overfull \hbox (6.96353pt too wide) in paragraph at lines 233--236
+\T2A/cmr/m/n/14.4 (-20) Внут^^?рен^^?ний ин^^?тер^^?пре^^?та^^?тор аген^^?та не
+пре^^?рыв^^?но вы^^?пол^^?ня^^?ет сле^^?ду^^?ю^^?щий цикл [[]]:
+ []
+
+[36]
+
+Package xcolor Warning: Incompatible color definition on input line 271.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 277.
+
+
+Package xcolor Warning: Incompatible color definition on input line 285.
+
+Package epstopdf Info: Source file: <fig/hybrid-arch.eps>
+(epstopdf)                    date: 2012-04-09 18:57:16
+(epstopdf)                    size: 172713 bytes
+(epstopdf)             Output file: <fig/hybrid-arch-eps-converted-to.pdf>
+(epstopdf)                    date: 2012-04-09 19:00:42
+(epstopdf)                    size: 87837 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/hybrid-arch-eps-convert
+ed-to.pdf fig/hybrid-arch.eps>
+(epstopdf)             \includegraphics on input line 289.
+Package epstopdf Info: Output file is already uptodate.
+<fig/hybrid-arch-eps-converted-to.pdf, id=648, 855.195pt x 571.13374pt>
+File: fig/hybrid-arch-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig/hybrid-arch-eps-converted-to.pdf>
+Package pdftex.def Info: fig/hybrid-arch-eps-converted-to.pdf used on input lin
+e 289.
+(pdftex.def)             Requested size: 478.0064pt x 319.2314pt.
+
+
+Package xcolor Warning: Incompatible color definition on input line 301.
+
+[37]
+
+Package xcolor Warning: Incompatible color definition on input line 312.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 314.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 334.
+
+
+Package xcolor Warning: Incompatible color definition on input line 348.
+
+[38 <./fig/hybrid-arch-eps-converted-to.pdf>]
+
+Package xcolor Warning: Incompatible color definition on input line 352.
+
+
+Package xcolor Warning: Incompatible color definition on input line 359.
+
+
+Package xcolor Warning: Incompatible color definition on input line 360.
+
+[39]
+
+Package xcolor Warning: Incompatible color definition on input line 380.
+
+[40]
+
+Package xcolor Warning: Incompatible color definition on input line 418.
+
+Package epstopdf Info: Source file: <fig/env-merge.eps>
+(epstopdf)                    date: 2012-03-06 17:38:50
+(epstopdf)                    size: 9571 bytes
+(epstopdf)             Output file: <fig/env-merge-eps-converted-to.pdf>
+(epstopdf)                    date: 2012-04-09 19:00:42
+(epstopdf)                    size: 5625 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/env-merge-eps-converted
+-to.pdf fig/env-merge.eps>
+(epstopdf)             \includegraphics on input line 423.
+Package epstopdf Info: Output file is already uptodate.
+<fig/env-merge-eps-converted-to.pdf, id=691, 713.66624pt x 286.06876pt>
+File: fig/env-merge-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig/env-merge-eps-converted-to.pdf>
+Package pdftex.def Info: fig/env-merge-eps-converted-to.pdf used on input line 
+423.
+(pdftex.def)             Requested size: 382.40657pt x 153.28316pt.
+
+
+Package xcolor Warning: Incompatible color definition on input line 446.
+
+
+Package xcolor Warning: Incompatible color definition on input line 447.
+
+Package epstopdf Info: Source file: <fig/holo-merge.eps>
+(epstopdf)                    date: 2012-03-06 17:38:50
+(epstopdf)                    size: 6433 bytes
+(epstopdf)             Output file: <fig/holo-merge-eps-converted-to.pdf>
+(epstopdf)                    date: 2012-04-09 19:00:42
+(epstopdf)                    size: 4034 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/holo-merge-eps-converte
+d-to.pdf fig/holo-merge.eps>
+(epstopdf)             \includegraphics on input line 451.
+Package epstopdf Info: Output file is already uptodate.
+<fig/holo-merge-eps-converted-to.pdf, id=694, 713.66624pt x 286.06876pt>
+File: fig/holo-merge-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig/holo-merge-eps-converted-to.pdf>
+Package pdftex.def Info: fig/holo-merge-eps-converted-to.pdf used on input line
+ 451.
+(pdftex.def)             Requested size: 382.40657pt x 153.28316pt.
+ [41 <./fig/env-merge-eps-converted-to.pdf>]
+Overfull \hbox (4.39949pt too wide) in paragraph at lines 463--470
+[]\T2A/cmr/m/n/14.4 (-20) Создадим сре^^?ду $\OT1/cmr/m/n/14.4 (-20) (\OMS/cmsy
+/m/n/14.4 f\OML/cmm/m/it/14.4 []; []; [] ; []\OMS/cmsy/m/n/14.4 g\OML/cmm/m/
+it/14.4 ; \OMS/cmsy/m/n/14.4 E\OML/cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4 (-20) ^^E[
+]\OML/cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4 (-20) ^^A[])$ \T2A/cmr/m/n/14.4 (-20) с
+ аген^^?том $\OML/cmm/m/it/14.4 [] \OT1/cmr/m/n/14.4 (-20) = (\OML/cmm/m/it/14
+.4 S[]; P[]; A[]; ^^^[]\OT1/cmr/m/n/14.4 (-20) )$\T2A/cmr/m/n/14.4 (-20) ,
+ []
+
+[42 <./fig/holo-merge-eps-converted-to.pdf>] [43]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 541.
+
+[44]
+
+Package xcolor Warning: Incompatible color definition on input line 567.
+
+
+Package xcolor Warning: Incompatible color definition on input line 570.
+
+
+Package xcolor Warning: Incompatible color definition on input line 570.
+
+
+Package xcolor Warning: Incompatible color definition on input line 570.
+
+
+Package xcolor Warning: Incompatible color definition on input line 570.
+
+
+Package xcolor Warning: Incompatible color definition on input line 570.
+
+
+Package xcolor Warning: Incompatible color definition on input line 573.
+
+[45]
+
+Package xcolor Warning: Incompatible color definition on input line 594.
+
+
+Package xcolor Warning: Incompatible color definition on input line 602.
+
+
+Underfull \hbox (badness 1158) in paragraph at lines 623--625
+[]|\T2A/cmr/m/n/14.4 (+20) специализированный агент-^^?про^^?то^^?тип, ре^^?а^^
+?ли^^?зу^^?ю^^?щий агент^^?ную
+ []
+
+
+Overfull \hbox (15.46407pt too wide) in paragraph at lines 614--626
+[] 
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 627.
+
+[46] [47]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 681.
+
+
+Package xcolor Warning: Incompatible color definition on input line 689.
+
+
+Package xcolor Warning: Incompatible color definition on input line 689.
+
+[48]
+
+Package xcolor Warning: Incompatible color definition on input line 724.
+
+[49]
+
+Package xcolor Warning: Incompatible color definition on input line 731.
+
+<fig/utility-func.png, id=778, 1284.8pt x 963.6pt>
+File: fig/utility-func.png Graphic file (type png)
+ <use fig/utility-func.png>
+Package pdftex.def Info: fig/utility-func.png used on input line 737.
+(pdftex.def)             Requested size: 478.0064pt x 358.49667pt.
+
+[50 <./fig/utility-func.png>]) (./3.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 18.
+
+
+Package xcolor Warning: Incompatible color definition on input line 33.
+
+
+Package xcolor Warning: Incompatible color definition on input line 37.
+
+[51]
+
+Package xcolor Warning: Incompatible color definition on input line 57.
+
+
+Package xcolor Warning: Incompatible color definition on input line 64.
+
+
+Package xcolor Warning: Incompatible color definition on input line 64.
+
+
+Package xcolor Warning: Incompatible color definition on input line 65.
+
+
+Package xcolor Warning: Incompatible color definition on input line 65.
+
+
+Package xcolor Warning: Incompatible color definition on input line 66.
+
+
+Package xcolor Warning: Incompatible color definition on input line 66.
+
+[52]
+
+Package xcolor Warning: Incompatible color definition on input line 85.
+
+
+Package xcolor Warning: Incompatible color definition on input line 85.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 90.
+
+
+Package xcolor Warning: Incompatible color definition on input line 93.
+
+
+Package xcolor Warning: Incompatible color definition on input line 97.
+
+[53]
+
+Package xcolor Warning: Incompatible color definition on input line 122.
+
+
+Package xcolor Warning: Incompatible color definition on input line 130.
+
+
+Package xcolor Warning: Incompatible color definition on input line 130.
+
+[54]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 132.
+
+
+Package xcolor Warning: Incompatible color definition on input line 137.
+
+
+Package xcolor Warning: Incompatible color definition on input line 140.
+
+
+Package xcolor Warning: Incompatible color definition on input line 150.
+
+
+Package xcolor Warning: Incompatible color definition on input line 155.
+
+
+Package xcolor Warning: Incompatible color definition on input line 155.
+
+
+Package xcolor Warning: Incompatible color definition on input line 162.
+
+Package epstopdf Info: Source file: <fig/general-hms-structure.eps>
+(epstopdf)                    date: 2012-03-06 17:38:48
+(epstopdf)                    size: 55594 bytes
+(epstopdf)             Output file: <fig/general-hms-structure-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2012-04-09 19:03:12
+(epstopdf)                    size: 28329 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/general-hms-structure-e
+ps-converted-to.pdf fig/general-hms-structure.eps>
+(epstopdf)             \includegraphics on input line 166.
+Package epstopdf Info: Output file is already uptodate.
+
+<fig/general-hms-structure-eps-converted-to.pdf, id=836, 1623.06375pt x 974.641
+25pt>
+File: fig/general-hms-structure-eps-converted-to.pdf Graphic file (type pdf)
+ <use fig/general-hms-structure-eps-converted-to.pdf>
+Package pdftex.def Info: fig/general-hms-structure-eps-converted-to.pdf used on
+ input line 166.
+(pdftex.def)             Requested size: 430.20284pt x 258.33818pt.
+ [55]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 754.
+
+[56 <./fig/general-hms-structure-eps-converted-to.pdf>]
+Overfull \hbox (0.9066pt too wide) in paragraph at lines 765--770
+\T2A/cmr/m/n/14.4 (-20) ис^^?поль^^?зо^^?ва^^?на для по^^?стро^^?е^^?ния мно^^?
+го^^?агент^^?ной тех^^?но^^?ло^^?ги^^?че^^?ской си^^?сте^^?мы ---
+ []
+
+) (./4.tex [57]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 40.
+
+
+Package xcolor Warning: Incompatible color definition on input line 42.
+
+[58
+
+]
+
+Package xcolor Warning: Incompatible color definition on input line 53.
+
+
+Package xcolor Warning: Incompatible color definition on input line 56.
+
+
+Package xcolor Warning: Incompatible color definition on input line 71.
+
+[59]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 73.
+
+
+Package xcolor Warning: Incompatible color definition on input line 109.
+
+
+Package xcolor Warning: Incompatible color definition on input line 113.
+
+
+Package xcolor Warning: Incompatible color definition on input line 113.
+
+[60]
+
+Package xcolor Warning: Incompatible color definition on input line 118.
+
+
+Package xcolor Warning: Incompatible color definition on input line 125.
+
+
+Package xcolor Warning: Incompatible color definition on input line 127.
+
+
+Package xcolor Warning: Incompatible color definition on input line 127.
+
+
+Package xcolor Warning: Incompatible color definition on input line 129.
+
+
+Package xcolor Warning: Incompatible color definition on input line 147.
+
+[61]
+
+Package xcolor Warning: Incompatible color definition on input line 184.
+
+[62]
+LaTeX Font Info:    Try loading font information for T2A+cmtt on input line 214
+.
+ (/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
+File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+)
+
+Package xcolor Warning: Incompatible color definition on input line 222.
+
+
+Package xcolor Warning: Incompatible color definition on input line 222.
+
+
+Package xcolor Warning: Incompatible color definition on input line 225.
+
+[63] [64] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 306.
+
+[65]
+
+Package xcolor Warning: Incompatible color definition on input line 321.
+
+
+Package xcolor Warning: Incompatible color definition on input line 338.
+
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 342.
+[66]
+
+Package xcolor Warning: Incompatible color definition on input line 354.
+
+
+Package xcolor Warning: Incompatible color definition on input line 361.
+
+
+Package xcolor Warning: Incompatible color definition on input line 361.
+
+[67]
+
+Package xcolor Warning: Incompatible color definition on input line 415.
+
+[68]
+
+Package xcolor Warning: Incompatible color definition on input line 427.
+
+
+Overfull \hbox (6.57784pt too wide) detected at line 440
+\OMS/cmsy/m/n/14.4 K\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 X; Y\OT1/cmr/m/n/14.4
+ ) = []
+ []
+
+[69]
+
+Package xcolor Warning: Incompatible color definition on input line 447.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 449.
+
+
+Package xcolor Warning: Incompatible color definition on input line 452.
+
+
+Package xcolor Warning: Incompatible color definition on input line 456.
+
+
+Package xcolor Warning: Incompatible color definition on input line 464.
+
+Package epstopdf Info: Source file: <fig/net-frame.eps>
+(epstopdf)                    date: 2012-04-09 18:57:08
+(epstopdf)                    size: 129944 bytes
+(epstopdf)             Output file: <fig/net-frame-eps-converted-to.pdf>
+(epstopdf)                    date: 2012-04-09 19:03:12
+(epstopdf)                    size: 68244 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/net-frame-eps-converted
+-to.pdf fig/net-frame.eps>
+(epstopdf)             \includegraphics on input line 472.
+Package epstopdf Info: Output file is already uptodate.
+<fig/net-frame-eps-converted-to.pdf, id=983, 460.72125pt x 657.45625pt>
+File: fig/net-frame-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig/net-frame-eps-converted-to.pdf>
+Package pdftex.def Info: fig/net-frame-eps-converted-to.pdf used on input line 
+472.
+(pdftex.def)             Requested size: 262.90497pt x 375.16527pt.
+ [70]
+
+Package xcolor Warning: Incompatible color definition on input line 501.
+
+[71 <./fig/net-frame-eps-converted-to.pdf>]
+
+Package xcolor Warning: Incompatible color definition on input line 533.
+
+
+Package xcolor Warning: Incompatible color definition on input line 533.
+
+[72]
+LaTeX Font Info:    Font shape `T2A/cmtt/bx/n' in size <14.4> not available
+(Font)              Font shape `T2A/cmtt/m/n' tried instead on input line 544.
+
+Overfull \hbox (4.35056pt too wide) in paragraph at lines 551--552
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 586.
+
+[73] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+)
+
+Package xcolor Warning: Incompatible color definition on input line 620.
+
+
+Package xcolor Warning: Incompatible color definition on input line 645.
+
+
+Package xcolor Warning: Incompatible color definition on input line 645.
+
+
+Package xcolor Warning: Incompatible color definition on input line 645.
+
+[74]
+
+Package xcolor Warning: Incompatible color definition on input line 671.
+
+[75]
+Overfull \hbox (4.35056pt too wide) in paragraph at lines 707--708
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+[76]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 742.
+
+[77]
+
+Package xcolor Warning: Incompatible color definition on input line 771.
+
+
+Package xcolor Warning: Incompatible color definition on input line 772.
+
+
+Package xcolor Warning: Incompatible color definition on input line 774.
+
+
+Package xcolor Warning: Incompatible color definition on input line 781.
+
+[78]
+
+Package xcolor Warning: Incompatible color definition on input line 839.
+
+[79]
+Overfull \hbox (4.35056pt too wide) in paragraph at lines 864--865
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 880.
+
+
+Package xcolor Warning: Incompatible color definition on input line 884.
+
+
+Package xcolor Warning: Incompatible color definition on input line 887.
+
+
+Package xcolor Warning: Incompatible color definition on input line 888.
+
+
+Package xcolor Warning: Incompatible color definition on input line 888.
+
+[80]
+
+Package xcolor Warning: Incompatible color definition on input line 895.
+
+
+Package xcolor Warning: Incompatible color definition on input line 914.
+
+
+Package xcolor Warning: Incompatible color definition on input line 914.
+
+
+Package xcolor Warning: Incompatible color definition on input line 918.
+
+
+Package xcolor Warning: Incompatible color definition on input line 919.
+
+
+Package xcolor Warning: Incompatible color definition on input line 919.
+
+
+Package xcolor Warning: Incompatible color definition on input line 927.
+
+Package epstopdf Info: Source file: <fig/FIPA-message-structure.eps>
+(epstopdf)                    date: 2012-03-06 17:38:50
+(epstopdf)                    size: 93957 bytes
+(epstopdf)             Output file: <fig/FIPA-message-structure-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2012-04-09 19:03:14
+(epstopdf)                    size: 49687 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/FIPA-message-structure-
+eps-converted-to.pdf fig/FIPA-message-structure.eps>
+(epstopdf)             \includegraphics on input line 931.
+Package epstopdf Info: Output file is already uptodate.
+
+<fig/FIPA-message-structure-eps-converted-to.pdf, id=1211, 579.16376pt x 315.17
+75pt>
+File: fig/FIPA-message-structure-eps-converted-to.pdf Graphic file (type pdf)
+ <use fig/FIPA-message-structure-eps-converted-to.pdf>
+Package pdftex.def Info: fig/FIPA-message-structure-eps-converted-to.pdf used o
+n input line 931.
+(pdftex.def)             Requested size: 334.60301pt x 182.0865pt.
+ [81]
+Overfull \hbox (2.02403pt too wide) in paragraph at lines 939--943
+[]\T2A/cmr/m/n/14.4 (-20) Содержимое пер^^?фор^^?ма^^?ти^^?ва пред^^?став^^?ля^
+^?ет со^^?бой \T2A/cmr/m/it/14.4 (-20) утвер^^?жде^^?ние \T2A/cmr/m/n/14.4 (-20
+) (statement).
+ []
+
+[82 <./fig/FIPA-message-structure-eps-converted-to.pdf>] [83]
+
+Package xcolor Warning: Incompatible color definition on input line 996.
+
+
+Package xcolor Warning: Incompatible color definition on input line 1000.
+
+
+Package xcolor Warning: Incompatible color definition on input line 1001.
+
+
+Package xcolor Warning: Incompatible color definition on input line 1001.
+
+
+Package xcolor Warning: Incompatible color definition on input line 1013.
+
+
+Package xcolor Warning: Incompatible color definition on input line 1015.
+
+
+Package xcolor Warning: Incompatible color definition on input line 1018.
+
+
+Package xcolor Warning: Incompatible color definition on input line 1018.
+
+
+Package xcolor Warning: Incompatible color definition on input line 1024.
+
+[84]
+
+Package xcolor Warning: Incompatible color definition on input line 1036.
+
+Package epstopdf Info: Source file: <fig/spade.eps>
+(epstopdf)                    date: 2012-04-09 18:57:06
+(epstopdf)                    size: 115658 bytes
+(epstopdf)             Output file: <fig/spade-eps-converted-to.pdf>
+(epstopdf)                    date: 2012-04-09 19:03:14
+(epstopdf)                    size: 58860 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/spade-eps-converted-to.
+pdf fig/spade.eps>
+(epstopdf)             \includegraphics on input line 1042.
+Package epstopdf Info: Output file is already uptodate.
+<fig/spade-eps-converted-to.pdf, id=1266, 1322.9425pt x 592.2125pt>
+File: fig/spade-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig/spade-eps-converted-to.pdf>
+Package pdftex.def Info: fig/spade-eps-converted-to.pdf used on input line 1042
+.
+(pdftex.def)             Requested size: 478.0064pt x 213.97346pt.
+ [85 <./fig/spade-eps-converted-to.pdf>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 1061.
+
+
+Package xcolor Warning: Incompatible color definition on input line 1088.
+
+
+Package xcolor Warning: Incompatible color definition on input line 1090.
+
+
+Package xcolor Warning: Incompatible color definition on input line 1100.
+
+
+Package xcolor Warning: Incompatible color definition on input line 1100.
+
+<fig/rvis-foto.png, id=1279, 803.0pt x 2055.68pt>
+File: fig/rvis-foto.png Graphic file (type png)
+ <use fig/rvis-foto.png>
+Package pdftex.def Info: fig/rvis-foto.png used on input line 1105.
+(pdftex.def)             Requested size: 164.71408pt x 421.67413pt.
+
+[86]
+
+Package xcolor Warning: Incompatible color definition on input line 1111.
+
+
+Package xcolor Warning: Incompatible color definition on input line 1116.
+
+
+Package xcolor Warning: Incompatible color definition on input line 1125.
+
+Package epstopdf Info: Source file: <fig/rvis-arch.eps>
+(epstopdf)                    date: 2012-04-09 18:57:10
+(epstopdf)                    size: 239815 bytes
+(epstopdf)             Output file: <fig/rvis-arch-eps-converted-to.pdf>
+(epstopdf)                    date: 2012-04-09 19:03:14
+(epstopdf)                    size: 124056 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/rvis-arch-eps-converted
+-to.pdf fig/rvis-arch.eps>
+(epstopdf)             \includegraphics on input line 1130.
+Package epstopdf Info: Output file is already uptodate.
+<fig/rvis-arch-eps-converted-to.pdf, id=1289, 1111.15125pt x 761.84625pt>
+File: fig/rvis-arch-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig/rvis-arch-eps-converted-to.pdf>
+Package pdftex.def Info: fig/rvis-arch-eps-converted-to.pdf used on input line 
+1130.
+(pdftex.def)             Requested size: 430.20284pt x 294.96825pt.
+
+Underfull \hbox (badness 3108) in paragraph at lines 1159--1159
+\T2A/cmr/m/n/14.4 (+20) ОЗУ DDR3 ECC, НЖМД Seagete
+ []
+
+
+Underfull \hbox (badness 3108) in paragraph at lines 1159--1159
+\T2A/cmr/m/n/14.4 (+20) ОЗУ DDR3 ECC, НЖМД Seagete
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 1164.
+
+[87 <./fig/rvis-foto.png (PNG copy)>] [88 <./fig/rvis-arch-eps-converted-to.pdf
+>]
+
+Package xcolor Warning: Incompatible color definition on input line 1181.
+
+
+Package xcolor Warning: Incompatible color definition on input line 1187.
+
+<fig/vm-manager.png, id=1309, 1000.1pt x 546.98471pt>
+File: fig/vm-manager.png Graphic file (type png)
+ <use fig/vm-manager.png>
+Package pdftex.def Info: fig/vm-manager.png used on input line 1193.
+(pdftex.def)             Requested size: 478.0064pt x 261.43127pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 1198.
+
+[89] [90 <./fig/vm-manager.png>]) (./5.tex [91]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 2.
+
+[92
+
+]
+
+Package xcolor Warning: Incompatible color definition on input line 41.
+
+Package epstopdf Info: Source file: <fig/activity-pcm.eps>
+(epstopdf)                    date: 2012-04-09 18:57:14
+(epstopdf)                    size: 631282 bytes
+(epstopdf)             Output file: <fig/activity-pcm-eps-converted-to.pdf>
+(epstopdf)                    date: 2012-04-09 19:03:14
+(epstopdf)                    size: 314870 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/activity-pcm-eps-conver
+ted-to.pdf fig/activity-pcm.eps>
+(epstopdf)             \includegraphics on input line 55.
+Package epstopdf Info: Output file is already uptodate.
+<fig/activity-pcm-eps-converted-to.pdf, id=1334, 1111.15125pt x 1452.42625pt>
+File: fig/activity-pcm-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig/activity-pcm-eps-converted-to.pdf>
+Package pdftex.def Info: fig/activity-pcm-eps-converted-to.pdf used on input li
+ne 55.
+(pdftex.def)             Requested size: 478.0064pt x 624.81923pt.
+
+
+Package xcolor Warning: Incompatible color definition on input line 71.
+
+[93] [94 <./fig/activity-pcm-eps-converted-to.pdf>]
+
+Package xcolor Warning: Incompatible color definition on input line 75.
+
+[95]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 381.
+
+
+Package xcolor Warning: Incompatible color definition on input line 385.
+
+Package epstopdf Info: Source file: <fig/pcm-proc.eps>
+(epstopdf)                    date: 2012-05-08 22:09:36
+(epstopdf)                    size: 468065 bytes
+(epstopdf)             Output file: <fig/pcm-proc-eps-converted-to.pdf>
+(epstopdf)                    date: 2012-06-19 08:54:58
+(epstopdf)                    size: 230920 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/pcm-proc-eps-converted-
+to.pdf fig/pcm-proc.eps>
+(epstopdf)             \includegraphics on input line 395.
+Package epstopdf Info: Output file is already uptodate.
+<fig/pcm-proc-eps-converted-to.pdf, id=1355, 1966.34625pt x 1332.98pt>
+File: fig/pcm-proc-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig/pcm-proc-eps-converted-to.pdf>
+Package pdftex.def Info: fig/pcm-proc-eps-converted-to.pdf used on input line 3
+95.
+(pdftex.def)             Requested size: 704.94373pt x 477.88734pt.
+
+Overfull \hbox (2.16063pt too wide) in paragraph at lines 395--397
+ [][] 
+ []
+
+[96] [97 <./fig/pcm-proc-eps-converted-to.pdf>]
+
+Package xcolor Warning: Incompatible color definition on input line 435.
+
+
+Package xcolor Warning: Incompatible color definition on input line 438.
+
+Package epstopdf Info: Source file: <fig/rvis-model.eps>
+(epstopdf)                    date: 2012-04-09 18:57:08
+(epstopdf)                    size: 313265 bytes
+(epstopdf)             Output file: <fig/rvis-model-eps-converted-to.pdf>
+(epstopdf)                    date: 2012-04-09 19:03:16
+(epstopdf)                    size: 155476 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/rvis-model-eps-converte
+d-to.pdf fig/rvis-model.eps>
+(epstopdf)             \includegraphics on input line 441.
+Package epstopdf Info: Output file is already uptodate.
+<fig/rvis-model-eps-converted-to.pdf, id=1370, 531.9875pt x 562.1pt>
+File: fig/rvis-model-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig/rvis-model-eps-converted-to.pdf>
+Package pdftex.def Info: fig/rvis-model-eps-converted-to.pdf used on input line
+ 441.
+(pdftex.def)             Requested size: 430.20284pt x 454.5609pt.
+ [98]
+
+Package xcolor Warning: Incompatible color definition on input line 452.
+
+
+Package xcolor Warning: Incompatible color definition on input line 455.
+
+[99 <./fig/rvis-model-eps-converted-to.pdf>]
+<fig/screenshot-1.png, id=1385, 997.18pt x 544.15059pt>
+File: fig/screenshot-1.png Graphic file (type png)
+
+<use fig/screenshot-1.png>
+Package pdftex.def Info: fig/screenshot-1.png used on input line 461.
+(pdftex.def)             Requested size: 478.0064pt x 260.84059pt.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 674.
+
+
+Package xcolor Warning: Incompatible color definition on input line 689.
+
+
+Package xcolor Warning: Incompatible color definition on input line 693.
+
+
+Package xcolor Warning: Incompatible color definition on input line 693.
+
+
+Package xcolor Warning: Incompatible color definition on input line 693.
+
+
+Package xcolor Warning: Incompatible color definition on input line 697.
+
+
+Package xcolor Warning: Incompatible color definition on input line 699.
+
+[100 <./fig/screenshot-1.png>]
+
+Package xcolor Warning: Incompatible color definition on input line 712.
+
+Package epstopdf Info: Source file: <fig/agent-comm.eps>
+(epstopdf)                    date: 2012-04-09 18:57:10
+(epstopdf)                    size: 213311 bytes
+(epstopdf)             Output file: <fig/agent-comm-eps-converted-to.pdf>
+(epstopdf)                    date: 2012-04-09 19:03:16
+(epstopdf)                    size: 105332 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/agent-comm-eps-converte
+d-to.pdf fig/agent-comm.eps>
+(epstopdf)             \includegraphics on input line 715.
+Package epstopdf Info: Output file is already uptodate.
+<fig/agent-comm-eps-converted-to.pdf, id=1401, 1482.53876pt x 538.01pt>
+File: fig/agent-comm-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig/agent-comm-eps-converted-to.pdf>
+Package pdftex.def Info: fig/agent-comm-eps-converted-to.pdf used on input line
+ 715.
+(pdftex.def)             Requested size: 702.7831pt x 255.0402pt.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 732.
+
+[101] [102 <./fig/agent-comm-eps-converted-to.pdf>]
+
+Package xcolor Warning: Incompatible color definition on input line 750.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 766.
+
+
+Package xcolor Warning: Incompatible color definition on input line 778.
+
+
+Package xcolor Warning: Incompatible color definition on input line 780.
+
+
+Package xcolor Warning: Incompatible color definition on input line 780.
+
+[103] [104]
+
+Package xcolor Warning: Incompatible color definition on input line 808.
+
+<fig/screenshot.png, id=1433, 487.64pt x 449.20764pt>
+File: fig/screenshot.png Graphic file (type png)
+ <use fig/screenshot.png>
+Package pdftex.def Info: fig/screenshot.png used on input line 813.
+(pdftex.def)             Requested size: 382.40657pt x 352.27235pt.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 828.
+
+
+Package xcolor Warning: Incompatible color definition on input line 836.
+
+[105 <./fig/screenshot.png>]
+
+Package xcolor Warning: Incompatible color definition on input line 846.
+
+
+Package xcolor Warning: Incompatible color definition on input line 847.
+
+
+Package xcolor Warning: Incompatible color definition on input line 860.
+
+
+Package xcolor Warning: Incompatible color definition on input line 864.
+
+Package epstopdf Info: Source file: <fig/agent-init.eps>
+(epstopdf)                    date: 2012-04-09 18:57:08
+(epstopdf)                    size: 196517 bytes
+(epstopdf)             Output file: <fig/agent-init-eps-converted-to.pdf>
+(epstopdf)                    date: 2012-04-09 19:03:16
+(epstopdf)                    size: 101780 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/agent-init-eps-converte
+d-to.pdf fig/agent-init.eps>
+(epstopdf)             \includegraphics on input line 868.
+Package epstopdf Info: Output file is already uptodate.
+<fig/agent-init-eps-converted-to.pdf, id=1447, 572.1375pt x 685.56125pt>
+File: fig/agent-init-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig/agent-init-eps-converted-to.pdf>
+Package pdftex.def Info: fig/agent-init-eps-converted-to.pdf used on input line
+ 868.
+(pdftex.def)             Requested size: 478.0064pt x 572.77112pt.
+ [106] [107 <./fig/agent-init-eps-converted-to.pdf>]
+
+Package xcolor Warning: Incompatible color definition on input line 892.
+
+[108]
+
+Package xcolor Warning: Incompatible color definition on input line 927.
+
+
+Package xcolor Warning: Incompatible color definition on input line 932.
+
+
+Package xcolor Warning: Incompatible color definition on input line 940.
+
+[109]
+
+Package xcolor Warning: Incompatible color definition on input line 955.
+
+
+Package xcolor Warning: Incompatible color definition on input line 975.
+
+
+Package xcolor Warning: Incompatible color definition on input line 977.
+
+
+Package xcolor Warning: Incompatible color definition on input line 978.
+
+[110]
+
+Package xcolor Warning: Incompatible color definition on input line 1008.
+
+[111]
+
+Package xcolor Warning: Incompatible color definition on input line 1040.
+
+
+Package xcolor Warning: Incompatible color definition on input line 1043.
+
+
+Package xcolor Warning: Incompatible color definition on input line 1057.
+
+
+Package xcolor Warning: Incompatible color definition on input line 1060.
+
+[112]
+
+Package xcolor Warning: Incompatible color definition on input line 1067.
+
+
+Overfull \hbox (4.35056pt too wide) in paragraph at lines 1089--1090
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 1098.
+
+Package epstopdf Info: Source file: <fig/app-auml-1.eps>
+(epstopdf)                    date: 2012-04-09 18:57:12
+(epstopdf)                    size: 77884 bytes
+(epstopdf)             Output file: <fig/app-auml-1-eps-converted-to.pdf>
+(epstopdf)                    date: 2012-04-09 19:03:16
+(epstopdf)                    size: 41530 bytes
+(epstopdf)             Command: <epstopdf --outfile=fig/app-auml-1-eps-converte
+d-to.pdf fig/app-auml-1.eps>
+(epstopdf)             \includegraphics on input line 1105.
+Package epstopdf Info: Output file is already uptodate.
+<fig/app-auml-1-eps-converted-to.pdf, id=1519, 500.87125pt x 684.5575pt>
+File: fig/app-auml-1-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig/app-auml-1-eps-converted-to.pdf>
+Package pdftex.def Info: fig/app-auml-1-eps-converted-to.pdf used on input line
+ 1105.
+(pdftex.def)             Requested size: 382.40657pt x 522.67155pt.
+ [113] [114 <./fig/app-auml-1-eps-converted-to.pdf>]
+
+Package xcolor Warning: Incompatible color definition on input line 1129.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 1134.
+
+[115] [116]) [117] (./concl.tex [118
+
+]) (./thesis.bbl [119] [120
+
+] [121] [122]
+[123] [124] [125]
+
+Package xcolor Warning: Incompatible color definition on input line 393.
+
+
+Package xcolor Warning: Incompatible color definition on input line 435.
+
+[126]
+
+Package xcolor Warning: Incompatible color definition on input line 473.
+
+[127] [128] [129] [130]
+
+Package xcolor Warning: Incompatible color definition on input line 747.
+
+) (./app-a.tex [131]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 21.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 31.
+
+[132
+
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 41.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 52.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 58.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 66.
+
+[133]) (./app-b.tex [134]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 1.
+
+[135
+
+] [136]) (./app-c.tex [137
+
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 1.
+
+
+Underfull \hbox (badness 1803) in paragraph at lines 59--59
+[]|\T2A/cmr/m/n/12 (+20) Отказ от вы^^?пол^^?не^^?ния неко^^?то^^?ро^^?го дей^^
+?ствия без со^^?об^^?ще^^?ния
+ []
+
+) (./app-d.tex [138
+
+] [139]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 4.
+
+
+Package xcolor Warning: Incompatible color definition on input line 18.
+
+<fig/salome.png, id=1807, 1204.5pt x 1013.7875pt>
+File: fig/salome.png Graphic file (type png)
+ <use fig/salome.png>
+Package pdftex.def Info: fig/salome.png used on input line 32.
+(pdftex.def)             Requested size: 478.0064pt x 402.32118pt.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 38.
+
+
+Package xcolor Warning: Incompatible color definition on input line 48.
+
+[140
+
+] [141 <./fig/salome.png>]
+
+Package xcolor Warning: Incompatible color definition on input line 52.
+
+
+Overfull \hbox (6.9576pt too wide) in paragraph at lines 50--54
+[]\T2A/cmr/m/n/14.4 (-20) К ос^^?нов^^?ным функ^^?ци^^?ям, ре^^?а^^?ли^^?зу^^?е
+^^?мым сред^^?ства^^?ми PDM-^^?систе^^?мы SmarTeam
+ []
+
+<fig/smarteam.png, id=1820, 1369.115pt x 736.7525pt>
+File: fig/smarteam.png Graphic file (type png)
+ <use fig/smarteam.png>
+Package pdftex.def Info: fig/smarteam.png used on input line 57.
+(pdftex.def)             Requested size: 478.0064pt x 257.22644pt.
+
+[142 <./fig/smarteam.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 101.
+
+<fig/openerp.png, id=1831, 1682.285pt x 1326.9575pt>
+File: fig/openerp.png Graphic file (type png)
+ <use fig/openerp.png>
+Package pdftex.def Info: fig/openerp.png used on input line 106.
+(pdftex.def)             Requested size: 478.0064pt x 377.0327pt.
+
+
+Package xcolor Warning: Incompatible color definition on input line 118.
+
+[143]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 123.
+
+
+Package xcolor Warning: Incompatible color definition on input line 130.
+
+[144 <./fig/openerp.png>] <fig/pycam.png, id=1848, 1375.1375pt x 774.895pt>
+File: fig/pycam.png Graphic file (type png)
+
+<use fig/pycam.png>
+Package pdftex.def Info: fig/pycam.png used on input line 134.
+(pdftex.def)             Requested size: 478.0064pt x 269.34914pt.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 140.
+
+
+Package xcolor Warning: Incompatible color definition on input line 148.
+
+
+Package xcolor Warning: Incompatible color definition on input line 148.
+
+<fig/vertical.png, id=1851, 501.875pt x 403.5075pt>
+File: fig/vertical.png Graphic file (type png)
+ <use fig/vertical.png>
+Package pdftex.def Info: fig/vertical.png used on input line 152.
+(pdftex.def)             Requested size: 334.60301pt x 269.03102pt.
+
+[145 <./fig/pycam.png>] [146 <./fig/vertical.png (PNG copy)>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 180.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 203.
+
+[147]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 226.
+
+[148]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 245.
+
+) (./app-e.tex [149]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 1.
+
+
+Overfull \hbox (4.35056pt too wide) in paragraph at lines 20--21
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[150
+
+]
+Overfull \hbox (13.12068pt too wide) in paragraph at lines 58--59
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+) (./app-f.tex [151]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 13.70703pt
+(hyperref)                replaced by space on input line 1.
+
+<fig/act-2.png, id=1965, 1810.4pt x 2484.81265pt>
+File: fig/act-2.png Graphic file (type png)
+ <use fig/act-2.png>
+Package pdftex.def Info: fig/act-2.png used on input line 5.
+(pdftex.def)             Requested size: 409.61525pt x 562.2286pt.
+
+<fig/act-1.png, id=1966, 1810.4pt x 2484.81265pt>
+File: fig/act-1.png Graphic file (type png)
+ <use fig/act-1.png>
+Package pdftex.def Info: fig/act-1.png used on input line 10.
+(pdftex.def)             Requested size: 460.83098pt x 632.50049pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 256.
+ [152
+
+ <./fig/act-2.png>] [153 <./fig/act-1.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 256.
+ (./thesis.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 256.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 256.
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 52E5653D6C23E00D1AAFA22297143DD4;22300.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 256.
+ ) 
+Here is how much of TeX's memory you used:
+ 29592 strings out of 493493
+ 523314 string characters out of 3143797
+ 753659 words of memory out of 3000000
+ 30504 multiletter control sequences out of 15000+200000
+ 99949 words of font info for 548 fonts, out of 3000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 56i,11n,73p,1430b,1994s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/shar
+e/texmf/fonts/type1/public/cm-super/sfbi1440.pfb></usr/share/texmf/fonts/type1/
+public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx
+1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share
+/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/type1/p
+ublic/cm-super/sfcc1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfit1
+440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/
+texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/pu
+blic/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm14
+40.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm2074.pfb></usr/share/t
+exmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/pub
+lic/cm-super/sfss1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx100
+0.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/te
+xmf/fonts/type1/public/cm-super/sfti1440.pfb></usr/share/texmf/fonts/type1/publ
+ic/cm-super/sftt1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1440
+.pfb>
+Output written on thesis.pdf (153 pages, 9670956 bytes).
+PDF statistics:
+ 2265 PDF objects out of 2487 (max. 8388607)
+ 1993 compressed objects within 20 object streams
+ 865 named destinations out of 1000 (max. 500000)
+ 123173 words of extra memory for PDF output out of 128383 (max. 10000000)
+

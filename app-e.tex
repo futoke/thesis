@@ -1,0 +1,82 @@
+\chapter{Программная реализация базового агента}
+\label{app:b}
+
+\begin{lstlisting}[
+    language=python,showstringspaces=false,basicstyle=\ttfamily,
+    numbers=left,numberstyle=\footnotesize,numbersep=5pt,frame=tb,
+    caption={Реализация базового агента}
+]
+# Импорт агентной библиотеки
+import spade
+from spade.bdi import *
+# Импорт библиотеки ВСПТД
+
+# Установление типа агента -- BDI
+agent = BDIAgent
+# Определение адрес СУА
+agent = ADS('1bc29b36f623ba82aaf6724fd3b16718@
+             tps.ifmo.ru')
+agent.setDebugToScreen()
+# Определение убеждений агена, т.е. триплетов онтологии
+# понятий с которыми он работает
+agent.addBelieve(expr('$VALUE=0;'))
+
+# Опеределение функции достижения цели, т.е. перевода
+# триплетов цели в разряд триплетов факта
+g = Goal(expr())
+
+class Serv1(Service):
+     """Первый агентный сервис (абстрактный ресурс)
+     и триплет цели, который он может заполнить
+     """
+
+    def run(self):
+        """Запускает сервис
+        """
+        
+        print 'Service 1 running'
+        self.addBelieve(expr('$VALUE=:1;'))
+
+
+class Serv2(Service):
+    """Второй агентный сервис (абстрактный ресурс)
+     и триплет цели, который он может заполнить
+     """
+
+    def run(self):
+        """Запускает сервис
+        """
+        
+        print 'Service 2 running'
+        self.addBelieve(expr('$VALUE=1;'))
+
+
+# Инициализация сервисов
+s1 = Serv1(P=expr('$TRP=0;'),Q=expr('$TRP=1;'))
+s2 = Serv2(P=expr('$TRP=2;'),Q=expr('$TRP=2;'))
+
+# Определение плана поведения (очередности и полезности)
+p = Plan(P=expr('$VALUE=0;'),Q=expr('$VALUE=2;'))
+
+# Связь агента с определенными выше сервисами
+p.appendService(s1)
+p.appendService(s2)
+
+# Назначение ему плана и целей
+agent.addPlan(p)
+agent.addGoal(g)
+
+# Инициализация агента
+agent.start()
+
+# Переход к основному исполнительному циклу, т.е.
+# ожиданию сообщений
+import time
+try:
+    while True:
+        time.sleep(1)
+except:
+    agent.stop()
+
+sys.exit(0)
+\end{lstlisting}

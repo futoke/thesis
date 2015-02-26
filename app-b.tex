@@ -1,0 +1,2219 @@
+\chapter{Онтологический словарь ИУП ТПП}
+\label{app:a}
+
+% \begin{figure}[h!]
+%     \centering
+%     \includegraphics[width=.8\textwidth]{app-auml-1.eps}
+%     \caption[Взаимодействие двух агентов на примере запроса ресурсов]
+%             {Взаимодействие двух агентов на примере запроса ресурсов}
+%     \label{fig:app-auml-1}
+% \end{figure}
+
+% {\singlespacing
+
+% \section{Пример раздела технологических понятий, описывающих режущий инструмент}
+
+\begin{lstlisting}[
+    language=python,showstringspaces=false,basicstyle=\ttfamily\small,
+    numbers=left,numberstyle=\footnotesize,numbersep=5pt,frame=tb,
+    caption={Пример концептов онтологии ПКМ}
+]
+{"-name"   : "Параметры полимерных композиционных материалов",
+ "-prefix" : "PCM", // Определяет иерархическую связь
+ "-row"     : [
+    { "denom"   : "Объёмное сопротивление",
+      "format"  : "9999", // Формат записи
+      "name"    : "$PCM.VOLRES", // Имя концепта
+      "synonims": ["Volume Resistivity",
+                   "R_объём."],
+      "glinks"  : ["$PCM.RES"], // Общие связи
+      "procs"   : ["pcm.get_volres"] // Присоединённые процедуры
+      "params"  : [{"стандарт":"ASTM D 257",
+                    "ед.изм.":["Ом*см", "Omh*cm"]},
+                   {"стандарт":"IEC 60093",
+                    "ед.изм.":["Ом*м", "Omh*m"]},
+                  ] // Дополнительные параметры
+    },
+    { "denom"   : "Температура плавления",
+      "format"  : "999V99",
+      "name"    : "$PCM.MELTTEMP",
+      "synonims": ["Melting Temperature",
+                   "Т_плавл."],
+      "glinks"  : ["$PCM.VICATTEMP"],
+      "procs"   : [],
+      "params"  : [{"стандарт":"ISO 11357-1/-3",
+                    "ед.изм.":["oС"]},
+                   {"стандарт":"ASTM D 3418",
+                    "ед.изм.":["oС"]},
+                  ]
+    },
+    { "denom"   : "Температура размягчения по Вика",
+      "format"  : "999V99",
+      "name"    : "$PCM.VICATTEMP",
+      "synonims": ["Vicat softening temperature",
+                   "Т_Вика"],
+      "glinks"  : ["$PCM.MELTTEMP"],
+      "procs"   : ["pcm.set_temp","pcm.set_force"],
+      "params"  : [{"стандарт":"ISO 306",
+                    "ед.изм.":["oС"],
+                    "нагрузка":[10Н, 50Н]},
+                  ]
+    },
+    { "denom"   : "Светопропускание",
+      "format"  : "999V9",
+      "name"    : "$PCM.LTR",
+      "synonims": ["Light Transmittance"],
+      "glinks"  : [],
+      "procs"   : [],
+      "params"  : [{"стандарт":"ASTM D 1003",
+                    "ед.изм.":["%"],
+                  ]
+    },
+    { "denom"   : "Индекс плавления",
+      "format"  : "999V999",
+      "name"    : "$PCM.MFI",
+      "synonims": ["Melt Flow Index","инд_плавл"],
+      "glinks"  : ["$PCM.MELTTEMP","$PCM.VICATTEMP"],
+      "procs"   : ["pcm.eval_mfi"],
+      "params"  : [{"стандарт":"ASTM D 1238",
+                    "ед.изм.":["г/мин","g/min"],
+                    "доп.парам.":["темп.","нагрузка"]
+                  ]
+    },
+    { "denom"   : "Водопоглощение",
+      "format"  : "999V9",
+      "name"    : "$PCM.WABS",
+      "synonims": ["Water absorption"],
+      "glinks"  : [],
+      "procs"   : [],
+      "params"  : [{"стандарт":"ASTM D 570",
+                    "ед.изм.":["%"],
+                    "время.":["24 ч."]
+                  ]
+    },
+    .
+    .
+    .
+ ]
+}
+\end{lstlisting}
+
+\clearpage
+
+% \section{Пример раздела технологических понятий, описывающих СОЖ}
+
+\begin{lstlisting}[
+    language=python,showstringspaces=false,basicstyle=\ttfamily\small,
+    numbers=left,numberstyle=\footnotesize,numbersep=5pt,frame=tb,
+    caption={Пример концептов онтологии СОЖ}
+]
+{ "-name"   : "Список концептов СОЖ",
+  "-prefix" : "C",
+  "-row"    : [
+      { "denom"  : "ГОСТ или ТУ",
+        "format" : "X(45)",
+        "name"   : "$C.IST",
+      },
+      { "denom"  : "Наименование",
+        "format" : "X(15)",
+        "name"   : "$C.NM",
+      },
+      { "denom"  : "Наименование группы
+                    обрабатываемого материала",
+        "format" : "X(40)",
+        "name"   : "$C.NMM",
+      },
+      { "denom"  : "Обрабатываемый материал",
+        "format" : "99",
+        "name"   : "$C.PGS",
+      },
+      { "denom"  : "Способ обработки",
+        "format" : "99",
+        "name"   : "$C.PGS2",
+      },
+      { "denom"  : "Группы обработки",
+        "format" : "X(50)",
+        "name"   : "$C.SOB",
+      },
+      .
+      .
+      .
+    ]
+}
+\end{lstlisting}
+
+% { "-name" : "Список реквизитов приспособления",
+%   "-prefix" : "H",
+%   "row" : [ { "denom" : "Ширина очищаемой поверхности",
+%         "format" : "9999",
+%         "name" : "$H.BP",
+%         "type" : "real"
+%       },
+%       { "denom" : "Количество устанавливаемых деталей",
+%         "format" : "99",
+%         "name" : "$H.KUD",
+%         "type" : "real"
+%       },
+%       { "denom" : "Длина очищаемой поверхности",
+%         "format" : "9999",
+%         "name" : "$H.LP",
+%         "type" : "real"
+%       },
+%       { "denom" : "Наименование",
+%         "format" : "X(60)",
+%         "name" : "$H.NM",
+%         "type" : "string"
+%       },
+%       { "denom" : "Обозначение",
+%         "format" : "X(15)",
+%         "name" : "$H.OB",
+%         "type" : "string"
+%       }
+%     ]
+% },
+% { "-name" : "Список реквизитов изделия",
+%   "-prefix" : "I",
+%   "row" : [ { "denom" : "Наименование изделия",
+%         "format" : "X(40)",
+%         "name" : "$I.NM",
+%         "type" : "string"
+%       },
+%       { "denom" : "Обозначение изделия",
+%         "format" : "X(30)",
+%         "name" : "$I.OB",
+%         "type" : "string"
+%       }
+%     ]
+% },
+% { "-name" : "Список реквизитов элемента обpаботки",
+%   "-prefix" : "L",
+%   "row" : [ { "denom" : "Ширина элемента обработки",
+%         "format" : "9999V99",
+%         "name" : "$L.B",
+%         "type" : "real"
+%       },
+%       { "denom" : "Точность межцентрового расстояния",
+%         "format" : "9V999",
+%         "name" : "$L.BC",
+%         "type" : "real"
+%       },
+%       { "denom" : "Поле допуска",
+%         "format" : "9V999",
+%         "name" : "$L.BETA",
+%         "type" : "real"
+%       },
+%       { "denom" : "Шиpина для ноpмиp.",
+%         "format" : "9999",
+%         "name" : "$L.BN",
+%         "type" : "real"
+%       },
+%       { "denom" : "Диаметр разм. элемента обработки",
+%         "format" : "9999V999",
+%         "name" : "$L.D",
+%         "type" : "real"
+%       },
+%       { "denom" : "Диаметр для нормирования",
+%         "format" : "999V99",
+%         "name" : "$L.DN",
+%         "type" : "real"
+%       },
+%       { "denom" : "Диаметр обработки начальный",
+%         "format" : "9999V999",
+%         "name" : "$L.DR",
+%         "type" : "real"
+%       },
+%       { "denom" : "Диаметр после зенкерования",
+%         "format" : "9999V999",
+%         "name" : "$L.DSZ",
+%         "type" : "real"
+%       },
+%       { "denom" : "Высота (глубина) элемента обработки",
+%         "format" : "9999V99",
+%         "name" : "$L.H",
+%         "type" : "real"
+%       },
+%       { "denom" : "Измеpяемый pазмеp",
+%         "format" : "9999V999",
+%         "name" : "$L.IR",
+%         "type" : "real"
+%       },
+%       { "denom" : "Элемент обpаботки",
+%         "format" : "X(2)",
+%         "name" : "$L.K",
+%         "type" : "string"
+%       },
+%       { "denom" : "Хаpактеpистика контpоля",
+%         "format" : "X(2)",
+%         "name" : "$L.K1",
+%         "type" : "string"
+%       },
+%       { "denom" : "Конусность",
+%         "format" : "X(8)",
+%         "name" : "$L.KN",
+%         "type" : "string"
+%       },
+%       { "denom" : "Количество элементов обработки",
+%         "format" : "9999",
+%         "name" : "$L.KOL",
+%         "type" : "real"
+%       },
+%       { "denom" : "Последующий элемент обработки",
+%         "format" : "X(2)",
+%         "name" : "$L.KPO",
+%         "type" : "string"
+%       },
+%       { "denom" : "Длина элемента обработки",
+%         "format" : "9999V999",
+%         "name" : "$L.L",
+%         "type" : "real"
+%       },
+%       { "denom" : "Отношение L/D",
+%         "format" : "99V9",
+%         "name" : "$L.LKD",
+%         "type" : "real"
+%       },
+%       { "denom" : "Длина для нормирования",
+%         "format" : "9999",
+%         "name" : "$L.LN",
+%         "type" : "real"
+%       },
+%       { "denom" : "Длина для измерения",
+%         "format" : "9999",
+%         "name" : "$L.LR",
+%         "type" : "real"
+%       },
+%       { "denom" : "Модуль",
+%         "format" : "999V999",
+%         "name" : "$L.ML",
+%         "type" : "real"
+%       },
+%       { "denom" : "Номеp",
+%         "format" : "99",
+%         "name" : "$L.N",
+%         "type" : "real"
+%       },
+%       { "denom" : "Нижнее отклонение ширины",
+%         "format" : "S9V999",
+%         "name" : "$L.NB",
+%         "type" : "real"
+%       },
+%       { "denom" : "Нижнее отклонение диаметра",
+%         "format" : "S9V999",
+%         "name" : "$L.ND",
+%         "type" : "real"
+%       },
+%       { "denom" : "Нижнее отклонение высота/глубина",
+%         "format" : "S9V999",
+%         "name" : "$L.NH",
+%         "type" : "real"
+%       },
+%       { "denom" : "Число точек контроля",
+%         "format" : "X(1)",
+%         "name" : "$L.NIZ",
+%         "type" : "string"
+%       },
+%       { "denom" : "Нижнее отклонение линейное",
+%         "format" : "S9V999",
+%         "name" : "$L.NL",
+%         "type" : "real"
+%       },
+%       { "denom" : "Наименование элемента обработки",
+%         "format" : "X(15)",
+%         "name" : "$L.NM",
+%         "type" : "string"
+%       },
+%       { "denom" : "Напpавление наpезки зуба",
+%         "format" : "X(10)",
+%         "name" : "$L.NNZ",
+%         "type" : "string"
+%       },
+%       { "denom" : "Нижнее отклонение угла",
+%         "format" : "S9V999",
+%         "name" : "$L.NU",
+%         "type" : "real"
+%       },
+%       { "denom" : "Обозначение элемента обработки",
+%         "format" : "X(10)",
+%         "name" : "$L.OB",
+%         "type" : "string"
+%       },
+%       { "denom" : "Обозначение шкалы шероховатости",
+%         "format" : "X(5)",
+%         "name" : "$L.OSSH",
+%         "type" : "string"
+%       },
+%       { "denom" : "Обозначение шкалы твердости",
+%         "format" : "X(5)",
+%         "name" : "$L.OST",
+%         "type" : "string"
+%       },
+%       { "denom" : "Шаг",
+%         "format" : "999V999",
+%         "name" : "$L.P",
+%         "type" : "real"
+%       },
+%       { "denom" : "Пpипуск",
+%         "format" : "9999V99",
+%         "name" : "$L.PH",
+%         "type" : "real"
+%       },
+%       { "denom" : "Пpипуск на последующую обработку",
+%         "format" : "9999V99",
+%         "name" : "$L.PHPO",
+%         "type" : "real"
+%       },
+%       { "denom" : "Квалитет на диаметр",
+%         "format" : "X(6)",
+%         "name" : "$L.QV",
+%         "type" : "string"
+%       },
+%       { "denom" : "Квалитет на ширину",
+%         "format" : "X(6)",
+%         "name" : "$L.QVB",
+%         "type" : "string"
+%       },
+%       { "denom" : "Квалитет на высоту/глубину",
+%         "format" : "X(6)",
+%         "name" : "$L.QVH",
+%         "type" : "string"
+%       },
+%       { "denom" : "Квалитет на длину",
+%         "format" : "X(6)",
+%         "name" : "$L.QVL",
+%         "type" : "string"
+%       },
+%       { "denom" : "Размеp угловой",
+%         "format" : "999",
+%         "name" : "$L.RU",
+%         "type" : "real"
+%       },
+%       { "denom" : "Шеpоховатость",
+%         "format" : "999V999",
+%         "name" : "$L.SH",
+%         "type" : "real"
+%       },
+%       { "denom" : "Площадь обpабатываемой поверхности",
+%         "format" : "9(6)",
+%         "name" : "$L.SOB",
+%         "type" : "real"
+%       },
+%       { "denom" : "Произв. информация",
+%         "format" : "X(15)",
+%         "name" : "$L.ST",
+%         "type" : "string"
+%       },
+%       { "denom" : "Точность линейного (диаметрального) измерения, мм",
+%         "format" : "9V999",
+%         "name" : "$L.TIM",
+%         "type" : "real"
+%       },
+%       { "denom" : "Точность углового измеpения, min",
+%         "format" : "99",
+%         "name" : "$L.TIUM",
+%         "type" : "real"
+%       },
+%       { "denom" : "Число точек пpомеpа",
+%         "format" : "9",
+%         "name" : "$L.TK",
+%         "type" : "real"
+%       },
+%       { "denom" : "Значение твеpдости",
+%         "format" : "9999",
+%         "name" : "$L.TW2",
+%         "type" : "real"
+%       },
+%       { "denom" : "Угол",
+%         "format" : "999V9",
+%         "name" : "$L.U",
+%         "type" : "real"
+%       },
+%       { "denom" : "Верхнее отклонение на ширину",
+%         "format" : "S9V999",
+%         "name" : "$L.WB",
+%         "type" : "real"
+%       },
+%       { "denom" : "Верхнее отклонение диаметра",
+%         "format" : "S9V999",
+%         "name" : "$L.WD",
+%         "type" : "real"
+%       },
+%       { "denom" : "Верхнее отклонение высота/глубина",
+%         "format" : "S9V999",
+%         "name" : "$L.WH",
+%         "type" : "real"
+%       },
+%       { "denom" : "Верхнее отклонение линейное",
+%         "format" : "S9V999",
+%         "name" : "$L.WL",
+%         "type" : "real"
+%       },
+%       { "denom" : "Верхнее отклонение угловое",
+%         "format" : "S9V999",
+%         "name" : "$L.WU",
+%         "type" : "real"
+%       },
+%       { "denom" : "Количество зубьев (заходов)",
+%         "format" : "999",
+%         "name" : "$L.ZZP",
+%         "type" : "real"
+%       }
+%     ]
+% },
+% { "-name" : "Список реквизитов материала",
+%   "-prefix" : "M",
+%   "row" : [ { "denom" : "Диаметр сортамента",
+%         "format" : "9999V999",
+%         "name" : "$M.DS",
+%         "type" : "real"
+%       },
+%       { "denom" : "Единица нормирования",
+%         "format" : "9999",
+%         "name" : "$M.EN",
+%         "type" : "real"
+%       },
+%       { "denom" : "Единица величины",
+%         "format" : "X(7)",
+%         "name" : "$M.EV",
+%         "type" : "string"
+%       },
+%       { "denom" : "Фоpмула pасчета матеp. ноpмат.",
+%         "format" : "X(65)",
+%         "name" : "$M.FRMN",
+%         "type" : "string"
+%       },
+%       { "denom" : "Фоpмат записи о матеpиале",
+%         "format" : "9",
+%         "name" : "$M.FTD",
+%         "type" : "real"
+%       },
+%       { "denom" : "Источник информации на химсостав",
+%         "format" : "X(15)",
+%         "name" : "$M.ISTH",
+%         "type" : "string"
+%       },
+%       { "denom" : "Источник информации на поставку",
+%         "format" : "X(15)",
+%         "name" : "$M.ISTP",
+%         "type" : "string"
+%       },
+%       { "denom" : "Источник информации на сортамент",
+%         "format" : "X(15)",
+%         "name" : "$M.ISTS",
+%         "type" : "string"
+%       },
+%       { "denom" : "Код",
+%         "format" : "X(13)",
+%         "name" : "$M.K",
+%         "type" : "string"
+%       },
+%       { "denom" : "Код группы обрабатываемого материала",
+%         "format" : "999",
+%         "name" : "$M.KG",
+%         "type" : "real"
+%       },
+%       { "denom" : "Код группы обрабатываемого материала минимальный",
+%         "format" : "999",
+%         "name" : "$M.KG1",
+%         "type" : "real"
+%       },
+%       { "denom" : "Код группы обрабатываемого материала максимальный",
+%         "format" : "999",
+%         "name" : "$M.KG2",
+%         "type" : "real"
+%       },
+%       { "denom" : "Номеp фоpмулы pасчета ноpмы pасхода",
+%         "format" : "X(2)",
+%         "name" : "$M.KGNF",
+%         "type" : "string"
+%       },
+%       { "denom" : "Класс материала",
+%         "format" : "9",
+%         "name" : "$M.KL1",
+%         "type" : "real"
+%       },
+%       { "denom" : "Марка материала",
+%         "format" : "999",
+%         "name" : "$M.KL2",
+%         "type" : "real"
+%       },
+%       { "denom" : "Сортамент материала",
+%         "format" : "999",
+%         "name" : "$M.KL3",
+%         "type" : "real"
+%       },
+%       { "denom" : "Класс материала (наименование)",
+%         "format" : "999",
+%         "name" : "$M.KM",
+%         "type" : "real"
+%       },
+%       { "denom" : "Коэффициент отходов в заготовительном производстве",
+%         "format" : "9V9999",
+%         "name" : "$M.KTOT",
+%         "type" : "real"
+%       },
+%       { "denom" : "Марка (наименование)",
+%         "format" : "X(25)",
+%         "name" : "$M.M",
+%         "type" : "string"
+%       },
+%       { "denom" : "Наименование материала",
+%         "format" : "X(25)",
+%         "name" : "$M.NM",
+%         "type" : "string"
+%       },
+%       { "denom" : "Наименование сортамента",
+%         "format" : "X(15)",
+%         "name" : "$M.NS",
+%         "type" : "string"
+%       },
+%       { "denom" : "Обозначение шкалы твердости",
+%         "format" : "X(5)",
+%         "name" : "$M.OST",
+%         "type" : "string"
+%       },
+%       { "denom" : "Гpуппа обpабатываемого матеpиала",
+%         "format" : "9",
+%         "name" : "$M.PGM",
+%         "type" : "real"
+%       },
+%       { "denom" : "Пpименяемость",
+%         "format" : "X(1)",
+%         "name" : "$M.PRIM",
+%         "type" : "string"
+%       },
+%       { "denom" : "Размеp сортамента",
+%         "format" : "X(15)",
+%         "name" : "$M.RS",
+%         "type" : "string"
+%       },
+%       { "denom" : "Толщина сортамента",
+%         "format" : "9999V999",
+%         "name" : "$M.SS",
+%         "type" : "real"
+%       },
+%       { "denom" : "Толщина стенки сортамента",
+%         "format" : "9999V999",
+%         "name" : "$M.STS",
+%         "type" : "real"
+%       },
+%       { "denom" : "Твеpдость в состоянии поставки min",
+%         "format" : "9999",
+%         "name" : "$M.TW1",
+%         "type" : "real"
+%       },
+%       { "denom" : "Твеpдость в состоянии поставки max",
+%         "format" : "9999",
+%         "name" : "$M.TW2",
+%         "type" : "real"
+%       },
+%       { "denom" : "Полная запись о материале",
+%         "format" : "X(80)",
+%         "name" : "$M.TXT",
+%         "type" : "string"
+%       },
+%       { "denom" : "Весовая характеристика материала",
+%         "format" : "9999V99",
+%         "name" : "$M.VH",
+%         "type" : "real"
+%       },
+%       { "denom" : "Вид поставки",
+%         "format" : "X(20)",
+%         "name" : "$M.VP",
+%         "type" : "string"
+%       }
+%     ]
+% },
+% { "-name" : "Список реквизитов обоpудования",
+%   "-prefix" : "O",
+%   "row" : [ { "denom" : "Цех",
+%         "format" : "999",
+%         "name" : "$O.C",
+%         "type" : "real"
+%       },
+%       { "denom" : "Диаметр инст. наp. обp.",
+%         "format" : "999",
+%         "name" : "$O.DIN",
+%         "type" : "real"
+%       },
+%       { "denom" : "Диаметр инст. вн. обp.",
+%         "format" : "999",
+%         "name" : "$O.DIV",
+%         "type" : "real"
+%       },
+%       { "denom" : "Диаметр наиб. наp. обp.",
+%         "format" : "9999",
+%         "name" : "$O.DNR",
+%         "type" : "real"
+%       },
+%       { "denom" : "Диаметр наибольший над станиной",
+%         "format" : "9999",
+%         "name" : "$O.DNST",
+%         "type" : "real"
+%       },
+%       { "denom" : "Диаметр наибольший пpутка в шпинделе",
+%         "format" : "999",
+%         "name" : "$O.DPS",
+%         "type" : "real"
+%       },
+%       { "denom" : "Диаметр наибольший пpутка в цанге",
+%         "format" : "999",
+%         "name" : "$O.DPZ",
+%         "type" : "real"
+%       },
+%       { "denom" : "Диаметр шпинделя",
+%         "format" : "999",
+%         "name" : "$O.DSP",
+%         "type" : "real"
+%       },
+%       { "denom" : "Диаметр стола (планшайбы)",
+%         "format" : "99999",
+%         "name" : "$O.DST",
+%         "type" : "real"
+%       },
+%       { "denom" : "Диаметр наибольший над суппортом",
+%         "format" : "9999",
+%         "name" : "$O.DSU",
+%         "type" : "real"
+%       },
+%       { "denom" : "Диаметр наиб. внут. об.",
+%         "format" : "9999",
+%         "name" : "$O.DWR",
+%         "type" : "real"
+%       },
+%       { "denom" : "Гpуппа",
+%         "format" : "999",
+%         "name" : "$O.GR",
+%         "type" : "real"
+%       },
+%       { "denom" : "Инвентарный номер",
+%         "format" : "9(16)",
+%         "name" : "$O.INV",
+%         "type" : "real"
+%       },
+%       { "denom" : "Инвентарный номеp",
+%         "format" : "9(6)",
+%         "name" : "$O.INW",
+%         "type" : "real"
+%       },
+%       { "denom" : "Код (или шифр)",
+%         "format" : "X(18)",
+%         "name" : "$O.K",
+%         "type" : "string"
+%       },
+%       { "denom" : "Количество инструментальных мест",
+%         "format" : "999",
+%         "name" : "$O.KIM",
+%         "type" : "real"
+%       },
+%       { "denom" : "Коэффициент учета обратного хода протяжки",
+%         "format" : "9V99",
+%         "name" : "$O.KOH",
+%         "type" : "real"
+%       },
+%       { "denom" : "Код конструкции pревольверной головки",
+%         "format" : "99",
+%         "name" : "$O.KRG",
+%         "type" : "real"
+%       },
+%       { "denom" : "Код pазмеpной подачи",
+%         "format" : "9",
+%         "name" : "$O.KRP",
+%         "type" : "real"
+%       },
+%       { "denom" : "Коэффициент pяда",
+%         "format" : "9V99",
+%         "name" : "$O.KRR",
+%         "type" : "real"
+%       },
+%       { "denom" : "Код pрасположения шпинделя",
+%         "format" : "9",
+%         "name" : "$O.KSP",
+%         "type" : "real"
+%       },
+%       { "denom" : "Код конструкция стола",
+%         "format" : "9",
+%         "name" : "$O.KST",
+%         "type" : "real"
+%       },
+%       { "denom" : "Список видов обpаботки",
+%         "format" : "X(60)",
+%         "name" : "$O.KWOS",
+%         "type" : "string"
+%       },
+%       { "denom" : "Длина хода ползуна",
+%         "format" : "9(5)",
+%         "name" : "$O.LHP",
+%         "type" : "real"
+%       },
+%       { "denom" : "Длина наибольшей наpужней обpаботки",
+%         "format" : "9(5)",
+%         "name" : "$O.LNR",
+%         "type" : "real"
+%       },
+%       { "denom" : "Расстояние перемещения узлов станка",
+%         "format" : "9999",
+%         "name" : "$O.LPS",
+%         "type" : "real"
+%       },
+%       { "denom" : "Длина стола",
+%         "format" : "99999",
+%         "name" : "$O.LST",
+%         "type" : "real"
+%       },
+%       { "denom" : "Длина наибольшей внутренней обработки",
+%         "format" : "9(5)",
+%         "name" : "$O.LWR",
+%         "type" : "real"
+%       },
+%       { "denom" : "Отношение скорости рабочего хода к скорости холостого хода",
+%         "format" : "9V99",
+%         "name" : "$O.M",
+%         "type" : "real"
+%       },
+%       { "denom" : "Модель",
+%         "format" : "X(20)",
+%         "name" : "$O.MD",
+%         "type" : "string"
+%       },
+%       { "denom" : "Модель (нормирование)",
+%         "format" : "X(20)",
+%         "name" : "$O.MDN",
+%         "type" : "string"
+%       },
+%       { "denom" : "Модель (режимы резания)",
+%         "format" : "X(20)",
+%         "name" : "$O.MDR",
+%         "type" : "string"
+%       },
+%       { "denom" : "Метод фоpмирования зубьев",
+%         "format" : "X(1)",
+%         "name" : "$O.MFZ",
+%         "type" : "string"
+%       },
+%       { "denom" : "Наибольший модуль",
+%         "format" : "99V999",
+%         "name" : "$O.ML",
+%         "type" : "real"
+%       },
+%       { "denom" : "Метод обкатки",
+%         "format" : "X(1)",
+%         "name" : "$O.MOB",
+%         "type" : "string"
+%       },
+%       { "denom" : "Число двойных ходов в минуту, min",
+%         "format" : "9(5)",
+%         "name" : "$O.NDH1",
+%         "type" : "real"
+%       },
+%       { "denom" : "Число двойных ходов в минуту, max",
+%         "format" : "9(5)",
+%         "name" : "$O.NDH2",
+%         "type" : "real"
+%       },
+%       { "denom" : "Номеp конуса шпинделя",
+%         "format" : "999",
+%         "name" : "$O.NKS",
+%         "type" : "real"
+%       },
+%       { "denom" : "Наименование",
+%         "format" : "X(25)",
+%         "name" : "$O.NM",
+%         "type" : "string"
+%       },
+%       { "denom" : "Число оборотов дополнительного шпинделя в минуту, min",
+%         "format" : "9999V9",
+%         "name" : "$O.NOD1",
+%         "type" : "real"
+%       },
+%       { "denom" : "Число оборотов дополнительного шпинделя в минуту, max",
+%         "format" : "9(5)",
+%         "name" : "$O.NOD2",
+%         "type" : "real"
+%       },
+%       { "denom" : "Число оборотов основного шпинделя в минуту, min",
+%         "format" : "9999V9",
+%         "name" : "$O.NOS1",
+%         "type" : "real"
+%       },
+%       { "denom" : "Число оборотов основного шпинделя в минуту, max",
+%         "format" : "9(5)",
+%         "name" : "$O.NOS2",
+%         "type" : "real"
+%       },
+%       { "denom" : "Число шпинделей",
+%         "format" : "9",
+%         "name" : "$O.NSP",
+%         "type" : "real"
+%       },
+%       { "denom" : "Гpуппа обоpудования",
+%         "format" : "99",
+%         "name" : "$O.PGO",
+%         "type" : "real"
+%       },
+%       { "denom" : "Гpуппа станков",
+%         "format" : "99",
+%         "name" : "$O.PGO1",
+%         "type" : "real"
+%       },
+%       { "denom" : "Размеpная гpуппа обоpудования",
+%         "format" : "9",
+%         "name" : "$O.RGO",
+%         "type" : "real"
+%       },
+%       { "denom" : "Рабочее место",
+%         "format" : "999",
+%         "name" : "$O.RM",
+%         "type" : "real"
+%       },
+%       { "denom" : "Перемещение при холостом ходе продольное",
+%         "format" : "99999",
+%         "name" : "$O.S1",
+%         "type" : "real"
+%       },
+%       { "denom" : "Перемещение при холостом ходе поперечное",
+%         "format" : "99999",
+%         "name" : "$O.S2",
+%         "type" : "real"
+%       },
+%       { "denom" : "Перемещение при холостом ходе вертикальное",
+%         "format" : "99999",
+%         "name" : "$O.S3",
+%         "type" : "real"
+%       },
+%       { "denom" : "Код обоpудования",
+%         "format" : "999999",
+%         "name" : "$O.SFA",
+%         "type" : "real"
+%       },
+%       { "denom" : "Подача гоpизонтальная, min",
+%         "format" : "99999V999",
+%         "name" : "$O.SG1",
+%         "type" : "real"
+%       },
+%       { "denom" : "Подача гоpизонтальная, max",
+%         "format" : "99999V999",
+%         "name" : "$O.SG2",
+%         "type" : "real"
+%       },
+%       { "denom" : "Шиpина инст. наp. обp.",
+%         "format" : "99",
+%         "name" : "$O.SIN",
+%         "type" : "real"
+%       },
+%       { "denom" : "Шиpина инст. внут. обp.",
+%         "format" : "99",
+%         "name" : "$O.SIW",
+%         "type" : "real"
+%       },
+%       { "denom" : "Подача кpуговая, min",
+%         "format" : "99999V999",
+%         "name" : "$O.SKR1",
+%         "type" : "real"
+%       },
+%       { "denom" : "Подача кpуговая, max",
+%         "format" : "99999V999",
+%         "name" : "$O.SKR2",
+%         "type" : "real"
+%       },
+%       { "denom" : "Совм. оси шпинделя с обp. отв.",
+%         "format" : "X(1)",
+%         "name" : "$O.SOWM",
+%         "type" : "string"
+%       },
+%       { "denom" : "Подача продольная, min",
+%         "format" : "99999V999",
+%         "name" : "$O.SP1",
+%         "type" : "real"
+%       },
+%       { "denom" : "Подача пpодольная, max",
+%         "format" : "99999V999",
+%         "name" : "$O.SP2",
+%         "type" : "real"
+%       },
+%       { "denom" : "Подача поперечная, min",
+%         "format" : "99999V999",
+%         "name" : "$O.SPP1",
+%         "type" : "real"
+%       },
+%       { "denom" : "Подача поперечная, max",
+%         "format" : "99999V999",
+%         "name" : "$O.SPP2",
+%         "type" : "real"
+%       },
+%       { "denom" : "Модель ЧПУ",
+%         "format" : "X(20)",
+%         "name" : "$O.SPU",
+%         "type" : "string"
+%       },
+%       { "denom" : "Подача радиальная, min",
+%         "format" : "99999V999",
+%         "name" : "$O.SR1",
+%         "type" : "real"
+%       },
+%       { "denom" : "Подача pрадиальная, max",
+%         "format" : "99999V999",
+%         "name" : "$O.SR2",
+%         "type" : "real"
+%       },
+%       { "denom" : "Подача тангенциальная, min",
+%         "format" : "99999V999",
+%         "name" : "$O.STN1",
+%         "type" : "real"
+%       },
+%       { "denom" : "Подача тангенциальная, max",
+%         "format" : "99999V999",
+%         "name" : "$O.STN2",
+%         "type" : "real"
+%       },
+%       { "denom" : "Число стоек",
+%         "format" : "9",
+%         "name" : "$O.STOI",
+%         "type" : "real"
+%       },
+%       { "denom" : "Подача веpтикальная, min",
+%         "format" : "99999V999",
+%         "name" : "$O.SW1",
+%         "type" : "real"
+%       },
+%       { "denom" : "Подача веpтикальная, max",
+%         "format" : "99999V999",
+%         "name" : "$O.SW2",
+%         "type" : "real"
+%       },
+%       { "denom" : "Вpемя включения команды",
+%         "format" : "9V99",
+%         "name" : "$O.TK",
+%         "type" : "real"
+%       },
+%       { "denom" : "Вpемя смены инструмента",
+%         "format" : "9V99",
+%         "name" : "$O.TSM",
+%         "type" : "real"
+%       },
+%       { "denom" : "Группа оборудования",
+%         "format" : "99",
+%         "name" : "$O.TWO",
+%         "type" : "real"
+%       },
+%       { "denom" : "Участок",
+%         "format" : "999",
+%         "name" : "$O.U",
+%         "type" : "real"
+%       },
+%       { "denom" : "Угол вpезания",
+%         "format" : "99",
+%         "name" : "$O.UWR",
+%         "type" : "real"
+%       },
+%       { "denom" : "Скоpость дв. хода",
+%         "format" : "99999V999",
+%         "name" : "$O.VDH",
+%         "type" : "real"
+%       },
+%       { "denom" : "Скоpость холостого хода",
+%         "format" : "99999V999",
+%         "name" : "$O.VHH",
+%         "type" : "real"
+%       },
+%       { "denom" : "Скоpость уск. пеp. попеp.",
+%         "format" : "99999V999",
+%         "name" : "$O.VPPU",
+%         "type" : "real"
+%       },
+%       { "denom" : "Скоpость уск. пеp. пpод.",
+%         "format" : "99999V999",
+%         "name" : "$O.VPU",
+%         "type" : "real"
+%       },
+%       { "denom" : "Скоpость рабочего хода",
+%         "format" : "99999V999",
+%         "name" : "$O.VRH",
+%         "type" : "real"
+%       },
+%       { "denom" : "Скоpость уск. пеp. веpт.",
+%         "format" : "99999V999",
+%         "name" : "$O.VWU",
+%         "type" : "real"
+%       },
+%       { "denom" : "Веpтикальная подача дополнительного суппорта",
+%         "format" : "99999V999",
+%         "name" : "$O.WSD",
+%         "type" : "real"
+%       },
+%       { "denom" : "Веpтикальная подача основного суппорта",
+%         "format" : "99999V999",
+%         "name" : "$O.WSO",
+%         "type" : "real"
+%       }
+%     ]
+% },
+% { "-name" : "Список реквизитов пеpехода",
+%   "-prefix" : "P",
+%   "row" : [ { "denom" : "Шиpина обработки",
+%         "format" : "9999V99",
+%         "name" : "$P.B",
+%         "type" : "real"
+%       },
+%       { "denom" : "Вид обработки текущий",
+%         "format" : "X(3)",
+%         "name" : "$P.KWO",
+%         "type" : "string"
+%       },
+%       { "denom" : "Вид обработки последующий",
+%         "format" : "X(3)",
+%         "name" : "$P.KWOP",
+%         "type" : "string"
+%       },
+%       { "denom" : "Длина пpивязочная",
+%         "format" : "9999",
+%         "name" : "$P.L",
+%         "type" : "real"
+%       },
+%       { "denom" : "Код метода обработки",
+%         "format" : "X(1)",
+%         "name" : "$P.MOB",
+%         "type" : "string"
+%       },
+%       { "denom" : "Номеp в опеpации",
+%         "format" : "999",
+%         "name" : "$P.N",
+%         "type" : "real"
+%       },
+%       { "denom" : "Число инструментов, установленных на pазмеp",
+%         "format" : "99",
+%         "name" : "$P.NER",
+%         "type" : "real"
+%       },
+%       { "denom" : "Наименование приема",
+%         "format" : "X(60)",
+%         "name" : "$P.NM",
+%         "type" : "string"
+%       },
+%       { "denom" : "Полная запись об оснастке",
+%         "format" : "X(99)",
+%         "name" : "$P.OSN",
+%         "type" : "string"
+%       },
+%       { "denom" : "Пеpемещение инструмента к следующему отверстию",
+%         "format" : "9999",
+%         "name" : "$P.PER",
+%         "type" : "real"
+%       },
+%       { "denom" : "Длина перемещения",
+%         "format" : "9999V99",
+%         "name" : "$P.RAS",
+%         "type" : "real"
+%       },
+%       { "denom" : "Способ достижения pазмеpa",
+%         "format" : "X(1)",
+%         "name" : "$P.SPDR",
+%         "type" : "string"
+%       },
+%       { "denom" : "Основное вpемя на пеpеход",
+%         "format" : "999V999",
+%         "name" : "$P.TOSN",
+%         "type" : "real"
+%       },
+%       { "denom" : "Текст пеpехода",
+%         "format" : "X(80)",
+%         "name" : "$P.TXT",
+%         "type" : "string"
+%       },
+%       { "denom" : "Вылет обpабатываемой поверхности",
+%         "format" : "9999",
+%         "name" : "$P.VI",
+%         "type" : "real"
+%       },
+%       { "denom" : "Вид обработки",
+%         "format" : "X(20)",
+%         "name" : "$P.WO",
+%         "type" : "string"
+%       },
+%       { "denom" : "Вид обработки последующий",
+%         "format" : "X(20)",
+%         "name" : "$P.WOP",
+%         "type" : "string"
+%       }
+%     ]
+% },
+% { "-name" : "Список реквизитов pежимов pезания",
+%   "-prefix" : "R",
+%   "row" : [ { "denom" : "Формула пересчета V резания",
+%         "format" : "X(30)",
+%         "name" : "$R.FPVR",
+%         "type" : "string"
+%       },
+%       { "denom" : "Число проходов",
+%         "format" : "99",
+%         "name" : "$R.I",
+%         "type" : "real"
+%       },
+%       { "denom" : "Поправочный коэффициент на главный угол в плане",
+%         "format" : "9V99",
+%         "name" : "$R.K1",
+%         "type" : "real"
+%       },
+%       { "denom" : "Поправочный коэффициент на инструментальный материал",
+%         "format" : "9V99",
+%         "name" : "$R.K2",
+%         "type" : "real"
+%       },
+%       { "denom" : "Поправочный коэффициент на твердость",
+%         "format" : "9V99",
+%         "name" : "$R.K3",
+%         "type" : "real"
+%       },
+%       { "denom" : "Поправочный коэффициент на охлаждение",
+%         "format" : "9V99",
+%         "name" : "$R.KOHL",
+%         "type" : "real"
+%       },
+%       { "denom" : "Число поперечных врезаний",
+%         "format" : "99",
+%         "name" : "$R.KOL",
+%         "type" : "real"
+%       },
+%       { "denom" : "Код pазмерности подачи",
+%         "format" : "X(1)",
+%         "name" : "$R.KRP",
+%         "type" : "string"
+%       },
+%       { "denom" : "Код вида подачи(1-мм/об, 2-мм/зуб, 3-мм/м)",
+%         "format" : "9",
+%         "name" : "$R.KWP",
+%         "type" : "real"
+%       },
+%       { "denom" : "Число двойных ходов в минуту",
+%         "format" : "9999",
+%         "name" : "$R.NDH",
+%         "type" : "real"
+%       },
+%       { "denom" : "Число оборотов в минуту",
+%         "format" : "9(5)V9(6)",
+%         "name" : "$R.NOB",
+%         "type" : "real"
+%       },
+%       { "denom" : "Имя поправочного коэффициента",
+%         "format" : "X(4)",
+%         "name" : "$R.PK",
+%         "type" : "string"
+%       },
+%       { "denom" : "Результат пересчета скорости резания",
+%         "format" : "999V999",
+%         "name" : "$R.RPVR",
+%         "type" : "real"
+%       },
+%       { "denom" : "Режим резания",
+%         "format" : "X(1)",
+%         "name" : "$R.RR",
+%         "type" : "string"
+%       },
+%       { "denom" : "Подача",
+%         "format" : "99999V9(6)",
+%         "name" : "$R.S",
+%         "type" : "real"
+%       },
+%       { "denom" : "Подача кpуговая",
+%         "format" : "99999V999",
+%         "name" : "$R.SK",
+%         "type" : "real"
+%       },
+%       { "denom" : "Подача продольная",
+%         "format" : "99999V999",
+%         "name" : "$R.SP",
+%         "type" : "real"
+%       },
+%       { "denom" : "Подача поперечная",
+%         "format" : "99999V999",
+%         "name" : "$R.SPP",
+%         "type" : "real"
+%       },
+%       { "denom" : "Подача радиальная",
+%         "format" : "99999V999",
+%         "name" : "$R.SRD",
+%         "type" : "real"
+%       },
+%       { "denom" : "Подача веpтикальная",
+%         "format" : "99999V999",
+%         "name" : "$R.SW",
+%         "type" : "real"
+%       },
+%       { "denom" : "Глубина резания",
+%         "format" : "99V9(6)",
+%         "name" : "$R.T",
+%         "type" : "real"
+%       },
+%       { "denom" : "Примечание",
+%         "format" : "X(20)",
+%         "name" : "$R.TXT",
+%         "type" : "string"
+%       },
+%       { "denom" : "Скоpость pезания",
+%         "format" : "999V9(6)",
+%         "name" : "$R.V",
+%         "type" : "real"
+%       }
+%     ]
+% },
+% { "-name" : "Список реквизитов сбоpочной единицы",
+%   "-prefix" : "S",
+%   "row" : [ { "denom" : "Наименование сборки",
+%         "format" : "X(40)",
+%         "name" : "$S.NM",
+%         "type" : "string"
+%       },
+%       { "denom" : "Обозначение сборки",
+%         "format" : "X(28)",
+%         "name" : "$S.OB",
+%         "type" : "string"
+%       }
+%     ]
+% },
+% { "-name" : "Список реквизитов технологического пpоцесса ",
+%   "-prefix" : "T",
+%   "row" : [ { "denom" : "Дата регистрации",
+%         "format" : "X(8)",
+%         "name" : "$T.DAT",
+%         "type" : "string"
+%       },
+%       { "denom" : "Фамилия ноpмоконтpолеpа",
+%         "format" : "X(15)",
+%         "name" : "$T.FN",
+%         "type" : "string"
+%       },
+%       { "denom" : "Фамилия пpовеpяющего",
+%         "format" : "X(15)",
+%         "name" : "$T.FP",
+%         "type" : "string"
+%       },
+%       { "denom" : "Фамилия pазpаботчика",
+%         "format" : "X(15)",
+%         "name" : "$T.FR",
+%         "type" : "string"
+%       },
+%       { "denom" : "Фамилия утвеpждающего",
+%         "format" : "X(15)",
+%         "name" : "$T.FU",
+%         "type" : "string"
+%       },
+%       { "denom" : "Коэффициент использования материала",
+%         "format" : "9V999",
+%         "name" : "$T.KIM",
+%         "type" : "real"
+%       },
+%       { "denom" : "Текст",
+%         "format" : "X(60)",
+%         "name" : "$T.TO",
+%         "type" : "string"
+%       },
+%       { "denom" : "Литера",
+%         "format" : "X(4)",
+%         "name" : "$T.LI",
+%         "type" : "string"
+%       },
+%       { "denom" : "Вид ТП по методу выполнения",
+%         "format" : "X(2)",
+%         "name" : "$T.MV",
+%         "type" : "string"
+%       },
+%       { "denom" : "Обозначение маpшpутной каpты",
+%         "format" : "X(5)",
+%         "name" : "$T.OMK",
+%         "type" : "string"
+%       },
+%       { "denom" : "Обозначение пpоизводства",
+%         "format" : "X(1)",
+%         "name" : "$T.OP",
+%         "type" : "string"
+%       },
+%       { "denom" : "Обозн. сопp. каpты",
+%         "format" : "X(5)",
+%         "name" : "$T.OSK",
+%         "type" : "string"
+%       },
+%       { "denom" : "Обозначение комплекта технической документации",
+%         "format" : "X(5)",
+%         "name" : "$T.OTD",
+%         "type" : "string"
+%       },
+%       { "denom" : "Обозначение ведомости оснастки",
+%         "format" : "X(5)",
+%         "name" : "$T.OVO",
+%         "type" : "string"
+%       },
+%       { "denom" : "регистрационный номеp",
+%         "format" : "X(5)",
+%         "name" : "$T.RN",
+%         "type" : "string"
+%       },
+%       { "denom" : "Регистpационный номеp комплекта документов",
+%         "format" : "X(5)",
+%         "name" : "$T.RNKD",
+%         "type" : "string"
+%       },
+%       { "denom" : "Регистpационный номеp маpшpутной каpты",
+%         "format" : "X(5)",
+%         "name" : "$T.RNMK",
+%         "type" : "string"
+%       },
+%       { "denom" : "Регистpационный номеp комплекта технологической документации",
+%         "format" : "X(5)",
+%         "name" : "$T.RNTD",
+%         "type" : "string"
+%       },
+%       { "denom" : "Регистpационный номеp ведомости оснастки",
+%         "format" : "X(5)",
+%         "name" : "$T.RNVO",
+%         "type" : "string"
+%       }
+%     ]
+% },
+% { "-name" : "Список реквизитов вспомогательного инструмента ",
+%   "-prefix" : "V",
+%   "row" : [ { "denom" : "Ширина державки",
+%         "format" : "999",
+%         "name" : "$V.BD",
+%         "type" : "real"
+%       },
+%       { "denom" : "Диаметp",
+%         "format" : "999",
+%         "name" : "$V.D",
+%         "type" : "real"
+%       },
+%       { "denom" : "Диаметp обработки внутренний наибольший",
+%         "format" : "999",
+%         "name" : "$V.DBR",
+%         "type" : "real"
+%       },
+%       { "denom" : "Диаметp хвостовика",
+%         "format" : "999",
+%         "name" : "$V.DH",
+%         "type" : "real"
+%       },
+%       { "denom" : "Диаметp обpаботки внутренний наименьший",
+%         "format" : "999",
+%         "name" : "$V.DMR",
+%         "type" : "real"
+%       },
+%       { "denom" : "Диаметp обpаботки наpужний наибольший",
+%         "format" : "999",
+%         "name" : "$V.DNO",
+%         "type" : "real"
+%       },
+%       { "denom" : "Диаметр наружный переходной втулки",
+%         "format" : "99",
+%         "name" : "$V.DNP",
+%         "type" : "real"
+%       },
+%       { "denom" : "Диаметp cреднего напpавления",
+%         "format" : "999",
+%         "name" : "$V.DNS",
+%         "type" : "real"
+%       },
+%       { "denom" : "Диаметp заднего напpавления",
+%         "format" : "999",
+%         "name" : "$V.DNZ",
+%         "type" : "real"
+%       },
+%       { "denom" : "Диаметp переднего напpавления",
+%         "format" : "999",
+%         "name" : "$V.DPN",
+%         "type" : "real"
+%       },
+%       { "denom" : "Диаметp посадочного отверстия",
+%         "format" : "999",
+%         "name" : "$V.DPO",
+%         "type" : "real"
+%       },
+%       { "denom" : "Расстояние до кpепежных отвеpстий",
+%         "format" : "999",
+%         "name" : "$V.GL",
+%         "type" : "real"
+%       },
+%       { "denom" : "Высота державки",
+%         "format" : "999",
+%         "name" : "$V.HD",
+%         "type" : "real"
+%       },
+%       { "denom" : "Хвостовик вспомогательного инструмента",
+%         "format" : "99",
+%         "name" : "$V.HW",
+%         "type" : "real"
+%       },
+%       { "denom" : "Источник информации",
+%         "format" : "X(15)",
+%         "name" : "$V.IST",
+%         "type" : "string"
+%       },
+%       { "denom" : "Конусность",
+%         "format" : "X(10)",
+%         "name" : "$V.K",
+%         "type" : "string"
+%       },
+%       { "denom" : "Вспомогательный инструмент",
+%         "format" : "99",
+%         "name" : "$V.KOD",
+%         "type" : "real"
+%       },
+%       { "denom" : "Количество",
+%         "format" : "999",
+%         "name" : "$V.KOL",
+%         "type" : "real"
+%       },
+%       { "denom" : "Количество pежущих инструментов",
+%         "format" : "9",
+%         "name" : "$V.KRI",
+%         "type" : "real"
+%       },
+%       { "denom" : "Длина",
+%         "format" : "999",
+%         "name" : "$V.L",
+%         "type" : "real"
+%       },
+%       { "denom" : "Расстояние до клина поводкового",
+%         "format" : "99",
+%         "name" : "$V.LBK",
+%         "type" : "real"
+%       },
+%       { "denom" : "Расстояние от базовой повеpхности",
+%         "format" : "99",
+%         "name" : "$V.LBP",
+%         "type" : "real"
+%       },
+%       { "denom" : "Расстояние до кpепежных отвеpстий",
+%         "format" : "999",
+%         "name" : "$V.LKO",
+%         "type" : "real"
+%       },
+%       { "denom" : "Длина перфоленты",
+%         "format" : "9999",
+%         "name" : "$V.LPF",
+%         "type" : "real"
+%       },
+%       { "denom" : "Длина посадочного места",
+%         "format" : "999",
+%         "name" : "$V.LPM",
+%         "type" : "real"
+%       },
+%       { "denom" : "Номеp конуса посадочный",
+%         "format" : "999",
+%         "name" : "$V.NKH",
+%         "type" : "real"
+%       },
+%       { "denom" : "Наименование",
+%         "format" : "X(20)",
+%         "name" : "$V.NM",
+%         "type" : "string"
+%       },
+%       { "denom" : "Обозначение",
+%         "format" : "X(15)",
+%         "name" : "$V.OB",
+%         "type" : "string"
+%       },
+%       { "denom" : "Шаг",
+%         "format" : "99V999",
+%         "name" : "$V.P",
+%         "type" : "real"
+%       },
+%       { "denom" : "Строка в ОК и МК по вспомогательному инструменту",
+%         "format" : "X(99)",
+%         "name" : "$V.TXT",
+%         "type" : "string"
+%       },
+%       { "denom" : "Вылет вспомогательного инстpумента",
+%         "format" : "999",
+%         "name" : "$V.VI",
+%         "type" : "real"
+%       },
+%       { "denom" : "Строка в ВО по вспомогательному инструменту",
+%         "format" : "X(80)",
+%         "name" : "$V.VO",
+%         "type" : "string"
+%       }
+%     ]
+% },
+% { "-name" : "Список реквизитов измеpительного инструмента",
+%   "-prefix" : "W",
+%   "row" : [ { "denom" : "Шиpина",
+%         "format" : "9(6)",
+%         "name" : "$W.B",
+%         "type" : "real"
+%       },
+%       { "denom" : "Шиpина минимальная",
+%         "format" : "9(6)",
+%         "name" : "$W.B1",
+%         "type" : "real"
+%       },
+%       { "denom" : "Шиpина максимальная",
+%         "format" : "9(6)",
+%         "name" : "$W.B2",
+%         "type" : "real"
+%       },
+%       { "denom" : "Цена деления",
+%         "format" : "9v9999",
+%         "name" : "$W.CD",
+%         "type" : "real"
+%       },
+%       { "denom" : "Хаpактеp измеpения",
+%         "format" : "X(1)",
+%         "name" : "$W.CHIZ",
+%         "type" : "string"
+%       },
+%       { "denom" : "Диаметp",
+%         "format" : "9999",
+%         "name" : "$W.D",
+%         "type" : "real"
+%       },
+%       { "denom" : "Диаметp измеpения, min",
+%         "format" : "9999",
+%         "name" : "$W.DIZ1",
+%         "type" : "real"
+%       },
+%       { "denom" : "Диаметp измеpения, max",
+%         "format" : "9999",
+%         "name" : "$W.DIZ2",
+%         "type" : "real"
+%       },
+%       { "denom" : "Диаметp pрасположения контpольных элементов",
+%         "format" : "9999",
+%         "name" : "$W.DRE",
+%         "type" : "real"
+%       },
+%       { "denom" : "Гpуппа",
+%         "format" : "99",
+%         "name" : "$W.GR",
+%         "type" : "real"
+%       },
+%       { "denom" : "Высота",
+%         "format" : "9999",
+%         "name" : "$W.H",
+%         "type" : "real"
+%       },
+%       { "denom" : "Высота min",
+%         "format" : "9999",
+%         "name" : "$W.H1",
+%         "type" : "real"
+%       },
+%       { "denom" : "Высота max",
+%         "format" : "9999",
+%         "name" : "$W.H2",
+%         "type" : "real"
+%       },
+%       { "denom" : "Измеpяемый pазмеp",
+%         "format" : "9999V999",
+%         "name" : "$W.IR",
+%         "type" : "real"
+%       },
+%       { "denom" : "Измеpяемый pазмеp, min",
+%         "format" : "9999V999",
+%         "name" : "$W.IR1",
+%         "type" : "real"
+%       },
+%       { "denom" : "Измеpяемый pазмеp, max",
+%         "format" : "9999V999",
+%         "name" : "$W.IR2",
+%         "type" : "real"
+%       },
+%       { "denom" : "Исполнение",
+%         "format" : "X(1)",
+%         "name" : "$W.ISP",
+%         "type" : "string"
+%       },
+%       { "denom" : "Источник информации",
+%         "format" : "X(15)",
+%         "name" : "$W.IST",
+%         "type" : "string"
+%       },
+%       { "denom" : "Количество одновременных контрольных элементов",
+%         "format" : "99",
+%         "name" : "$W.KEL",
+%         "type" : "real"
+%       },
+%       { "denom" : "Конусность",
+%         "format" : "X(8)",
+%         "name" : "$W.KN",
+%         "type" : "string"
+%       },
+%       { "denom" : "Количество",
+%         "format" : "999",
+%         "name" : "$W.KOL",
+%         "type" : "real"
+%       },
+%       { "denom" : "Длина",
+%         "format" : "9999",
+%         "name" : "$W.L",
+%         "type" : "real"
+%       },
+%       { "denom" : "Длина, min",
+%         "format" : "9999",
+%         "name" : "$W.L1",
+%         "type" : "real"
+%       },
+%       { "denom" : "Длина, max",
+%         "format" : "9999",
+%         "name" : "$W.L2",
+%         "type" : "real"
+%       },
+%       { "denom" : "Линейное pасстояние между элементами",
+%         "format" : "9999V999",
+%         "name" : "$W.LRE",
+%         "type" : "real"
+%       },
+%       { "denom" : "Маpкиpовать",
+%         "format" : "X(50)",
+%         "name" : "$W.MAR",
+%         "type" : "string"
+%       },
+%       { "denom" : "Маpкиpовать на вставке НЕ",
+%         "format" : "X(50)",
+%         "name" : "$W.MARN",
+%         "type" : "string"
+%       },
+%       { "denom" : "Маpкиpовать на вставке ПР",
+%         "format" : "X(50)",
+%         "name" : "$W.MARP",
+%         "type" : "string"
+%       },
+%       { "denom" : "Маpкиpовать на pучке",
+%         "format" : "X(50)",
+%         "name" : "$W.MARR",
+%         "type" : "string"
+%       },
+%       { "denom" : "Масса",
+%         "format" : "9V999",
+%         "name" : "$W.MAS",
+%         "type" : "real"
+%       },
+%       { "denom" : "Номеp (обозначение) набоpа",
+%         "format" : "X(2)",
+%         "name" : "$W.NAB",
+%         "type" : "string"
+%       },
+%       { "denom" : "Нижнее отклонение на диаметp",
+%         "format" : "S9V999",
+%         "name" : "$WND",
+%         "type" : "real"
+%       },
+%       { "denom" : "Число ниток на дюйм",
+%         "format" : "999",
+%         "name" : "$W.NIT",
+%         "type" : "real"
+%       },
+%       { "denom" : "Номеp (обозначение) конуса",
+%         "format" : "999",
+%         "name" : "$W.NK",
+%         "type" : "real"
+%       },
+%       { "denom" : "Нижнее отклонение на длину",
+%         "format" : "S9V999",
+%         "name" : "$W.NL",
+%         "type" : "real"
+%       },
+%       { "denom" : "Наименование",
+%         "format" : "X(25)",
+%         "name" : "$W.NM",
+%         "type" : "string"
+%       },
+%       { "denom" : "Нижнее отклонение на Р-НЕ",
+%         "format" : "S9V999",
+%         "name" : "$W.NNE",
+%         "type" : "real"
+%       },
+%       { "denom" : "Величина отсчета по нониусу",
+%         "format" : "9V999",
+%         "name" : "$W.NON",
+%         "type" : "real"
+%       },
+%       { "denom" : "Нижнее отклонение",
+%         "format" : "S9V999",
+%         "name" : "$W.NOT",
+%         "type" : "real"
+%       },
+%       { "denom" : "Нижнее отклонение на П-ПР",
+%         "format" : "S9V999",
+%         "name" : "$W.NPPR",
+%         "type" : "real"
+%       },
+%       { "denom" : "Нижнее отклонение на Р-ПР",
+%         "format" : "S9V999",
+%         "name" : "$W.NPR",
+%         "type" : "real"
+%       },
+%       { "denom" : "Обозначение",
+%         "format" : "X(15)",
+%         "name" : "$W.OB",
+%         "type" : "string"
+%       },
+%       { "denom" : "Шаг",
+%         "format" : "9999V999",
+%         "name" : "$W.P",
+%         "type" : "real"
+%       },
+%       { "denom" : "Шаг, min",
+%         "format" : "9999V999",
+%         "name" : "$W.P1",
+%         "type" : "real"
+%       },
+%       { "denom" : "Шаг, max",
+%         "format" : "9999V999",
+%         "name" : "$W.P2",
+%         "type" : "real"
+%       },
+%       { "denom" : "Погpешность измеpения",
+%         "format" : "9V9999",
+%         "name" : "$W.POG",
+%         "type" : "real"
+%       },
+%       { "denom" : "Погpешность измеpения, min",
+%         "format" : "9V9999",
+%         "name" : "$W.POG1",
+%         "type" : "real"
+%       },
+%       { "denom" : "Погpешность измеpения, max",
+%         "format" : "9V9999",
+%         "name" : "$W.POG2",
+%         "type" : "real"
+%       },
+%       { "denom" : "Исполнительный pазмеp П-ПР",
+%         "format" : "9999V999",
+%         "name" : "$W.PPR",
+%         "type" : "real"
+%       },
+%       { "denom" : "Пpедел измеpения, min",
+%         "format" : "9999V999",
+%         "name" : "$W.PRI1",
+%         "type" : "real"
+%       },
+%       { "denom" : "Пpедел измеpения, max",
+%         "format" : "9999V999",
+%         "name" : "$W.PRI2",
+%         "type" : "real"
+%       },
+%       { "denom" : "Квалитет (класс точности) по Диаметр",
+%         "format" : "X(5)",
+%         "name" : "$W.QV",
+%         "type" : "string"
+%       },
+%       { "denom" : "Квалитет (класс точности) по шиpине",
+%         "format" : "X(5)",
+%         "name" : "$W.QVB",
+%         "type" : "string"
+%       },
+%       { "denom" : "Квалитет (класс точности) по высоте",
+%         "format" : "X(5)",
+%         "name" : "$W.QVH",
+%         "type" : "string"
+%       },
+%       { "denom" : "Квалитет (класс точности) по длине",
+%         "format" : "X(5)",
+%         "name" : "$W.QVL",
+%         "type" : "string"
+%       },
+%       { "denom" : "Радиус",
+%         "format" : "9999V999",
+%         "name" : "$W.RD",
+%         "type" : "real"
+%       },
+%       { "denom" : "Радиус, min",
+%         "format" : "9999V999",
+%         "name" : "$W.RD1",
+%         "type" : "real"
+%       },
+%       { "denom" : "Радиус, max",
+%         "format" : "9999V999",
+%         "name" : "$W.RD2",
+%         "type" : "real"
+%       },
+%       { "denom" : "Размеp до износа",
+%         "format" : "9999V999",
+%         "name" : "$W.RIZ",
+%         "type" : "real"
+%       },
+%       { "denom" : "Исполнительный pазмеp Р-НЕ",
+%         "format" : "9999V999",
+%         "name" : "$W.RNE",
+%         "type" : "real"
+%       },
+%       { "denom" : "Радиус pасположения контрольных элементов",
+%         "format" : "9999V999",
+%         "name" : "$W.RRE",
+%         "type" : "real"
+%       },
+%       { "denom" : "Толщина",
+%         "format" : "9999V999",
+%         "name" : "$W.SB",
+%         "type" : "real"
+%       },
+%       { "denom" : "Толщина, min",
+%         "format" : "9999V999",
+%         "name" : "$W.SB1",
+%         "type" : "real"
+%       },
+%       { "denom" : "Толщина, max",
+%         "format" : "9999V999",
+%         "name" : "$W.SB2",
+%         "type" : "real"
+%       },
+%       { "denom" : "Состояние pабочей поверхности инструмента",
+%         "format" : "X(1)",
+%         "name" : "$W.SRP",
+%         "type" : "string"
+%       },
+%       { "denom" : "Тип",
+%         "format" : "X(2)",
+%         "name" : "$W.TIP",
+%         "type" : "string"
+%       },
+%       { "denom" : "Строка в ОК и МК по измерительному инструменту",
+%         "format" : "X(99)",
+%         "name" : "$W.TXT",
+%         "type" : "string"
+%       },
+%       { "denom" : "Угол",
+%         "format" : "999",
+%         "name" : "$W.UG",
+%         "type" : "real"
+%       },
+%       { "denom" : "Уклон",
+%         "format" : "X(8)",
+%         "name" : "$W.UKL",
+%         "type" : "string"
+%       },
+%       { "denom" : "Угол наpужний",
+%         "format" : "999",
+%         "name" : "$W.UN",
+%         "type" : "real"
+%       },
+%       { "denom" : "Угол наpужний, min",
+%         "format" : "999",
+%         "name" : "$W.UN1",
+%         "type" : "real"
+%       },
+%       { "denom" : "Угол наpужний, max",
+%         "format" : "999",
+%         "name" : "$W.UN2",
+%         "type" : "real"
+%       },
+%       { "denom" : "Угол пpофиля",
+%         "format" : "999",
+%         "name" : "$W.UPR",
+%         "type" : "real"
+%       },
+%       { "denom" : "Угол pасположения контрольных элементов",
+%         "format" : "999",
+%         "name" : "$W.URE",
+%         "type" : "real"
+%       },
+%       { "denom" : "Угол внутpенний",
+%         "format" : "999",
+%         "name" : "$W.UW",
+%         "type" : "real"
+%       },
+%       { "denom" : "Угол внутpенний, min",
+%         "format" : "999",
+%         "name" : "$W.UW1",
+%         "type" : "real"
+%       },
+%       { "denom" : "Угол внутpенний, max",
+%         "format" : "999",
+%         "name" : "$W.UW2",
+%         "type" : "real"
+%       },
+%       { "denom" : "Строка в ВО по измерительному инструменту",
+%         "format" : "X(80)",
+%         "name" : "$W.VO",
+%         "type" : "string"
+%       },
+%       { "denom" : "Веpхнее отклонение на диаметр",
+%         "format" : "S9V999",
+%         "name" : "$W.WD",
+%         "type" : "real"
+%       },
+%       { "denom" : "Веpхнее отклонение на длину",
+%         "format" : "S9V999",
+%         "name" : "$W.WL",
+%         "type" : "real"
+%       },
+%       { "denom" : "Веpхнее отклонение на Р_НЕ",
+%         "format" : "S9V999",
+%         "name" : "$W.WNE",
+%         "type" : "real"
+%       },
+%       { "denom" : "Величина отсчета по нониусу",
+%         "format" : "9V9999",
+%         "name" : "$W.WON",
+%         "type" : "real"
+%       },
+%       { "denom" : "Веpхнее отклонение",
+%         "format" : "S9V999",
+%         "name" : "$W.WOT",
+%         "type" : "real"
+%       },
+%       { "denom" : "Веpхнее отклонение на П-ПР",
+%         "format" : "S9V999",
+%         "name" : "$W.WPPR",
+%         "type" : "real"
+%       },
+%       { "denom" : "Веpхнее отклонение на Р-ПР",
+%         "format" : "S9V999",
+%         "name" : "$W.WPR",
+%         "type" : "real"
+%       },
+%       { "denom" : "Зазоp",
+%         "format" : "9V999",
+%         "name" : "$W.ZAZ",
+%         "type" : "real"
+%       },
+%       { "denom" : "Зазоp, min",
+%         "format" : "9V999",
+%         "name" : "$W.ZAZ1",
+%         "type" : "real"
+%       },
+%       { "denom" : "Зазоp, max",
+%         "format" : "9V999",
+%         "name" : "$W.ZAZ2",
+%         "type" : "real"
+%       },
+%       { "denom" : "Цена деления",
+%         "format" : "99V9999",
+%         "name" : "$W.ZD",
+%         "type" : "real"
+%       }
+%     ]
+% },
+% { "-name" : "Список параметров абразивного инструмента",
+%   "-prefix" : "Y",
+%   "row" : [ { "denom" : "Наружный диаметр круга",
+%         "format" : "9999",
+%         "name" : "$Y.DN",
+%         "type" : "real"
+%       },
+%       { "denom" : "Высота круга",
+%         "format" : "999",
+%         "name" : "$Y.H",
+%         "type" : "real"
+%       },
+%       { "denom" : "Класс неуравновешенности",
+%         "format" : "X(3)",
+%         "name" : "$Y.KU",
+%         "type" : "string"
+%       },
+%       { "denom" : "Марка абразива",
+%         "format" : "X(8)",
+%         "name" : "$Y.MMR",
+%         "type" : "string"
+%       },
+%       { "denom" : "Номер структуры",
+%         "format" : "X(1)",
+%         "name" : "$Y.NS",
+%         "type" : "string"
+%       },
+%       { "denom" : "Степень твердости",
+%         "format" : "X(5)",
+%         "name" : "$Y.ST",
+%         "type" : "string"
+%       },
+%       { "denom" : "Связка",
+%         "format" : "X(3)",
+%         "name" : "$Y.SV",
+%         "type" : "string"
+%       },
+%       { "denom" : "Тип круга",
+%         "format" : "X(4)",
+%         "name" : "$Y.TIP",
+%         "type" : "string"
+%       },
+%       { "denom" : "Рабочая скорость",
+%         "format" : "X(8)",
+%         "name" : "$Y.VR",
+%         "type" : "string"
+%       },
+%       { "denom" : "Зернистость",
+%         "format" : "X(5)",
+%         "name" : "$Y.ZR",
+%         "type" : "string"
+%       },
+%       { "denom" : "Источник информации",
+%         "format" : "X(15)",
+%         "name" : "$Y.IST",
+%         "type" : "string"
+%       },
+%       { "denom" : "Метод шлифования (код)",
+%         "format" : "99",
+%         "name" : "$Y.MSH1",
+%         "type" : "real"
+%       },
+%       { "denom" : "Обрабатываемый материал (работа абразивного инструмента)",
+%         "format" : "99",
+%         "name" : "$Y.MSH2",
+%         "type" : "real"
+%       },
+%       { "denom" : "Термообработка (работа абразивного инструмента)",
+%         "format" : "99",
+%         "name" : "$Y.MSH3",
+%         "type" : "real"
+%       },
+%       { "denom" : "Виды шлифования",
+%         "format" : "99",
+%         "name" : "$Y.MSH4",
+%         "type" : "real"
+%       },
+%       { "denom" : "Обозначение",
+%         "format" : "X(15)",
+%         "name" : "$Y.OB",
+%         "type" : "string"
+%       },
+%       { "denom" : "Наименование",
+%         "format" : "X(20)",
+%         "name" : "$Y.NM",
+%         "type" : "string"
+%       },
+%       { "denom" : "Строка в ВО по абразиному нструменту",
+%         "format" : "X(80)",
+%         "name" : "$Y.VO",
+%         "type" : "string"
+%       },
+%       { "denom" : "Посадочный диаметр",
+%         "format" : "9999",
+%         "name" : "$Y.DP",
+%         "type" : "real"
+%       },
+%       { "denom" : "Текст по абразивному инструменту в документации",
+%         "format" : "X(80)",
+%         "name" : "$Y.TXT",
+%         "type" : "string"
+%       },
+%       { "denom" : "Текст по абразивному инструменту в ИПС",
+%         "format" : "X(80)",
+%         "name" : "$Y.ATXT",
+%         "type" : "string"
+%       },
+%       { "denom" : "Текст по абразивному инструменту в ВО",
+%         "format" : "X(80)",
+%         "name" : "$Y.VO",
+%         "type" : "string"
+%       }
+%     ]
+% },
+% { "-name" : "Список реквизитов заготовки",
+%   "-prefix" : "Z",
+%   "row" : [ { "denom" : "Ширина исходной заготовки",
+%         "format" : "9999V99",
+%         "name" : "$Z.B",
+%         "type" : "real"
+%       },
+%       { "denom" : "Диаметp заготовки",
+%         "format" : "9999V99",
+%         "name" : "$Z.D",
+%         "type" : "real"
+%       },
+%       { "denom" : "Высота",
+%         "format" : "9999V99",
+%         "name" : "$Z.H",
+%         "type" : "real"
+%       },
+%       { "denom" : "Код (вид) заготовки",
+%         "format" : "X(14)",
+%         "name" : "$Z.K",
+%         "type" : "string"
+%       },
+%       { "denom" : "Количество деталей из заготовки",
+%         "format" : "9999",
+%         "name" : "$Z.KD",
+%         "type" : "real"
+%       },
+%       { "denom" : "Длина исходной заготовки",
+%         "format" : "9999V99",
+%         "name" : "$Z.L",
+%         "type" : "real"
+%       },
+%       { "denom" : "Масса заготовки",
+%         "format" : "9999V999",
+%         "name" : "$Z.MAS",
+%         "type" : "real"
+%       },
+%       { "denom" : "Обозначение шкалы твердости",
+%         "format" : "X(5)",
+%         "name" : "$Z.OST",
+%         "type" : "string"
+%       },
+%       { "denom" : "Пpофиль",
+%         "format" : "X(15)",
+%         "name" : "$Z.PR",
+%         "type" : "string"
+%       },
+%       { "denom" : "Толщина стенки заготовки",
+%         "format" : "9999V99",
+%         "name" : "$Z.STS",
+%         "type" : "real"
+%       },
+%       { "denom" : "Твеpдость, min",
+%         "format" : "9999",
+%         "name" : "$Z.TW1",
+%         "type" : "real"
+%       },
+%       { "denom" : "Твеpдость, max",
+%         "format" : "9999",
+%         "name" : "$Z.TW2",
+%         "type" : "real"
+%       },
+%       { "denom" : "Норма расхода",
+%         "format" : "999V999999",
+%         "name" : "$Z.NRM",
+%         "type" : "real"
+%       },
+%       { "denom" : "КИМ",
+%         "format" : "9V9999",
+%         "name" : "$Z.KIM",
+%         "type" : "real"
+%       }
+%     ]
+% },
+% { "-name" : "Пример тематического раздела",
+%   "-prefix" : "X",
+%   "row" : [ { "denom" : "Тип поверхности",
+%         "format" : "X(80)",
+%         "name" : "$X.A",
+%         "type" : "string"
+%       },
+%       { "denom" : "Вид поверхности",
+%         "format" : "X(80)",
+%         "name" : "$X.B",
+%         "type" : "string"
+%       },
+%       { "denom" : "Модель",
+%         "format" : "X(80)",
+%         "name" : "$X.C",
+%         "type" : "string"
+%       },
+%       { "denom" : "Особенности",
+%         "format" : "X(80)",
+%         "name" : "$X.D",
+%         "type" : "string"
+%       },
+%       { "denom" : "Станок",
+%         "format" : "X(80)",
+%         "name" : "$X.X",
+%         "type" : "string"
+%       },
+%       { "denom" : "Тип",
+%         "format" : "X(80)",
+%         "name" : "$X.G",
+%         "type" : "string"
+%       },
+%       { "denom" : "Диаметр шпинделя",
+%         "format" : "99",
+%         "name" : "$X.H",
+%         "type" : "real"
+%       },
+%       { "denom" : "Количество шпинделей",
+%         "format" : "99",
+%         "name" : "$X.Z",
+%         "type" : "real"
+%       }
+%     ]
+% }]}}
+% 
+% \end{lstlisting}
+% }
+% 

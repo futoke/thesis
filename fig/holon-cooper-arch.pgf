@@ -1,0 +1,109 @@
+\begin{tikzpicture}[scale=1]
+
+\singlespacing \sffamily \footnotesize
+
+\tikzstyle{dash}=[draw,rectangle,dashed]
+\tikzstyle{ell}=[draw,shape=ellipse,solid]
+
+\path [level 1/.style={level distance=2.5cm,sibling distance=6.8cm,
+                     nodes={ell,minimum width=24mm,minimum height=12mm}},
+      level 2/.style={level distance=2cm,sibling distance=2.7cm,
+                     nodes={ell,minimum width=14mm,minimum height=7mm}},
+      level 3/.style={level distance=2cm,sibling distance=2cm,
+                     nodes={ell,minimum width=14mm,minimum height=7mm}},
+	  edge from parent path={}]
+
+node (CD1) [ell,minimum width=24mm,minimum height=12mm] {ДК1}
+	child {node (CD21) {ДК21}
+		child {node (CD27) {ДК27}}
+		child [missing]{node {}}
+		child {node (CD23) {ДК23}
+			child {node (CD25) {ДК25}}
+			child {node (CD28) {ДК28}}
+		}
+	}
+	child {node (CD11) {ДК11}
+		[grow=south]
+		child {node (CD13) {ДК13}
+			[grow=south east]
+			child {node (CD18) {ДК18}
+				[grow=south]
+				child {node (CD16) {ДК16}}
+				child {node (CD15) {ДК15}}
+			}
+			child {node (CD17) {ДК17}}
+		}
+		[grow=north]
+		child {node (CD14) {ДК14}}
+	};
+
+\node (CD2)  [ell, minimum width=24mm,minimum height=12mm,
+             left=4cm of CD1] {ДК2};
+\node        [above right=0cm and-6cm of CD1] {\small Домен кооперации};
+\node (CD24) [ell,minimum width=16mm,minimum height=7mm,right=.6cm of CD27] {ДК24};
+
+\node (a) [below=8.3cm of CD2] {}; \node (b) [right=3cm of a] {};
+\node (c) [below=.5cm of a  ] {}; \node (d) [right=3cm of c] {};
+
+\draw [-triangle 45] (a.east) -- (b.west);
+\draw [triangle 45-triangle 45,dashed] (c.east) -- (d.west);
+
+\node [right=0.6cm of b] {Поток управления};
+\node [right=0.6cm of d] {Информационный поток};
+
+\node [below right=0.5cm and -1.2cm of CD27] {Единичный холон (ЕХ)};
+\node (CH) [inner sep=0mm,below right=0.5cm and -1.2cm of CD25] {Составной холон (СХ)};
+
+
+\node (CH2)  [dash,label={[xshift=1cm]north west:СХ2},inner sep=4mm,
+             fit=(CD21) (CD27) (CD24) (CD23) (CD25) (CD28) (CH)] {};
+\node (CH1)  [dash,label={[xshift=1.6cm]north west:СХ1},inner sep=2mm,
+             fit=(CD23) (CD25) (CD28)] {};
+\node (AH2)  [dash,label={[xshift=-0.8cm]north east:ЕХ2},inner sep=2mm,
+             fit=(CD24)] {};
+\node (AH1)  [dash,label={[xshift=1cm]north west:ЕХ1},inner sep=2mm,
+             fit=(CD27)] {};
+\node (AH3)  [dash,label={[xshift=0.8cm]north west:ЕХ3},inner sep=1mm,
+             fit=(CD25)] {};
+\node (AH4)  [dash,label={[xshift=0.8cm]north west:ЕХ4},inner sep=1mm,
+             fit=(CD28)] {};
+
+\node (CH5)  [dash,label={[xshift=0.8cm]north west:СХ5},inner sep=4mm,
+             fit=(CD11) (CD14) (CD13) (CD17) (CD18) (CD16) (CD15)] {};
+\node (CH4)  [dash,label={[xshift=0.8cm]north west:СХ4},inner sep=3mm,
+             fit=(CD13) (CD17) (CD18) (CD16) (CD15)] {};
+\node (CH3)  [dash,label={[xshift=1cm]north west:СХ3},inner sep=2mm,
+             fit=(CD18) (CD16) (CD15)] {};
+\node (AH7)  [dash,label={[xshift=0.8cm]north west:ЕХ7},inner sep=1mm,
+             fit=(CD16)] {};
+\node (AH8)  [dash,label={[xshift=0.9cm]north west:ЕХ8},inner sep=1mm,
+             fit=(CD15)] {};
+\node (AH6)  [dash,label={[xshift=1cm]north west:ЕХ6},inner sep=2mm,
+             fit=(CD17)] {};
+\node (AH5)  [dash,label={[xshift=1.6cm]north west:ЕХ5},inner sep=1mm,
+             fit=(CD14)] {};
+
+
+\draw [triangle 45-triangle 45,dashed] (CD1.west) to [bend right]  (CD21.north);
+\draw [-triangle 45] (CD1.south west) to [bend left]  (CD21.north east);
+\draw [-triangle 45] (CD2.south) to [bend right]  (CD21.north west);
+\draw [-triangle 45] (CD21.south west) to [bend left]  (CD27.north east);
+\draw [triangle 45-triangle 45,dashed] (CD21.west) to [bend right](CD27.north);
+\draw [-triangle 45,dashed] (CD21.south) to [bend right] (CD24.north);
+\draw [-triangle 45,dashed] (CD21.south east) to [bend right]  (CD23.west);
+\draw [triangle 45-,dashed] (CD21.east) to [bend left]  (CD23.north);
+\draw [-triangle 45] (CD23.south west) to [bend right]  (CD25.north);
+\draw [triangle 45-triangle 45] (CD23.south) to [bend right]  (CD28.west);
+\draw [triangle 45-,dashed] (CD23.south east) to [bend left]  (CD28.north);
+\draw [-triangle 45] (CD1.east) to [bend left]  (CD11.north);
+\draw [triangle 45-triangle 45,dashed] (CD11.south east) to [bend right]  (CD14.south west);
+\draw [triangle 45-] (CD11.east) to [bend left]  (CD14.north);
+\draw [-triangle 45] (CD11.south) to [bend left]  (CD13.north);
+\draw [-triangle 45] (CD13.east) to [bend left]  (CD17.north west);
+\draw [-triangle 45,dashed] (CD13.south) to [bend right]  (CD18.north west);
+\draw [triangle 45-] (CD13.south east) to [bend left]  (CD18.north);
+\draw [-triangle 45,dashed] (CD18.south west) to [bend right]  (CD16.north);
+\draw [-triangle 45,dashed] (CD18.south east) to [bend left]  (CD15.north);
+\draw [triangle 45-] (CD18.south) to [bend right]  (CD15.west);
+
+\end{tikzpicture}

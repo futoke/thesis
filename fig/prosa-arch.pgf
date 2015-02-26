@@ -1,0 +1,30 @@
+\begin{tikzpicture}[
+	font={\sffamily\footnotesize},
+    simple/.style={
+		minimum height=1cm,minimum width=3cm,
+		double copy shadow={shadow xshift=1ex,
+                            shadow yshift=1ex},
+		fill=white,draw=black,thick
+	}
+]
+
+\node (a) [simple] {Холон ресурсов};
+\node (b) [simple,above right=3cm of a] {Холон нарядов};
+\node (c) [simple,above left=3cm of a] {Холон продукции};
+
+\begin{scope}[align=center]
+
+\draw [triangle 45-triangle 45] (a.east) -- (b)
+      node [right=1cm,near start] {Знания о\\выполнении\\технологического\\процесса};
+\draw [triangle 45-triangle 45] (a.west) -- (c)
+      node [left=5mm,midway] {Знания о\\технологическом\\процессе};
+\draw [triangle 45-triangle 45] (b) -- (c)
+      node [above=5mm,midway] {Знания о производстве};
+
+\end{scope}
+
+\node [draw,fit=(a) (b) (c),inner sep=0.7cm,
+      label={[yshift=.6cm]south:
+      Холоническая производственная система}] {};
+
+\end{tikzpicture}

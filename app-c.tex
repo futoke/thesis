@@ -1,0 +1,62 @@
+\chapter{Стандарт FIPA}
+\label{app:fipa}
+
+\begin{table}[h!]
+\caption{Ключевые спецификации FIPA}
+\begin{tabularx}{\textwidth}{lX}
+\toprule
+ Индекс & \centering Описание \tabularnewline
+\midrule
+\ttfamily 00001 & \hangindent=.7cm  Спецификация абстрактной архитектуры (\E{Abstract Architecture Specification})\tabularnewline
+\ttfamily 00007 & \hangindent=.7cm  Спецификация языка описания содержимого (\E{Content Languages Specification})\tabularnewline
+\ttfamily 00008 & \hangindent=.7cm  Спецификация языка описания содержимого SL (\E{SL Content Language Specification})\tabularnewline
+\ttfamily 00023 & \hangindent=.7cm  Спецификация управления агентами (\E{Agent Management Specification})\tabularnewline
+\ttfamily 00024 & \hangindent=.7cm  Спецификация транспортировки сообщений агентов (\E{Agent Message Transport Specification})\tabularnewline
+\ttfamily 00025 & \hangindent=.7cm  Спецификация библиотеки протокола взаимодействия (\E{Interaction Protocol Library Specification})\tabularnewline
+\ttfamily 00026 & \hangindent=.7cm  Спецификация запроса протокола взаимодействия (\E{FIPA Request Interaction Protocol Specification})\tabularnewline
+\ttfamily 00037 & \hangindent=.7cm  Спецификация библиотеки коммуникативных актов (\E{Communicative Act Library Specification})\tabularnewline
+\ttfamily 00061 & \hangindent=.7cm  Спецификация структуры сообщения ACL (\E{ACL Message Structure Specification})\tabularnewline
+\ttfamily 00063 & \hangindent=.7cm  Спецификация агентного контроля (\E{Control Agent Specification})\tabularnewline
+\ttfamily 00063 & \hangindent=.7cm  Спецификация строкового представления сообщений языка FIPA ACL (\E{FIPA ACL Message Representation in String Specification})\tabularnewline
+\ttfamily 00082 & \hangindent=.7cm  Спецификация сетевого управления и резервирования (\E{Network Management and Provisioning Specification})\tabularnewline
+\ttfamily 00084 & \hangindent=.7cm  Спецификация протокола транспортировки сообщений агентов для HTTP (\E{Agent Message Transport Protocol for HTTP Specification})\tabularnewline
+\ttfamily 00086 & \hangindent=.7cm  Спецификация сервиса онтологий (\E{Ontology Service Specification})\tabularnewline
+\ttfamily 00094 & \hangindent=.7cm  Спецификация качества обслуживания (\E{Quality of Service Specification})\tabularnewline
+\bottomrule
+\end{tabularx}
+\label{tab:FIPA-spec}
+\end{table}
+
+\begin{table}[p!]
+\caption{Речевые акты FIPA}
+\begin{tabularx}{\textwidth}{lX}
+\toprule
+Речевой акт & \centering Описание \tabularnewline
+\midrule
+\small\ttfamily Accept Proposal       & \hangindent=.7cm \small Принятие предложения другого агента \tabularnewline
+\small\ttfamily Agree                 & \hangindent=.7cm \small Согласие выполнить какое-то действие \tabularnewline
+\small\ttfamily Cancel                & \hangindent=.7cm \small Уведомление о прекращении выполнения действия \tabularnewline
+\small\ttfamily Call for Proposal     & \hangindent=.7cm \small Запрос предложений на выполнение действия \tabularnewline
+\small\ttfamily Confirm               & \hangindent=.7cm \small Уведомление об истинности некоторого суждения в случае сомнений получателя \tabularnewline
+\small\ttfamily Disconfirm            & \hangindent=.7cm \small Уведомление о ложности некоторого суждения в случае, когда получатель считает его истинным\tabularnewline
+\small\ttfamily Failure               & \hangindent=.7cm \small Уведомление о неудаче \tabularnewline
+\small\ttfamily Inform                & \hangindent=.7cm \small Уведомление об истинности некоторого суждения \tabularnewline
+\small\ttfamily Inform If             & \hangindent=.7cm \small Сообщение о том было ли суждение истинным или нет \tabularnewline
+\small\ttfamily Inform Ref            & \hangindent=.7cm \small Уведомление о соответствии полученного объекта некоторому произвольному дескриптору \tabularnewline
+\small\ttfamily Not Understood        & \hangindent=.7cm \small Осознание необходимости сделать что-либо при отсутствии понимания, что именно \tabularnewline
+\small\ttfamily Propagate             & \hangindent=.7cm \small Сообщение о необходимости принять сообщение и передать его другим агентам в соответствии с заданным дескриптором \tabularnewline
+\small\ttfamily Propose               & \hangindent=.7cm \small Предложение выполнить некоторое действие с учётом заданных условий \tabularnewline
+\small\ttfamily Proxy                 & \hangindent=.7cm \small Уведомление о необходимости передать сообщения другим агентам в соответствии с заданным дескриптором \tabularnewline
+\small\ttfamily Query If              & \hangindent=.7cm \small Запрос о том было ли суждение истинным или нет \tabularnewline
+\small\ttfamily Query Ref             & \hangindent=.7cm \small Запрос о соответствии имеющегося объекта некоторому дескриптору \tabularnewline
+\small\ttfamily Refuse                & \hangindent=.7cm \small Отказ от выполнения некоторого действия без сообщения \mbox{причины} \tabularnewline
+\small\ttfamily Reject Proposal       & \hangindent=.7cm \small Отклонение предложения выполнить некоторое действие во время проведения переговоров \tabularnewline
+\small\ttfamily Request               & \hangindent=.7cm \small Запрос на выполнение некоторого действия \tabularnewline
+\small\ttfamily Request When          & \hangindent=.7cm \small Запрос на выполнение некоторого действия в случае получения предложения \tabularnewline
+\small\ttfamily Request Whenever      & \hangindent=.7cm \small Запрос на выполнение некоторого действия постоянно при получении предложений \tabularnewline
+\small\ttfamily Subscribe             & \hangindent=.7cm \small Желание получать сообщения в соответствии с некоторым условием до тех пор, пока оно не изменится \tabularnewline
+\bottomrule
+\end{tabularx}
+\label{tab:speech-acts}
+\end{table}
+

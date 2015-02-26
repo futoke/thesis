@@ -1,0 +1,92 @@
+\begin{tikzpicture}[font={\sffamily}]
+
+\singlespacing
+
+\matrix (d) [
+	column sep=0.1cm,row sep=1.5cm,nodes={draw},
+	matrix of nodes,
+	row 1/.style={shape=ellipse,text centered,text width=2.5cm,
+                inner sep=0mm,minimum height=1.5cm,
+                font={\sffamily\footnotesize}},
+	row 2/.style={rectangle,anchor=north,text width=2.5cm,
+                text centered,minimum height=1.3cm,
+                font={\sffamily\footnotesize}}
+	]{
+	% first row
+	\node [xshift=0.5cm]{Функция пользователя}; &
+	\node [xshift=0.3cm]{Функция пользователя}; &
+	\node [xshift=-0.3cm]{Функция пользователя}; &
+	\node [xshift=-0.5cm]{Функция пользователя};\\
+	%second row
+	\node {Планирование}; &
+	\node {Моделирование}; &
+	\node {Управление}; &
+	\node {Диагностика};\\
+};
+\foreach \x in {1,...,4}{
+	\foreach \y in {1,...,4}{
+		\draw (d-2-\x.north) -- (d-1-\y.south);
+	}
+}
+\node (dtaci) [draw,double arrow,below=1.2cm of d,
+               minimum height=1.5cm,minimum width=0.8cm,
+               label={[xshift=.5cm,text width=6cm]south:
+                       \small Общий Интерфейс Доступа к Таблицам
+                       Данных (ОИДТД)},
+               rotate=90]{};
+\node (deli) [above=6cm of dtaci] {СОВЕЩАТЕЛЬНЫЙ СЛОЙ};
+\node [draw,dashed,inner sep=2mm,fit=(d)(deli)] {};
+\path let \p1 = (d.south west), \p2 = (d.north east) in
+node (dt) [draw,text centered,below=of d,text depth=0mm,
+           minimum width=\x2-\x1+2*2mm,minimum height=0.9cm,
+           yshift=-1.2cm]
+	      {\small ТАБЛИЦА ДАННЫХ};
+
+\node [draw,double arrow,fill=white,
+       right=-1cm of d] {\tiny FIPA, XML, и т.\,д.};
+\node (cidaci) [draw,double arrow,below right=1.4cm and -15cm of dt,
+              minimum height=1.5cm,minimum width=0.8cm,
+              label={[xshift=.5cm,text width=8cm]south:
+                    \small Общий Интерфейс Доступа к Данным и
+                     Управляющей Информации (ОИДДУИ)},
+              rotate=90]{};
+\node (cidaci-1) [draw,double arrow,below right=3.2cm and -3cm of dt,
+              minimum height=5cm,minimum width=1cm,
+              label={[xshift=2.5cm]\small ОИДДУИ},
+              rotate=90]{};
+\matrix (cf)
+	[matrix of nodes,below=of d.west,
+	nodes in empty cells,anchor=west,yshift=-8.1cm,
+	nodes={draw,rectangle,minimum height=8mm,
+               minimum width=4mm},
+        label={[xshift=2.7cm,yshift=1.5cm,text width=3cm,text centered]south:
+                \small ФУНКЦИИ УПРАВЛЕНИЯ},
+	column sep={1.5cm,between origins},
+	row sep={1cm}]{
+
+	& & & & & \\
+	|[draw=none]| & |[draw=none]| &  &\\
+};
+\node [draw,dashed,inner sep=2mm,fit=(cf)] {};
+\draw (cf-1-2) |- (cf-2-3);
+\draw (cf-1-3.south)  -- ++(0mm,-5mm) -|  (cf-2-4.north);
+
+\matrix (hw)
+	[matrix of nodes,below=of cf.west,
+	anchor=west,yshift=-2cm,
+	nodes={draw,rectangle,minimum size=1cm,text depth=0ex},
+	column sep=1cm]{
+
+	{АС}&{АС}&{АС}&{АС}&{АС}&{АС}&{АС}&{АС} \\
+};
+\node (ph)[below=.5cm of hw-1-3]{\footnotesize ФИЗИЧЕСКИЙ УРОВЕНЬ};
+\node [draw,fit=(hw-1-1)(hw-1-2)(hw-1-3)(hw-1-4)
+               (hw-1-4)(hw-1-5)(hw-1-6)(hw-1-7)
+               (hw-1-8)(ph),
+      inner sep=4mm,dashed]{};
+\node (sim)[below=.5cm of hw-1-7]{\footnotesize УРОВЕНЬ СИМУЛЯЦИИ};
+\node [draw,fit=(hw-1-6)(hw-1-7)(hw-1-8)(sim),
+      inner sep=4mm,dashed]{};
+
+
+\end{tikzpicture}

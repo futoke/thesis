@@ -1,0 +1,66 @@
+\begin{tikzpicture}[font={\sffamily\footnotesize}]
+
+\path [
+	nodes={draw,circle},edge from parent path={},
+	level 1/.style={level distance=2cm,sibling distance=2.5cm},
+	level 2/.style={level distance=2cm,sibling distance=1.5cm},
+	level 3/.style={level distance=2cm,sibling distance=2cm}
+]
+node (H) {Х}
+	child {node (H1) {Х}
+		[grow=south]
+		child {node [xshift=1.5cm](H11) {Х}}
+		child {node [xshift=1.5cm](H12) {Х}}
+		child {node [xshift=1.5cm](H13) {Х}}
+		child {node [yshift=2cm] (H14) {Х}}
+	}
+	child [missing]{node {}}
+	child {node [xshift=-0.5cm](H2) {Х}}
+	child {node [xshift=-0.5cm] (H3) {Х}
+		child {node (H31) {Х}}
+		child {node (H32) {Х}}
+	}
+    child {node (H4) {Х}}
+	child {node (H5) [yshift=2cm]{Х}
+		child {node [yshift=-1cm] (H51) {Х}
+			[grow=south east]
+			child {node (H511) {Х}}
+		}
+		child {node (H52) {Х}}
+	};
+\begin{scope}[-triangle 45]
+\draw (H) -- (H14);\draw (H) -- (H2);\draw (H) -- (H3);\draw (H) -- (H4);
+\draw (H1) -- (H11);\draw (H1) -- (H12);\draw (H1) -- (H13);\draw (H1) -- (H14);
+\draw (H3) -- (H31);\draw (H3) -- (H32);
+\draw (H5) -- (H4);\draw (H5) -- (H51);\draw (H5) -- (H52);
+\draw (H51) -- (H511);\draw (H51) -- (H52);
+\end{scope}
+
+\node [draw,shape=ellipse,below=2cm of H2]{Х};
+\node [draw,shape=ellipse,below=2cm of H4]{Х};
+\node (single) [draw,shape=ellipse,above=2cm of H1]{Х};
+
+\begin{scope}[nodes={draw,shape=ellipse,inner sep=0cm}]
+
+\node [fit=(H1)(H11)(H12)(H13)(H14)]{};
+\node (dvc) [fit=(H)(H2)(H3)(H14)]{};
+\node (dvc-0) [fit=(H3)(H31)(H32)]{};
+\node (dvc-1) [fit=(H4)(H5)(H51)(H52)]{};
+\node [fit=(H51)(H52)(H511)]{};
+
+\end{scope}
+
+\node[draw,rectangle callout,
+     callout absolute pointer={(H.west)},
+     left=of H] {Первичный холон};
+\node[draw,rectangle callout,
+     callout absolute pointer={(dvc.north east)},
+     above right=1cm and -1.4cm of H] {Динамический виртуальный кластер};
+\node[draw,rectangle callout,
+     callout absolute pointer={(dvc-1.north)},
+     above=of dvc-1] {Динамический виртуальный кластер};
+\node[draw,rectangle callout,
+     callout absolute pointer={(single.north east)},
+     above right=1cm and 1cm of single] {Единичный холон};
+
+\end{tikzpicture}

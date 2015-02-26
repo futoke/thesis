@@ -1,0 +1,48 @@
+\pgfdeclarelayer{background}
+\pgfdeclarelayer{foreground}
+\pgfsetlayers{background,main,foreground}
+
+\begin{tikzpicture}[
+	font={\sffamily\footnotesize},
+	nodes={
+		draw,
+		minimum height=1cm,
+		minimum width=4cm,
+		rounded corners=2mm,
+		text centered,
+		text width=3.8cm,
+		fill=white
+	}
+]
+
+\singlespacing
+
+\node (a) {Идентификация ситуации\\(состояния мира)};
+\node (b) [right=of a] {Выбор действия};
+\node (c) [rounded corners=0mm,right=of b] {Продукционные правила};
+
+\node (e) [below=of b] {\normalsize Эффекторы};
+
+\path let \p1 = (a.south), \p2 = (e.north) in
+node (d) [below=(\y1-\y2) of a] {\normalsize Сенсоры};
+
+\begin{pgfonlayer}{background}
+\node (f) [fit=(a)(c)(d),inner sep=3mm,fill=black!20,
+           label={[yshift=1.5cm,xshift=5cm]south:\normalsize Агент}] {};
+\end{pgfonlayer}
+
+\path let \p1 = (a.south west), \p2 = (c.north east) in
+node (g) [below=1cm of f,minimum height=1cm,text depth=0,text width=10cm,
+          minimum width=(\x2-\x1)+6mm,fill=black!20]{\normalsize Окружающая среда};
+
+\draw [draw,-triangle 45] (a.east) -- (b.west);
+\draw [draw,-triangle 45] (c.west) -- (b.east);
+\draw [draw,-triangle 45] (d.north) -- (a.south);
+\draw [draw,triangle 45-] (e.north) -- (b.south);
+
+\draw [draw,triangle 45-] (d.south) -- (d.south |- g.north);
+\draw [draw,-triangle 45] (e.south) -- (e.south |- g.north);
+
+
+
+\end{tikzpicture}

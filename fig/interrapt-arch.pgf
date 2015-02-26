@@ -1,0 +1,88 @@
+\begin{tikzpicture}[
+	rectangle,
+	font={\sffamily\small},
+	my shape/.style={
+		draw,
+		rectangle split,
+		rectangle split parts=#1,
+		text centered,
+		text depth=0mm,
+		inner sep=0cm,
+		minimum height=1.5cm,
+		dotted,
+		fill=white,
+		drop shadow
+	}
+]
+\singlespacing
+
+\begin{scope}[minimum height=1cm,minimum width=8.3cm]
+\node (cpl) [fill=black!20,drop shadow]
+            {Слой кооперативного планирования (СКП)};
+\node (lpl) [fill=black!10,drop shadow,below=of cpl]
+            {Слой локального планирования (СЛП)};
+\node (bbl) [draw,dotted,fill=white,drop shadow,below=of lpl]
+            {Определяющий поведение слой (ОПС)};
+\end{scope}
+
+\begin{scope}[minimum height=1.6cm,minimum width=5cm,
+              text width=4.5cm,font={\sffamily\footnotesize}]
+\node (soc) [fill=black!20,right=of cpl.north east,
+            anchor=north west]
+            {Социальная модель\\(протоколы, совместные\\планы, цели других агентов)};
+\node (men) [fill=black!10,right=of lpl]
+            {Ментальная модель\\(локальные планы и цели)};
+\node (sit) [draw,dotted,fill=white,right=of bbl.south east,
+            anchor=south west]
+            {Модель окружающего мира\\Шаблоны поведения};
+\end{scope}
+
+
+\draw [triangle 45-] (cpl.-20)  -- (lpl.20);
+\draw [-triangle 45] (cpl.-160) -- (lpl.160);
+\draw [triangle 45-] (lpl.-20)  -- (bbl.20);
+\draw [-triangle 45] (lpl.-160) -- (bbl.160);
+\draw [triangle 45-] (bbl.-20)  -- ++(0,-1);
+\draw [-triangle 45] (bbl.-160) -- ++(0,-1);
+\draw [triangle 45-] (sit.-25)  -- ++(0,-1);
+\draw [-triangle 45] (sit.-155) -- ++(0,-1);
+
+\draw [-triangle 45,loosely dashed] (soc.161) -- (sit.-161);
+
+\draw [triangle 45-triangle 45,dashed] (cpl.east) -- (soc.west);
+\draw [triangle 45-triangle 45,dashed] (lpl) -- (men);
+\draw [triangle 45-triangle 45,dashed] (bbl.east) -- (sit.west);
+
+\path let \p1 = (bbl.south west), \p2 = (sit.north east) in
+node (bot) [my shape=3,rectangle split horizontal,
+           below=1cm of bbl.south west,anchor=north west,
+           label={[fill=white,xshift=5mm]north:Интерфейс со средой},
+           text width=(\x2-\x1)/3]
+	      {\nodepart{one}Исполнение обязанностей
+	       \nodepart{two}Взаимодействие
+	       \nodepart{three}Восприятие};
+
+\path let \p1 = (bbl.south west), \p2 = (sit.north east) in
+node (env) [fill=black!30,below=of bot,minimum height=1.2cm,text depth=0,
+      minimum width=(\x2-\x1)+1cm]{ОКРУЖАЮЩАЯ СРЕДА};
+
+\draw [triangle 45-triangle 45] (bot.one south)    -- ++(0,-1);
+\draw [triangle 45-triangle 45] (bot.two south)    -- ++(0,-1);
+\draw [triangle 45-triangle 45] (bot.three south)  -- ++(0,-1);
+
+\node [draw,dashed,label={north:Модуль управления агента},
+       inner sep=2mm,fit=(cpl) (lpl) (bbl)] {};
+\node (kb) [draw,dashed,label={north:Иерархическая база знаний агента},
+       inner sep=2mm,fit=(soc) (men) (sit)] {};
+
+\path let \p1 = (kb.north), \p2 = (bot.south) in
+node [draw,single arrow,right=0.9cm of kb.north east,minimum height=(\y1-\y2),
+      anchor=east,rotate=90,top color=black!20,dotted] {Абстракция знаний};
+
+
+\draw[-triangle 45] (-3,-10) -- node[at end,right]
+     {Поток управления} ++(2,0);
+\draw[-triangle 45,dashed] (-3,-11) -- node[at end,right]
+     {Передача информации} ++(2,0);
+
+\end{tikzpicture}

@@ -1,0 +1,20 @@
+\nomenclatureentry{aТПП@[{ТПП}]\begingroup Технологическая подготовка производства\nomeqref {1.0}|nompageref}{13}
+\nomenclatureentry{aТП@[{ТП}]\begingroup Технологический процесс\nomeqref {1.0}|nompageref}{14}
+\nomenclatureentry{aМАС@[{МАС}]\begingroup Многоагентная система\nomeqref {1.0}|nompageref}{28}
+\nomenclatureentry{aИА@[{ИА}]\begingroup Интеллектуальный агент\nomeqref {2.0}|nompageref}{31}
+\nomenclatureentry{aМС@[{МС}]\begingroup Многоагентная среда\nomeqref {2.1}|nompageref}{39}
+\nomenclatureentry{aПО@[{ПО}]\begingroup Программное обеспечение\nomeqref {2.13}|nompageref}{46}
+\nomenclatureentry{aХПС@[{ХПС}]\begingroup Холоническая производственная система\nomeqref {2.16}|nompageref}{51}
+\nomenclatureentry{aXML@[{XML}]\begingroup eXtensible Markup Language\nomeqref {3.0}|nompageref}{60}
+\nomenclatureentry{aJSON@[{JSON}]\begingroup JavaScript Object Notation\nomeqref {3.0}|nompageref}{60}
+\nomenclatureentry{aСМД@[{СМД}]\begingroup Словарь метаданных\nomeqref {3.5}|nompageref}{77}
+\nomenclatureentry{aXMPP@[{XMPP}]\begingroup Extensible Messaging and Presence Protocol\nomeqref {3.7}|nompageref}{84}
+\nomenclatureentry{aРВИС@[{РВИС}]\begingroup Распределённый виртуальный испытательный стенд\nomeqref {3.7}|nompageref}{86}
+\nomenclatureentry{aВМ@[{ВМ}]\begingroup Виртуальная машина\nomeqref {3.7}|nompageref}{87}
+\nomenclatureentry{aАСТПП@[{АСТПП}]\begingroup Автоматизированная система технологической подготовки производства\nomeqref {3.7}|nompageref}{87}
+\nomenclatureentry{aИУП ТПП@[{ИУП ТПП}]\begingroup Информационно-управляющая платформа технологической подготовки производства\nomeqref {3.7}|nompageref}{87}
+\nomenclatureentry{aВРМ@[{ВРМ}]\begingroup Виртуальное рабочее место\nomeqref {3.7}|nompageref}{87}
+\nomenclatureentry{aСТО@[{СТО}]\begingroup Средства технологического оснащения\nomeqref {4.0}|nompageref}{95}
+\nomenclatureentry{aПКМ@[{ПКМ}]\begingroup Полимерный композиционный материал\nomeqref {4.0}|nompageref}{96}
+\nomenclatureentry{aORM@[{ORM}]\begingroup Object-relational mapping\nomeqref {4.0}|nompageref}{113}
+\nomenclatureentry{aAPI@[{API}]\begingroup Application Programming Interface\nomeqref {\CYRG .0}|nompageref}{143}

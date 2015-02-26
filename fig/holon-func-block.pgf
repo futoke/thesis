@@ -1,0 +1,42 @@
+\begin{tikzpicture}
+
+\singlespacing \sffamily
+
+\tikzstyle{hex}=[draw,regular polygon,regular polygon sides=6,text width=0.3cm];
+\tikzstyle{rec}=[draw,rectangle,text width=1.5cm,align=center];
+
+\draw [decorate,decoration={brace,amplitude=10pt,mirror,raise=4pt},yshift=0pt]
+          (5.5,0) -- (5.5,6) node [midway,xshift=1.6cm] {<<Голова>>};
+\draw [decorate,decoration={brace,amplitude=10pt,mirror,raise=4pt},yshift=0pt]
+          (5.5,-7) -- (5.5,-2) node [midway,xshift=2cm] {<<Туловище>>};
+\draw [decorate,decoration={brace,amplitude=10pt,mirror,raise=4pt},yshift=0pt]
+          (-2,0.5) -- (-2,-2.5) node [midway,xshift=-1.5cm] {<<Шея>>};
+
+\node at (1,-1) {Ядро};
+\node at (0,-6.5) {Функциональный блок};
+\node at (0,6.5) {Агент};
+
+\node (a) [hex] at (0,-3.5) {};
+\node (b) [hex] at (0,-5) {};
+\node (c) [hex] at (-4,-5.5) {};
+\node (d) [hex] at (4,-5.5) {};
+
+\draw (a.east) -- (d.north west);
+\draw (a.west) -- (c.north east);
+\draw (c.east) -- (b.west);
+\draw (b.east) -- (d.west);
+
+\node (HI) [rec] at (-1.5,3)  {ПИ};
+\node (PMI) [rec] at (0,1)  {ИПО};
+\node (IHI) [rec] at (0,5)  {ИВХ};
+\node (PMC) [rec] at (1.5,3)  {УПО};
+
+\draw[thin, triangle 45-triangle 45] (HI.south) |- (PMI.west);
+\draw[thin, triangle 45-triangle 45] (HI.north) |- (IHI.west);
+\draw[thin, triangle 45-triangle 45] (HI.east) -- (PMC.west);
+\draw[thin, triangle 45-triangle 45] (PMI.east) -| (PMC.south);
+
+\draw (0,3) circle (3cm);
+\draw (0,0) -- (0,-2) -- (5,-4) -- (5,-7) -- (-5,-7) -- (-5,-4) -- (0,-2);
+
+\end{tikzpicture}

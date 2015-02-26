@@ -1,0 +1,256 @@
+\documentclass[
+candidate
+,subf
+,href
+,colorlinks=true
+%,fixint=false
+%,times
+%,facsimile
+%,classified
+% ,draft
+]{disser}
+
+\usepackage[
+  a4paper, mag=1000, includefoot,
+  left=3cm, right=1.2cm, top=2cm, bottom=2cm, headsep=1cm, footskip=1cm
+]{geometry}
+\usepackage[T2A]{fontenc}
+\usepackage[cp1251]{inputenc}
+\usepackage[english,russian]{babel}
+\ifpdf\usepackage{epstopdf}\fi
+
+\usepackage[intoc,russian]{nomencl}
+% \makegossary
+\makenomenclature
+
+\usepackage{tikz}
+\usetikzlibrary{
+    decorations.pathreplacing,
+    arrows,
+    shapes,
+    positioning,
+    shapes.geometric,
+    fit,
+    arrows,
+    matrix,
+    calc,
+    shadows,
+    shadings,
+    chains,
+    scopes
+}
+
+\usepackage{amsmath,amssymb,latexsym,amsthm}
+\usepackage{mathtools}
+\usepackage{wrapfig}
+\usepackage{subfig}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{listings}
+\usepackage{makecell}
+\usepackage{rotating}
+\usepackage[hhmmss]{datetime}
+\usepackage{microtype}
+\usepackage{blindtext}
+
+\newcommand*{\hm}[1]{#1\nobreak\discretionary{}%
+ {\hbox{$\mathsurround=0pt #1$}}{}}
+
+% % \usepackage[nodisplayskipstretch]{setspace}
+% \setstretch{1.5}
+
+
+\lstnewenvironment{code}[1][]%
+  {\minipage{\linewidth}
+   \lstset{basicstyle=\ttfamily\footnotesize,frame=single,#1}}
+  {\endminipage}
+
+
+
+\usepackage{caption}
+\DeclareCaptionFormat{myformat}{\hspace*{14cm} #1\\ #3}
+
+\captionsetup[table]{singlelinecheck=off,justification=centering,position=above,
+                     font={singlespacing,small},textfont=bf,skip=15pt,format=myformat}
+
+\captionsetup[figure]{justification=centering,labelsep=period}
+
+
+\usepackage{fancybox}
+% \regtotcounter{figure}
+
+\newtheorem{mydef}{Определение}[chapter]
+\newtheorem{mylemma}{Лемма}[chapter]
+\newtheorem{mycorrollary}{Следствие}[chapter]
+
+
+\clubpenalty=10000
+\widowpenalty=10000
+
+% \setlength{\parskip}{3ex plus 2ex minus 2ex}
+\enlargethispage{-\baselineskip}
+
+% \righthyphenmin=2
+
+\doublehyphendemerits=1000000
+
+\emergencystretch=5pt
+
+\setcounter{tocdepth}{2}
+
+\newcommand{\E}[1]{\foreignlanguage{english}{#1}}
+\newcommand{\D}[1]{\foreignlanguage{dutch}{#1}}
+
+\renewcommand{\labelitemi}{\normalfont\bfseries{--}}
+
+\renewcommand{\nomname}{Список используемых сокращений}
+\renewcommand{\lstlistingname}{Листинг}
+\renewcommand\lstlistlistingname{Список листингов}
+
+\renewcommand{\nomlabel}[1]{\hfil#1 ---}
+\renewcommand{\nomentryend}{.} 
+
+\def\lstlistingautorefname{лис\-тинг}
+\def\figureautorefname{рис.}
+\def\sectionautorefname{разд.}
+\def\tableautorefname{табл.}
+\def\chapterautorefname{гл.}
+\def\subsectionautorefname{разд.}
+\def\appendixautorefname{прил.}
+
+\usepackage{paralist}
+  \let\itemize\compactitem
+  \let\enditemize\endcompactitem
+  \let\enumerate\compactenum
+  \let\endenumerate\endcompactenum
+  \let\description\compactdesc
+  \let\enddescription\endcompactdesc
+  \pltopsep=\medskipamount
+  \plitemsep=1pt
+  \plparsep=1pt
+
+
+% \makeatletter
+% \long\def\@makecaption#1#2{%
+%   \vskip\abovecaptionskip
+%   \sbox\@tempboxa{#2}%
+%   \hfill #1\par
+%   \ifdim \wd\@tempboxa >\hsize
+%     \begin{center}#2\end{center}
+%   \else
+%     \global \@minipagefalse
+%     \hb@xt@\hsize{\hfil\box\@tempboxa\hfil}%
+%   \fi
+%   \vskip\belowcaptionskip}
+% \makeatother
+
+% Номера страниц сверху и по центру
+%\def\headfont{\small}
+%\pagestyle{headcenter}
+%\chapterpagestyle{empty}
+
+% Ссылки на работы соискателя включаются в общий список литературы
+\let\citemy=\cite
+
+% Использовать полужирное начертание для векторов
+\let\vec=\mathbf
+
+% Путь к файлам с иллюстрациями
+\graphicspath{{fig/}}
+
+\begin{document}
+
+% Общие поля титульного листа диссертации и автореферата
+\institution{{\singlespacing%
+Министерство образования и науки Российской Федерации\\
+{\singlespacing\small Федеральное государственное бюджетное образовательное\\}
+{\singlespacing\small учреждение высшего профессионального образования\\}
+<<Санкт-Петербургский национальный исследовательский университет
+информационных технологий, механики и оптики>>\\
+(НИУ ИТМО)\\}}
+
+% Включение файла с общим текстом диссертации и автореферата
+% (текст титульного листа и характеристика работы).
+\input{common}
+
+% номер копии для грифа секретности
+%\copynum{1}
+% класс доступа
+%\classlabel{Для служебного пользования}
+
+\title{ДИССЕРТАЦИЯ\\
+на соискание ученой степени\\
+кандидата технических наук}
+
+\maketitle
+
+%%
+%% Titlepage in English
+%%
+%
+%\institution{Name of Organization}
+%
+%\title{PhD Thesis}
+%
+%% Topic
+%\topic{Dummy Title}
+%
+%% Author
+%\author{Author's Name}
+%
+%\specnum{01.04.05}
+%\spec{Optics}
+%
+%%\specsndnum{01.04.07}
+%%\specsnd{Condensed matter physics}
+%
+%\sa{I.\,I.~Ivanov}
+%\sastatus{Professor}
+%%\sasnd{P.\,P.~Petrov}
+%%\sasndstatus{Professor}
+%
+%% Scientific consultant
+%%\scon{B.\,B.~Baranov}
+%%\sconstatus{Professor}
+%
+%% City & Year
+%\city{Saint Petersburg}
+%\date{\number\year}
+%
+%\maketitle[en]
+
+\tableofcontents
+
+{\singlespacing\printnomenclature}
+% \printglossary
+% \listoffigures
+% \listoftables
+% \lstlistoflistings
+% \addcontentsline{toc}{chapter}{Список листингов}
+
+
+\input{intro}
+% \input{review}
+\input{1}
+\input{2}
+\input{3}
+\input{4}
+\input{5}
+\conclusion
+\input{concl}
+
+% \cite{*}
+
+\bibliography{thesis}
+\bibliographystyle{gost705}
+
+\appendix
+\input{app-a}
+{\singlespacing\input{app-b}}
+{\singlespacing\input{app-c}}
+\input{app-d}
+{\singlespacing\input{app-e}}
+\input{app-f}
+
+% \vfill\noindent Собрано \today\  в \currenttime.
+\end{document}
